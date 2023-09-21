@@ -21,17 +21,21 @@
 
 body{
  background-color: rgb(230, 230, 230);
- margin: 40px;
+ padding: 10vh;
  height: 100%;
  width: 100%;
+ min-height: 100vh;
  justify-content: center;
  align-items: center;
- display: flex;
+ display: inline-block;
+ position: relative;
  flex-direction: column;
- display: inline;
+ font-family: 'poppins', sans-serif;
+ 
 }
 .container{
-    font-size: large;
+    font-size: 18px;
+    max-width: 80vh;
     background-color: rgb(251, 250, 250);
     display: flex;
     justify-content: center;
@@ -52,8 +56,12 @@ img{
 }
 
 #forget{
-    margin-left: 50rem;
     text-decoration: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 h2{
@@ -64,7 +72,7 @@ h2{
 .btn{
     border-radius: 5px;
     font-size: large;
-    font-family: 'Poppins', sans-serif;
+ 
 }
 
 #createaccount{
@@ -72,8 +80,9 @@ h2{
    text-decoration: none;
 }
 
-.cbox{
-    height: 5px;
+.newtogit{
+    background-color: rgb(251, 250, 250);
+    border-radius: 10px;
 }
     </style>
 </head>
@@ -91,8 +100,8 @@ h2{
             </div>
 
             <div class="form-group">
-                <label for="password">Password
-                    <a id="forget" href="#">forget password?</a>
+                <label class="form-group-list" for="password">Password
+                    <a class="form-group-item" id="forget" href="#">forget password?</a>
                 </label>
                 <input class="form-control" type="password" name="password" id="password">
             </div>
@@ -101,10 +110,9 @@ h2{
         </div>
 <br>
         <div class="container">
-            <div class="form-group">
-                <div class="cbox">
-                    <label for="github">New Github?
-                        <a id="createaccount" href="#">Create an account.</a>
+            <div class="newtogit">
+                    <label class="form-group-list" for="github">New Github?
+                        <a class="form-group-item" id="createaccount" href="#">Create an account.</a>
                     </label>
                 </div>
             </div>
