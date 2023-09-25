@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+        
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background: url(wallpaperflare.com_wallpaper\ \(69\).jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .container{
+        
+          width: 100%;
+          min-height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items:center;
+          flex-direction: column;
+          position: relative;
+      }
+
+        .form-box{
+          
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            padding: 40px;
+            position: relative;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            backdrop-filter: blur(5px);
+            box-shadow: 5px 5px 20px rgba(46, 45, 45, 0.382);
+        }
+
+        h2{
+            text-transform: capitalize;
+
+            text-align: center;
+            color: #fcfcfcc5;
+        }
+
+        .form-control{
+            border-radius: 40px;
+            background-color: #ffffffff;
+            border: none;
+            margin: 20px 0;
+            min-width: 200px;
+        }
+
+        .form-control::placeholder{
+            font-size: 15px;
+            padding-left: 5px;
+            color: #000000;
+        }
+
+        .form-control:hover{
+            background-color: #ffffff29;
+
+        }
+
+        /* .remember{
+            color: #ffffff;
+            font-size: 14px;
+            margin: 20px 10px;
+        } */
+
+        .forget{
+            color: #fffafadd;
+            font-size: 16px;
+            margin-left: 10px;
+            display: flex;
+          
+            justify-content: end;
+            font-weight: 400;
+            text-decoration: none;
+            transition: .3s;
+        }
+
+        .forget:hover{
+            color:  #0f0e0e9f;
+            text-decoration: none;
+        }
+
+        .btn{
+            width: 100%;
+            border-radius: 40px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: .3s;
+            border: none;
+            outline: none;
+        
+        }
+
+        .btn:hover{
+
+            background-color: #ffffff29;
+            color: #fff;
+
+        }
+
+        h6 {
+            color: #cfcfcfbb;
+            text-align: center;
+            margin: 100px auto;
+            text-align: center;
+            position: relative;
+        }
+
+        h6:before {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 1px;
+            background: #cfcfcfbb;
+            left: 0;
+            top: 50%;
+            position: absolute;
+        }
+
+        h6:after {
+            content: "";
+            display: block;
+            width: 70px;
+            height: 1px;
+            background: #cfcfcfbb;
+            right: 0;
+            top: 50%;
+            position: absolute;
+        }
+
+        #icon{
+            width: 30px;
+            margin: 4px 10px;
+          transition: .3s;
+        }
+
+        #icon:hover{
+            background-color: #ffffff87;
+            border-radius: 50%;
+    
+        }
+
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        .signup{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+
+            .user{
+                color: #cfcfcfe9;
+                font-size: 15px;
+            }
+
+            .sign-up{
+                color: #cfcfcfe9;
+                font-weight: 500;
+                text-decoration: none;
+            }
+        }
+
+        .sign-up:hover{
+            color: #cfcfcfbd;
+        }
+           /* @media screen (max-width:375px ) {
+
+            .container{
+               
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            .form-box{
+               display: flex;
+            }
+            
+           } */
+    </style>
+</head>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="form-box">
+            <form action="">
+              <h2 class="mb-4">Login</h2>
+            
+                <div class="form-group">
+                  <input class="form-control" type="text" name="username" id="username" placeholder="username or email">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" id="password" placeholder="password">
+                </div>
+
+                <div class="form-group form-cheak">
+                    <label class="form-cheak-label">
+                        <span><a class="forget" href="#">Forger password?</a></span>
+                    </label>
+                </div>
+     
+                 <button class="btn btn-light" type="submit">LOGIN</button>
+
+                  <h6 class="m-4">OR</h6>
+
+                <div class="logo">
+                        <a href="#"><img id="icon" src="facebook (1).png"></a>
+
+                        <a href="#"><img id="icon" src="google.png"></a>
+
+                        <a href="#"><img id="icon" src="github.png"></a>
+                </div>
+
+                <div class="signup">
+                    <p class="user">Don't have account ? <span><a class="sign-up" href="signup.html">Sign up</a></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+   
+
+</body>
+</html>
