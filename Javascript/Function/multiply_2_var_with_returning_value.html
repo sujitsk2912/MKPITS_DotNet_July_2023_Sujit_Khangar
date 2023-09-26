@@ -2,25 +2,25 @@
 <html lang="en">
 <head>
    <script lang="javascript">
-
-    function addition(num1,num2)
+    function multiplication(num1, num2)
     {
-        var sum=num1+num2;
-        return sum;
+        var mul=num1*num2;
+        return mul;
     }
 
     function display()
     {
         n1=prompt("Enter value of num1: ");
         n2=prompt("Enter value of num2: ");
-        
-        n1 = parseInt(n1);
-        n2 = parseInt(n2);
-        var results= addition(n1, n2);
-        alert("Addition of 2 numbers: " + results);
+
+        n1=parseInt(n1);
+        n2=parseInt(n2);
+
+        var results= multiplication(n1, n2);
+        alert("Multiplication of 2 numbers: " + results);
     }
    </script>
-</head> 
+</head>
 <body>
     <input type="button" value="call display function" onclick="display();">
 </body>

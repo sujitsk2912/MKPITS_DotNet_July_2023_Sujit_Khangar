@@ -3,9 +3,9 @@
 <head>
    <script lang="javascript">
 
-    function addition(num1,num2)
+    function addition(num1, num2, num3)
     {
-        var sum=num1+num2;
+        var sum = num1 + num2 + num3;
         return sum;
     }
 
@@ -13,11 +13,13 @@
     {
         n1=prompt("Enter value of num1: ");
         n2=prompt("Enter value of num2: ");
+        n3=prompt("Enter value of num3: ");
         
         n1 = parseInt(n1);
         n2 = parseInt(n2);
-        var results= addition(n1, n2);
-        alert("Addition of 2 numbers: " + results);
+        n3 = parseInt(n3);
+        var results= addition(n1, n2, n3);
+        alert("Addition of 3 numbers: " + results);
     }
    </script>
 </head> 

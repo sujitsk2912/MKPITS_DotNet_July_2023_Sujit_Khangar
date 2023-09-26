@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <script lang="javascript">
+
+    function calculate(length, bredth, height)
+    {
+        var volume=length*bredth*height;
+        return volume;
+    }
+
+    function display()
+    {
+        l=prompt("Enter length: ");
+        b=prompt("Enter bredth: ");
+        h=prompt("Enter height: ");
+
+        var result= calculate(l, b, h);
+        alert("Volume: " + result);
+    }
+ </script>
+</head>
+<body>
+    <input type="button" value="display Volume" onclick="display();">
+</body>
+</html>

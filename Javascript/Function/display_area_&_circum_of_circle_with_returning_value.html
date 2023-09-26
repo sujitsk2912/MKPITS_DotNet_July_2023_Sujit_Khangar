@@ -1,31 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <script lang="javascript">
+   <script>
     function calculate(radius)
     { 
-        var area,circum;
-        // radius=rad;
-        // rad=prompt("Enter Radius: ");
-        area=3.14*radius*radius;
-        circum=2*3.14*radius;
-        return calculate;
+        var area, circum;
+        area = 3.14 * radius * radius;
+        circum = 2 * 3.14 * radius;
+        return [area, circum];
     }
 
-    function display()
-
+    function display(radius)
     {
-        var res1,res2;
-        res1=area();
+        var rad = radius;
+        rad = prompt("Enter radius: ");
+        var results = calculate(rad);
+        var res1 = results[0];
+        var res2 = results[0];
         alert("Area of circle: " + res1);
-        res2=circum();
         alert("Circumference of circle: " + res2);
     }
    </script>
 </head>
 <body>
-  
-    <input type="button" value="call display function" onclick="display(2);">
-
+    <input type="button" value="Call display function" onclick="display(2);">
 </body>
 </html>
