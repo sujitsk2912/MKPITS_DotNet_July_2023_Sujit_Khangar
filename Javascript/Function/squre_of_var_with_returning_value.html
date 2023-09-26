@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script lang="javascript">
+        function square()
+        {
+            var num,square;
+            num=prompt("Enter number: ");
+            square=num*num;
+            return square; 
+        }
+
+        function display()
+        {
+            var result;
+            result=square();
+            alert("Square of number: " + result);
+        }
+
+    </script>
+</head>
+<body>
+    <h1 style="text-align: center;">Variable with Returning Values</h1>
+    <br>
+    <input type="button" value="call display function" onclick="display();">
+</body>
+</html>
