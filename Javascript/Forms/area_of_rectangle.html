@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    
+    <script lang="javascript">
+        function rectangle()
+        {
+            var l=parseFloat(document.getElementById("length").value);
+            var b=parseFloat(document.getElementById("breadth").value);
+            var area=l*b;
+
+            document.getElementById("result").innerHTML="Area of Rectangle: " + area;
+        }
+    </script>
+</head>
+<body>
+    <h2>Accept length and breadth and calculate area of Rectangle</h2><hr><br>
+
+    <form name="form">
+        Enter length: <input type="text" id="length"><br><br>
+        Enter breadth: <input type="text" id="breadth"><br><br>
+
+        <input type="button" value="calculate" onclick="rectangle()"><br><br>
+        <span id="result">show result here -></span>
+    </form>
+</body>
+</html>

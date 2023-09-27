@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    
+   <script lang="javascript">
+    function Marks()
+    {
+        var e=parseFloat(document.getElementById("eng").value);
+        var m=parseFloat(document.getElementById("maths").value);
+        var s=parseFloat(document.getElementById("sci").value);
+        var total=e+m+s;
+        document.getElementById("result").innerHTML="Total Marks Of the Subject's Are: " + total;
+    }
+   </script>
+</head>
+<body>
+    <h2>Accept 3 subject marks and display total marks</h2><hr><br>
+
+    <form name="form">
+        <h3>Enter Marks: </h3>
+
+        English: <input type="text" id="eng"><br><br>
+        Mathematics: <input type="text" id="maths"><br><br>
+        science: <input type="text" id="sci"><br><br>
+
+        <input type="button" value="Calculate Marks" onclick="Marks()"><br><br>
+        <span id="result">Total Marks of the Subjects are : -></span>
+    </form>
+</body>
+</html>

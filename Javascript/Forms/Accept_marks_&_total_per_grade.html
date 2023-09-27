@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+<script lang="javascript">
+    function Marks()
+    {
+        var e=parseFloat(document.getElementById("eng").value);
+        var m=parseFloat(document.getElementById("maths").value);
+        var s=parseFloat(document.getElementById("sci").value);
+        var total=e+m+s;
+        document.getElementById("totalmarks").innerHTML="Total Marks: " + total;
+
+        var per=parseFloat(total/300)*100;
+        document.getElementById("percent").innerHTML="Percentage: " + per;
+
+        if(per >= 95)
+        {
+            document.getElementById("grade").innerHTML="Grade: A";
+        }
+
+        else if(per >= 80)
+        {
+            document.getElementById("grade").innerHTML="Grade: B";
+        }
+
+        else if(per >= 75)
+        {
+            document.getElementById("grade").innerHTML="Grade: C";
+        }
+
+        else if ( per < 74 && per >= 55)
+        {
+            document.getElementById("grade").innerHTML="Grade: D";
+        }
+
+        else
+        {
+            document.getElementById("grade").innerHTML="Grade: E";
+        }
+
+        var pass;
+
+        if ( per < 35)
+        {
+            document.getElementById("Pass_Fail").innerHTML="Result: Fail";
+        }
+
+        
+        else{
+
+            document.getElementById("Pass_Fail").innerHTML="Result: Pass";
+        }
+
+      
+    }
+
+</script>
+</head>
+<body>
+    <h2>Accept 3 subject marks and display total, percentage, and grade.</h2><hr><br>
+
+    <form name="form">
+        <h3>Enter Marks (/100) : </h3>
+
+        English: <input type="text" id="eng"><br><br>
+        Mathematics: <input type="text" id="maths"><br><br>
+        science: <input type="text" id="sci"><br><br>
+
+        <input type="button" value="Calculate" onclick="Marks()"><br><br>
+        <span id="totalmarks">Total Marks, percentage, Grade, Pass And Fail are shown Here: -></span><br><br>
+        <span id="percent"></span><br><br>
+        <span id="grade"></span><br><br>
+        <span id="Pass_Fail"></span>
+    </form>
+</body>
+</html>

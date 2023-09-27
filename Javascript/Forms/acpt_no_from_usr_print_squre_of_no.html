@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+    <script lang="javascript">
+        function square()
+        {
+            var num=document.getElementById("e1").value;
+            var sq=num*num;
+            
+            alert("Square of number: " + sq);
+        }
+    </script>
+</head>
+<body>
+    <h2>Accept number from the user in textbox and then print square of a number</h2> <hr><br>
+
+    <form name="form">
+        Enter Number : <input type="text" id="e1"> <br><br>
+        <input type="button" value="click here to see output" onclick="square();"><br><br>
+       
+
+    </form>
+</body>
+</html>

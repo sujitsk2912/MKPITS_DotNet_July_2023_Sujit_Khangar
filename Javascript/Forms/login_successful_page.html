@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+   <script lang="javascript">
+    function login()
+    {
+        var user=document.getElementById("uname").value;
+        var pass=document.getElementById("pwd").value;
+
+        if(user=="admin" && pass=="admin")
+        {
+            document.getElementById("result").innerHTML="Login Successfully";
+        }
+
+        else{
+            document.getElementById("result").innerHTML="Incorrect Password, Please try Again...";
+        }
+
+    }
+   </script>
+</head>
+<body>
+    <h2>Accept username and password and display login successfull if username is admin and password is admin other wise display invalid credentials.</h2><hr><br>
+</body>
+
+<form name="form">
+    Enter Username: <input type="text" id="uname"><br><br>
+    Enter Password: <input type="password" id="pwd"><br><br>
+
+    <input type="button" value="Log in" onclick="login()"><br><br>
+
+    <span id="result">Show Login Details Here -> </span>
+</form>
+</html>

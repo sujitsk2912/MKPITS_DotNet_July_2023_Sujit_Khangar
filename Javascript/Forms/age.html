@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="style.css">
+<head>
+
+    <script lang="javascript">
+        function vote()
+        {
+            var a=document.getElementById("age").value;
+
+            if(a>=18)
+            {
+                document.getElementById("result").innerHTML="Eligible to Vote";
+            }
+
+            else
+            {
+                document.getElementById("result").innerHTML="Not eligible to Vote";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Accept age from the user and display whether he is eligable to vote or not.</h2><hr><br>
+
+    <form name="form">
+        Enter Age: <input type="text" id="age"><br><br>
+
+        <input type="button" value="Cheak" onclick="vote()"><br><br>
+        <span id="result">Show Eligiblity Here -></span>
+    </form>
+</body>
+</html>
