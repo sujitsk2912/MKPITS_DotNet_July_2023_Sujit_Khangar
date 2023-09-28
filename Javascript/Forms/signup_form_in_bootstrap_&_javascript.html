@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up form using Bootstrap and Javascript</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <script lang="javascript">
+
+        function signup()
+        {
+            var fname=document.getElementById("firstname").value;
+            var lname=document.getElementById("lastname").value;
+
+            document.getElementById("fn").innerHTML=fname;
+            document.getElementById("ln").innerHTML=lname;
+
+            //for Gender (radio button)
+
+            var ele=document.getElementsByName("Gender");
+
+            for (i = 0; i < ele.length; i++) 
+            {
+                if (ele[i].checked)
+                   document.getElementById("gen").innerHTML =  ele[i].value;
+            }
+
+            //for Courses (Cheakboxes)
+
+            var c1=document.getElementById("dotnet").checked;
+            var co="";
+                if(c1 == true)
+                {
+                co = " DotNet" ;
+                }
+
+            var c2=document.getElementById("php").checked;
+
+                if(c2 == true)
+                {
+                co += " PHP" ;
+                }
+
+            var c3=document.getElementById("java").checked;
+
+                if(c3 == true)
+                {
+                co += " Java" ;
+                }
+
+            document.getElementById("course").innerHTML=co;
+            
+        }
+
+    </script>
+</head>
+<body>
+
+        <!-- Heading -->
+
+    <h2 class="text-center">Create a signup form in bootstrap and then write javascript code to display values 
+        below the signup form</h2><hr><br>
+
+        <!-- Heading -->
+
+        <!-- Form Start -->
+
+<div class="container">
+        <form name="form">
+            
+            <h3>Sign Up Form</h3><br>
+
+            <!-- User Details -->
+
+            <div class="form-group">
+
+                <label for="firstname">Firstname: </label>
+                <input class="form-control" type="text" id="firstname" placeholder="Enter firstname">
+
+            </div>
+
+            <div class="form-group">
+
+                <label for="lastname">Lastname: </label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter Lastname">
+
+            </div>
+
+            <!-- User Details -->
+
+             <!-- Gender -->
+
+            <div class="form-group">
+
+                <h3 for="Gender">Gender: </h3>
+
+                <input type="radio" name="Gender" id="Male" value="Male" >
+                <label for="Male">Male</label>
+<br>
+                <input type="radio" name="Gender" id="Female" value="Female" >
+                <label for="Female">Female</label>
+
+            </div>
+
+            <!-- Gender -->
+
+            <!-- Courses -->
+
+            <div class="form-group">
+
+                <h3 for="Course">Courses: </h3>
+
+                <label class="form-cheak-label" for="dotnet">
+                    <input class="form-cheak-input" id="dotnet" name="dotnet" type="checkbox"> DotNet
+                </label>
+<br>
+                <label class="form-cheak-label" for="php">
+                    <input class="form-cheak-input" id="php" name="php" type="checkbox"> PHP
+                </label>
+<br>
+                <label class="form-cheak-label" for="java">
+                    <input class="form-cheak-input" id="java" name="java" type="checkbox"> Java
+                </label>
+
+            </div>
+
+             <!-- Courses -->
+
+            <button class="btn btn-primary" type="button" onclick="signup()">Sign Up</button><br><br>
+
+            <span>details of the user is shown below : </span><br>
+        </form>
+
+        <!-- Form END -->
+</div>
+
+<hr>
+
+        <!-- Result of User Details -->
+
+        <div class="container">
+            
+            <h4>User Details: </h4>
+
+            
+
+            <div class="conatainer-box" style="line-height: 2rem;">
+
+                <div class="row">
+                    <div class="col">
+                    Firstname: <span id="fn"></span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                    Lasttname: <span id="ln"></span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                    Gender: <span id="gen"></span>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                    Courses: <span id="course"></span>
+                    </div>
+
+                </div>
+
+            </div>
+                
+
+        </div> 
+
+        <!-- Result of User Details -->
+        
+
+
+</body>
+</html>

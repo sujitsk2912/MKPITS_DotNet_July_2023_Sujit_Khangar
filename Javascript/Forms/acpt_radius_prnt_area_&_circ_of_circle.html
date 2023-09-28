@@ -6,10 +6,12 @@
         function Area_circum()
         {
             var rad=parseFloat(document.getElementById("radius").value);
+
             var area=3.14*rad*rad;
-            document.getElementById("result").innerHTML="Area Of Circle: " + area;
+            document.getElementById("area1").innerHTML="Area Of Circle: " + area;
+            
             var circum=2*3.14*rad;
-            document.getElementById("result2").innerHTML="Circumference of Circle: " + circum;
+            document.getElementById("circum2").innerHTML="Circumference of Circle: " + circum;
         }
     </script>
 </head>
@@ -21,8 +23,8 @@
 
         <input type="button" value="calculate" onclick="Area_circum()"><br><br>
 
-        <span id="result">show Area and circumference of circle Here -></span><br><br>
-        <span id="result2"></span>
+        <span id="area1">show Area and circumference of circle Here -></span><br><br>
+        <span id="circum2"></span>
      
 
 
