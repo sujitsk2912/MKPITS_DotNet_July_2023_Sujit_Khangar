@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        /* Add any custom CSS styles here if needed */
+    </style>
+
+    <script lang="javascript">
+        var pnum = 0;
+        var cnum = 0;
+        var result = 0;
+        var op = "";
+
+        function appendValue(value) {
+            if (op === "=") {
+                op = "";
+                document.form.display.value = "";
+            }
+            document.form.display.value += value;
+        }
+
+        function clearDisplay() {
+            op = "";
+            document.form.display.value = "";
+        }
+
+        function calculate() {
+            cnum = parseFloat(document.form.display.value);
+
+            switch (op) {
+                case "+":
+                    result = pnum + cnum;
+                    break;
+                case "-":
+                    result = pnum - cnum;
+                    break;
+                case "*":
+                    result = pnum * cnum;
+                    break;
+                case "/":
+                    if (cnum !== 0) {
+                        result = pnum / cnum;
+                    } else {
+                        result = "Error";
+                    }
+                    break;
+                default:
+                    result = cnum;
+            }
+
+            document.form.display.value = result;
+            op = "=";
+        }
+
+    </script>
+
+</head>
+<body>
+    <h2 class="text-center">Calculator</h2>
+    <hr>
+    <br>
+    <div class="container">
+        <form name="form">
+            <div class="content-box">
+                <div class="form-group">
+                    <input class="form-control text-center" type="text" name="display" id="display">
+                </div>
+
+                <div class="form-group">
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="b1" onclick="appendValue('1')">1</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b2" onclick="appendValue('2')">2</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b3" onclick="appendValue('3')">3</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_plus" onclick="appendValue('+')">+</button>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="b4" onclick="appendValue('4')">4</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b5" onclick="appendValue('5')">5</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b6" onclick="appendValue('6')">6</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_minus" onclick="appendValue('-')">-</button>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="b7" onclick="appendValue('7')">7</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b8" onclick="appendValue('8')">8</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b9" onclick="appendValue('9')">9</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_multiply" onclick="appendValue('*')">*</button>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="allclear" onclick="clearDisplay()">AC</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b0" onclick="appendValue('0')">0</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="equal" onclick="calculate()">=</button>
+                        </div>
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_division" onclick="appendValue('/')">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

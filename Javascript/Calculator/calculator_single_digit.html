@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script lang="javascript">
+        var pnum=0;
+        var cnum=0;
+        var result=0;
+        var op;
+      
+        function one()
+        {
+            op=document.form.display.value;
+            document.form.display.value="1";
+        }
+
+        function two()
+        {
+            op=document.form.display.value;
+            document.form.display.value="2";
+        }
+
+        function three()
+        {
+            op=document.form.display.value;
+            document.form.display.value="3";
+        }
+
+        function four()
+        {
+            op=document.form.display.value;
+            document.form.display.value="4";
+        }
+
+        function five()
+        {
+            op=document.form.display.value;
+            document.form.display.value="5";
+        }
+
+        function six()
+        {
+            op=document.form.display.value;
+            document.form.display.value="6";
+        }
+
+        function seven()
+        {
+            op=document.form.display.value;
+            document.form.display.value="7";
+        }
+
+        function eight()
+        {
+            op=document.form.display.value;
+            document.form.display.value="8";
+        }
+
+        function nine()
+        {
+            op=document.form.display.value;
+            document.form.display.value="9";
+        }
+
+        function zero()
+        {
+            op=document.form.display.value;
+            document.form.display.value="0";
+        }
+
+        function plus()
+        {
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="+"
+        }
+
+        function minus()
+        {
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="-"
+        }
+
+        function multiply()
+        {
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="*"
+        }
+
+        function division()
+        {
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="/"
+        }
+
+        function equals_to()
+        {
+            cnum=parseInt(document.form.display.value);
+
+            if(op == "+")
+            {
+                document.getElementById("display").value=pnum+cnum;
+            }
+
+            else if(op == "-")
+            {
+                document.getElementById("display").value=pnum-cnum
+            }
+
+            else if(op== "*")
+            {
+                document.getElementById("display").value=pnum*cnum;
+            }
+
+            else if (op == "/")
+            {
+                document.getElementById("display").value=pnum/cnum;
+            }
+        }
+
+        function Ac()
+        {
+            op=document.form.display.value;
+            document.form.display.value=""
+        }
+
+
+    </script>
+    
+</head>
+<body>
+    <h2 class="text-center">Calculator</h2><hr><br>
+    <div class="container">
+        <form name="form">
+
+            <div class="content-box">
+                <div class="form-group">
+                    <input class="form-control text-center" type="text" name="display" id="display">
+                </div>
+
+                <div class="form-group">
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="b1" onclick="one()">1</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b2" onclick="two()">2</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b3" onclick="three()">3</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_plus" onclick="plus()">+</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="b4" onclick="four()">4</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b5" onclick="five()">5</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b6" onclick="six()">6</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_minus" onclick="minus()">-</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="b7">7</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b8" onclick="eight()">8</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b9" onclick="nine()">9</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_multiply*" onclick="multiply()">*</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col">
+                            <button class="form-control" type="button" id="allclear" onclick="Ac()">AC</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b0" onclick="zero()">0</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="equal=" onclick="equals_to()">=</button>
+                        </div>
+
+                        <div class="col">
+                            <button class="form-control" type="button" id="b_division/" onclick="division()">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
