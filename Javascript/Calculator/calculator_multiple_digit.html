@@ -17,12 +17,13 @@
 
         function one()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "1";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="1";
             }
@@ -30,12 +31,13 @@
 
         function two()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "2";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="2";
             }
@@ -43,12 +45,13 @@
 
         function three()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "3";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="3";
             }
@@ -56,12 +59,13 @@
 
         function four()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "4";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="4";
             }
@@ -69,12 +73,13 @@
 
         function five()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "5";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="5";
             }
@@ -82,12 +87,13 @@
 
         function six()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
-                document.form.display.value = document.form.display.value + "7";
+                document.form.display.value = document.form.display.value + "6";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="6";
             }
@@ -95,12 +101,13 @@
 
         function seven()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "7";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="7";
             }
@@ -108,12 +115,13 @@
 
         function eight()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "8";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="8";
             }
@@ -121,12 +129,13 @@
 
         function nine()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "9";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="9";
             }
@@ -134,12 +143,13 @@
 
         function zero()
         {
-            if( op == "")
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
             {
                 document.form.display.value = document.form.display.value + "0";
             }
 
-            else{
+            else
+            {
                 op=document.form.display.value;
                 document.form.display.value="0";
             }
@@ -173,6 +183,7 @@
             document.form.display.value="/"
         }
 
+
         function equals_to()
         {
             cnum=parseInt(document.form.display.value);
@@ -196,6 +207,8 @@
             {
                 document.getElementById("display").value=pnum/cnum;
             }
+
+
         }
 
         function Ac()
@@ -206,13 +219,29 @@
 
     </script>
 
+    <!-- <style>
+
+.content-box{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-height:100vh;
+
+}
+       
+    </style> -->
+
 </head>
 <body>
-    <h2 class="text-center">Calculator</h2><hr><br>
+    
     <div class="container">
+
         <form name="form">
 
             <div class="content-box">
+
                 <div class="form-group">
                     <input class="form-control text-center" type="text" name="display" id="display">
                 </div>
@@ -288,6 +317,7 @@
                         <div class="col">
                             <button class="form-control" type="button" id="b_division/" onclick="division()">/</button>
                         </div>
+
                     </div>
                 </div>
             </div>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deposit and Withdrawal</title>
+</head>
+<body>
+    <div class="container">
+        <form name="form">
+            Enter Amount: <input type="text" class="form-control" name="amount" id="amount"><br><br>
+
+            <input type="radio" name="select" id="deposit">
+            <label for="deposit">Deposit</label>
+
+            <input type="radio" name="select" id="withdrawal">
+            <label for="withdrawal">Withdrawal</label><br><br>
+
+            <button type="button" onclick="Ok()">Ok</button><br><br>
+            
+            <span id="result">Balance Details Show Here: </span>
+        </form>
+    </div>
+
+    <script>
+        var bal = 1000;
+
+        function Ok() {
+            var amt = parseFloat(document.getElementById("amount").value);
+            var isDeposit = document.getElementById("deposit").checked;
+
+            if (isDeposit)
+             {
+                bal=bal+amt;
+            } 
+            else {
+                bal=bal-amt;
+            }
+
+            document.getElementById("result").innerHTML = "Balance: " + bal;
+        }
+    </script>
+</body>
+</html>
