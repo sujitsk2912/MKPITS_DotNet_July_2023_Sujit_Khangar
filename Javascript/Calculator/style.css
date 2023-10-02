@@ -1,26 +1,84 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-
 }
 
-/* .container{
-    border: 2px solid red;
+body{
+    background-color: rgba(240, 237, 237, 0.736);
+}
+
+.wrapper{
     display: flex;
-    display: inline-block;
     justify-content: center;
     align-items: center;
-    padding: 10rem;
-
+    width: 100%;
+    height: 100vh;
 }
 
 .content-box{
-    border: 2px solid green;
-    padding: 10rem;
-} */
+ 
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    height: 25rem;
+    background-color: rgba(252, 252, 252, 0.833);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(161, 159, 159, 0.621);
+
+}
+
+ .screen #display{
+    outline: none;
+    border-color: #c2bebe7f;
+    border-radius: 5px;
+    font-weight: 600;
+    width: 18rem;
+    height: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-size: 18px;
+    box-shadow: inset -2px -2px 10px 1px rgba(203, 203, 203, 0.56);
+}
+
+.row .col button{
+
+    width: 50px;
+    font-weight: 600;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 5px;
+    border-color: white;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px 1px rgba(163, 159, 159, 0.311);
+}
+
+.row .col button:hover{
+    background-color: rgba(236, 236, 236, 0.727);
+}
+
+.row .col button #b_plus{
+    background-color: black;
+    color: white;
+    transition: .3s ease;
+}
+
+
+#b_plus, #b_minus, #b_multiply, #b_division, #equal{
+    background-color: rgba(0, 0, 0, 0.94);
+    color: white;
+    outline: none;
+    border-color:rgba(252, 252, 252, 0.833);
+}
+
+#allclear{
+    background-color: red;
+    color: white;
+}

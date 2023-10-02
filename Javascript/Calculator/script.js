@@ -1,121 +1,207 @@
- var pnum=0;
- var cnum=0;
- var result=0;
- var op;
+        
+        var pnum=0;
+        var cnum=0;
+        var result=0;
+        var op;
 
- function one()
- {
-    op=document.form.display.value;
-    document.form.display.value="1";
- }
+        function one()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "1";
+            }
 
- function two()
- {
-    op=document.form.display.value;
-    document.form.display.value="2";
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="1";
+            }
+        }
 
- function three()
- {
-    op=document.form.display.value;
-    document.form.display.value="3";
- }
+        function two()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "2";
+            }
 
- function four()
- {
-    op=document.form.display.value;
-    document.form.display.value="4";
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="2";
+            }
+        }
 
- function five()
- {
-    op=document.form.display.value;
-    document.form.display.value="5";
- }
+        function three()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "3";
+            }
 
- function six()
- {
-    op=document.form.display.value;
-    document.form.display.value="6";
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="3";
+            }
+        }
 
- function seven()
- {
-    op=document.form.display.value;
-    document.form.display.value="7";
- }
+        function four()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "4";
+            }
 
- function eight()
- {
-    op=document.form.display.value;
-    document.form.display.value="8";
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="4";
+            }
+        }
 
- function nine()
- {
-    op=document.form.display.value;
-    document.form.display.value="9";
- }
+        function five()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "5";
+            }
 
- function zero()
- {
-    op=document.form.display.value;
-    document.form.display.value="0";
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="5";
+            }
+        }
 
- function plus()
- {
-    pnum=parseInt(document.form.display.value);
-    document.form.display.value="+"
- }
+        function six()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "6";
+            }
 
- function minus()
- {
-    pnum=parseInt(document.form.display.value);
-    document.form.display.value="-"
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="6";
+            }
+        }
 
- function multiply()
- {
-    pnum=parseInt(document.form.display.value);
-    document.form.display.value="*"
- }
+        function seven()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "7";
+            }
 
- function division()
- {
-    pnum=parseInt(document.form.display.value);
-    document.form.display.value="/"
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="7";
+            }
+        }
 
- function equals_to()
- {
-    cnum=parseInt(document.form.display.value);
+        function eight()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "8";
+            }
 
-    if(op == "+")
-    {
-        document.getElementById("display").value=pnum+cnum;
-    }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="8";
+            }
+        }
 
-    else if(op == "-")
-    {
-        document.getElementById("display").value=pnum-cnum
-    }
+        function nine()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "9";
+            }
 
-    else if(op== "*")
-    {
-        document.getElementById("display").value=pnum*cnum;
-    }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="9";
+            }
+        }
 
-    else if (op == "/")
-    {
-        document.getElementById("display").value=pnum/cnum;
-    }
- }
+        function zero()
+        {
+            if(document.form.display.value != "+" && document.form.display.value != "-" && document.form.display.value != "*" && document.form.display.value != "/"   )
+            {
+                document.form.display.value = document.form.display.value + "0";
+            }
 
- function Ac()
- {
-    pnum=parseInt(document.form.display.value);
-    document.form.display.value=""
- }
+            else
+            {
+                op=document.form.display.value;
+                document.form.display.value="0";
+            }
+        }
+
+        function plus()
+        {
+            op="+"
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="+"
+        }
+
+        function minus()
+        {
+            op="-"
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="-"
+        }
+
+        function multiply()
+        {
+            op="*"
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="*"
+        }
+
+        function division()
+        {
+            op="/"
+            pnum=parseInt(document.form.display.value);
+            document.form.display.value="/"
+        }
 
 
+        function equals_to()
+        {
+            cnum=parseInt(document.form.display.value);
+
+            if(op == "+")
+            {
+                document.getElementById("display").value=pnum+cnum;
+            }
+
+            else if(op == "-")
+            {
+                document.getElementById("display").value=pnum-cnum
+            }
+
+            else if(op== "*")
+            {
+                document.getElementById("display").value=pnum*cnum;
+            }
+
+            else if (op == "/")
+            {
+                document.getElementById("display").value=pnum/cnum;
+            }
+
+
+        }
+
+        function Ac()
+        {
+            op=document.form.display.value;
+            document.form.display.value=""
+        }
