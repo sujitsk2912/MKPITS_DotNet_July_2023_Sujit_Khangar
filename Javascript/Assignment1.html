@@ -1,52 +1,68 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Deposite and Withdrawl</title>
-        <script lang="javascript">
-            var bal=1000;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1- Deposite and Withdrawl</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-            function Ok()
-            {
-                var amt=parseFloat(document.getElementById("amount").value);
-                var isDeposite=document.getElementById("deposite").checked;
-                if(isDeposite)
+    <script lang="javascript">
+        var bal=1000;
+        var ans;
+        function Ok()
+        {
+
+           var amt=parseInt(document.getElementById("amount").value);
+           var sel=document.getElementsByName("select");
+           for(i=0; i<sel.length; i++)
+           {
+                if(sel[i].checked)
                 {
-                    bal=bal+amt;
+                    ans=sel[i].value;
                 }
+           }
 
-                else
-                {
-                    bal=bal-amt;
-                }
+           if(ans=="deposite")
+           {
+            bal=bal+amt;
+           }
+           
+           else if (ans=="withdrawal")
+           {
+            bal=bal-amt;
+           }
 
-                document.getElementById("result").innerHTML="Balance: " + bal;
-            }
+           document.getElementById("result").innerHTML="Total Balance: " + bal;
 
-        </script>
+        }
+
+    </script>
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Assignment 1- Deposite and Withdrawl</h2><hr><br>
+        <form name="form">
         
-        
-    </head>
-    <body>
-        <div class="container">
-
-            <form name="form">
-            
+            <div class="form-group">
                 Enter Amount: <input type="text" class="form-control" name="amount" id="amount" > <br><br>
 
 
-                        <input type="radio" name="select" id="deposite">
-                        <label for="deposite">Deposite</label>
+                        <input type="radio"  name="select" id="deposite" value="deposite">
+                        <label for="deposite" class="mr-4">Deposite</label>
 
-                        <input type="radio" name="select" id="withdrawl">
-                        <label for="withdrawl">Withdrawl</label><br><br>
+                        <input type="radio"  name="select" id="withdrawal" value="withdrawal">
+                        <label for="withdrawal">withdrawal</label><br><br>
 
-                    <button type="button" onclick="Ok()">Ok</button><br><br>
+                    <button type="button" class="btn btn-success" onclick="Ok()">Submit</button><br><br>
                     
-                    <span id="result">Balance Details Show Here: </span>
-                </div>
-        </form>
-        </div>
-    </body>
-    </html>
+                    <span id="result">Balance Show Here: </span>
+            </div>
+    </form>
+    </div>
+</body>
+</html>
