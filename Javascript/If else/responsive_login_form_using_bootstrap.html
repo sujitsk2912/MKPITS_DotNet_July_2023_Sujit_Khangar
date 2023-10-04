@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive login form using Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script lang="javascript">
+
+    function ok()
+    {
+        var u=document.getElementById("username").value;
+        var p=document.getElementById("password").value;
+
+        if(u=="Admin" && p=="Admin")
+        {
+            document.getElementById("result").innerHTML="Login Successfully...";
+        }
+
+        else
+        {
+            document.getElementById("result").innerHTML="Incorrect Username or Password";
+        }
+
+    }
+</script>
+<body>
+    
+    <div class="container">
+
+        <h2>Responsive login form using Bootstrap</h2><hr><br>
+        <form >
+
+            <div class="form-group">
+
+                <label for="username">Username:</label>
+                <input type="text" class="form-control" name="username" id="username" placeholder="enter username">
+
+            </div>
+
+            <div class="form-group mt-2">
+
+                <label for="username">Password:</label>
+                <input type="password" class="form-control " name="password" id="password" placeholder="enter password">
+            </div>
+
+            <button type="button" onclick="ok()">Login</button><br><br>
+            <span id="result"></span>
+        </form>
+    </div>
+</body>
+</html>

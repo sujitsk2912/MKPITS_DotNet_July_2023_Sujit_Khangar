@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greater or smaller number using form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script lang="javascript">
+    function check()
+    {
+        var num=parseInt(document.getElementById("number").value);
+
+        if(num>10)
+        {
+            document.getElementById("result").innerHTML="Number is Greater";
+        }
+
+        else if(num== 10)
+        {
+            document.getElementById("result").innerHTML="Number is equal";
+        }
+
+        else
+        {
+            document.getElementById("result").innerHTML="Number is smaller";
+        }
+    }
+</script>
+<body>
+    
+    <h2>program to display Greater or smaller number using form</h2><hr><br>
+
+    <form name="form">
+
+        Enter Number : <input type="text" id="number"><br><br>
+
+        <button type="button" onclick="check()">Submit</button><br><br>
+        <span id="result">Result show's here: </span>
+    </form>
+</body>
+</html>
