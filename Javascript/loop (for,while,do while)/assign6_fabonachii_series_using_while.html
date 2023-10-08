@@ -16,21 +16,23 @@
         var num=parseInt(document.getElementById("number").value);
         var i;
         var result = "";
-        var add;
+        var next = num1 + num2;
         
-        for (i = 1; num1 <= num; i++) 
-        {
+        for( i=3; num1 <= num; i++)
+        { 
             result += num1 + " , ";
-            add = num1 + num2;
+           
             num1 = num2;
-            num2 = add;
+            num2 = next;
+            next = num1 + num2;
         }
+        return 0;
 
-        document.getElementById("res").innerHTML = result;
+        document.getElementById("res").innerHTML = next;
     }
 </script>
 <body>
-    <h2>Print a fabonachii series from 1 to 100</h2><hr><br>
+    <h2>Print a fabonachii series from 1 to 100 using while loop</h2><hr><br>
 
     <div class="container">
         
