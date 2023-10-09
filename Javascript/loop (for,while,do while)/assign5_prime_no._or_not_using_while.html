@@ -12,27 +12,26 @@
     function ok()
     {
         var num=parseInt(document.getElementById("number").value);
-        var count=2;
-        var result=0;
-
-        while(count<num)
+        var i=1;
+        var cnt=0;
+        while(i<=num)
         {
-            result = num % count;
-
-            if(result==0)
+            if(num % i == 0)
             {
-               document.getElementById("res").innerHTML="It is prime Number";
-               break;
-              
+                cnt++;
             }
+            i++;
         }
-            if(num==count)
-            {
-                document.getElementById("res").innerHTML="It is not prime Number";
+      
+        if(cnt==2)
+        {
+            document.getElementById("res").innerHTML="it is prime";
+        }
+        else
+        {
+            document.getElementById("res").innerHTML="it is not prime";
+     }
 
-             }
-            
-        
     }
 </script>
 <body>

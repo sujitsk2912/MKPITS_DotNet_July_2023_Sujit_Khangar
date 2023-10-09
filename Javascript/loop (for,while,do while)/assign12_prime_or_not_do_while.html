@@ -9,32 +9,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <script lang="javascript">
-    function ok()
+      function ok()
     {
         var num=parseInt(document.getElementById("number").value);
-        var count=2;
-        var result=0;
-
+        var i=1;
+        var cnt=0;
         do
         {
-            result = num % count;
-
-            if(result==0)
+            if(num % i == 0)
             {
-               document.getElementById("res").innerHTML="It is prime Number";
-               break;
-              
+                cnt++;
             }
+            i++;
         }
-        while(count<num)
-            if(num==count)
-            {
-                document.getElementById("res").innerHTML="It is not prime Number";
 
-             }
-             
-            
-        
+        while(i<=num)
+        {
+            if(cnt==2)
+            {
+                document.getElementById("res").innerHTML="it is prime";
+            }
+            else
+            {
+                document.getElementById("res").innerHTML="it is not prime";
+            }
+         }
     }
 </script>
 <body>
