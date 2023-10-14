@@ -6,7 +6,7 @@ namespace EMPLOYEE
         public static void Main()
         {
             int empno, basicsal;
-            string empname, designation = null;
+            string empname, designation;
             float bonus=0, totalsal=0;
 
             Console.Write("Enter Employee No.: ");
@@ -16,7 +16,7 @@ namespace EMPLOYEE
             Console.Write("Basic Salary: ");
             basicsal = Convert.ToInt32(Console.ReadLine());
             Console.Write("Designation: (manager, clerk, peon): ");
-            designation = Convert.ToString(Console.ReadLine());
+            designation = Console.ReadLine();
             Console.WriteLine("");
 
             if (designation == "manager")
