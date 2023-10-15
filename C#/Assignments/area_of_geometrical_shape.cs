@@ -8,7 +8,7 @@ namespace Program
             int choice;
             float result=0;
 
-            Console.Write("Enter Choice (1, 2, 3): ");
+            Console.Write("Enter Choice (1, 2, 3 , 4, 5): ");
             choice = Convert.ToInt32(Console.ReadLine());
 
             
