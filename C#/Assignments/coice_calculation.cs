@@ -1,7 +1,7 @@
 using System;
 namespace Program
 {
-    class Areaofshapes
+    class coicecalculation
     {
         public static void Main(string[] args)
         {
