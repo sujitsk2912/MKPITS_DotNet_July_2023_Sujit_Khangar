@@ -1,21 +1,19 @@
 using System;
-namespace EVENODD
+namespace TABLE
 {
-    class Evenodd
+    class program
     {
         public static void Main(string[] args)
         {
-            int num;
+            int num, counter=1, result=0;
             Console.Write("Enter Number: ");
             num = Convert.ToInt32(Console.ReadLine());
 
-            if(num % 2 == 0) 
+            while( counter <= 10)
             {
-                Console.WriteLine("Number are Even");
-            }
-            else
-            {
-                Console.WriteLine("Number are Odd");
+                result = num * counter;
+                Console.WriteLine( num + " * " + counter + " = " + result);
+                counter++;
             }
             Console.ReadKey();
         }

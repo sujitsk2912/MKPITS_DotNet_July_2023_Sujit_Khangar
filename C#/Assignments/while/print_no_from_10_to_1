@@ -1,0 +1,18 @@
+using System;
+namespace WHILE_LOOP
+{
+    class program
+    {
+        public static void Main(string[] args)
+        {
+            int counter=10;
+
+            while (counter >= 1)
+            {
+                Console.WriteLine(counter);
+                counter--;
+            }
+            Console.ReadKey();
+        }
+    }
+}
