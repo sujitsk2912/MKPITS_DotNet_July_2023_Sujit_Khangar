@@ -1,31 +1,37 @@
 using System;
-namespace PRIME
+using System.Diagnostics.Metrics;
+
+namespace ConsoleApp
 {
     class program
     {
-        public static void Main(string[] args) 
+        public static void Main(string[] args)
         {
-            int num, counter = 2, flag = 0 ;
+            int num, counter, rem = 0;
+
             Console.Write("Enter Number: ");
-            num = Convert.ToInt32(Console.ReadLine()); 
-            
-            while ( counter > num )
+            num = Convert.ToInt32(Console.ReadLine());
+
+            for( counter = 2; counter < num; counter++ )
             {
-                if (num % counter == 0 )
+                if( num % counter == 0 )
                 {
-                    flag = 1 ;
+                    rem = 1;
+                    break;
                 }
             }
 
-            if( flag == 0 )
+            if( rem == 0 )
             {
-                Console.WriteLine("it is prime number");
+                Console.WriteLine("\n{0} is prime",num );
             }
             else
             {
-                Console.WriteLine("it is not prime number");
+                Console.WriteLine("\n{0} is not prime", num);
             }
+
             Console.ReadKey();
         }
+            
     }
 }
