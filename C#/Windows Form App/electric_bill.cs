@@ -63,10 +63,9 @@ namespace Electricity_bill
             label4.Text = "Customer ID: " + UID;
             label5.Text = "Customer Name: " + uname;
             label6.Text = "Units Consumed: " + unit;
-            label7.Text = "Charge Per Unit: " + chrg;
-            label8.Text = "Total charge: " + total;
-            label9.Text = "Surcharge: " + surchrg;
-            label10.Text = "Final Amount: " + finalamt;
+            label7.Text = "Charge Per Unit is @" + chrg + ".Rs and Total charge: " + total;
+            label8.Text = "Surcharge: " + surchrg;
+            label9.Text = "Final Amount: " + finalamt;
         }       
     }
 }
