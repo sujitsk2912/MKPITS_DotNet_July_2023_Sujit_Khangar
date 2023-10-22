@@ -5,9 +5,10 @@ namespace WHILE_LOOP
     {
         public static void Main(string[] args)
         {
-            int counter=10;
+            int num = 1;
+            int counter = 10;
 
-            while (counter >= 1)
+            while(counter >= num)
             {
                 Console.WriteLine(counter);
                 counter--;
