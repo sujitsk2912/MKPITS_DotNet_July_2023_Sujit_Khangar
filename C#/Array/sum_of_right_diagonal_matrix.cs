@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace sum_of_rows_and_columns_of_matrix
+namespace sum_of_right_diagonal_of_matrix
 {
     internal class Program
     {
@@ -12,8 +12,8 @@ namespace sum_of_rows_and_columns_of_matrix
         {
             int row = 0;
             int col = 0;
-            
-            
+
+
 
             Console.WriteLine("Input the size of the square matrix: ");
             int n = Convert.ToInt32(Console.ReadLine());
@@ -22,14 +22,14 @@ namespace sum_of_rows_and_columns_of_matrix
 
             int[] num = new int[n];
             int sum = 0;
-            int[,] arry = new int [n, n];
+            int[,] arry = new int[n, n];
 
-            for( row = 0; row < n; row++)
+            for (row = 0; row < n; row++)
             {
-                for( col = 0; col < n; col++)
+                for (col = 0; col < n; col++)
                 {
                     Console.Write("Elements [{0}],[{1}]: ", row, col);
-                    arry[row,col] = Convert.ToInt32(Console.ReadLine());   
+                    arry[row, col] = Convert.ToInt32(Console.ReadLine());
                 }
             }
 
@@ -45,28 +45,19 @@ namespace sum_of_rows_and_columns_of_matrix
                 Console.WriteLine();
             }
 
-            Console.WriteLine("\nThe sum or rows and columns of the matrix is :\n");
-            
             for (row = 0; row < n; row++)
             {
-                sum = 0;
                 for (col = 0; col < n; col++)
                 {
-                    sum += arry[row, col];
+                    if (row == col)
+                    {
+                        sum += arry[row, col];
+                    }
                 }
-                Console.WriteLine("sum of row [{0}] : {1}", row + 1, sum);
             }
-            
-            for (row = 0; row < n; row++)
-            {
-                sum = 0;
-                for (col = 0; col < n; col++)
-                {
-                    sum += arry[col, row];
-                }
-                Console.WriteLine("sum of col [{0}]:  {1}",row+1, sum);
-            }
-            Console.ReadKey();  
+
+            Console.WriteLine("sum of right diagonal matrix are: {0}", sum);
+            Console.ReadKey();
         }
     }
 }
