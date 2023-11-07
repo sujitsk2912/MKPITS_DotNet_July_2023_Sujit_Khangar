@@ -21,7 +21,7 @@ namespace Students_marks_and_its_average
 
         Student[] sub = new Student[9];
         Student[] student = new Student[3];
-        float[] total = new float[3];
+        int[] total = new int[3];
         float [] avg = new float[3]; 
 
         int cnt = 0;
