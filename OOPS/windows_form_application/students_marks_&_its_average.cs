@@ -66,19 +66,15 @@ namespace Students_marks_and_its_average
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            student[0] = new Student();
-            student[1] = new Student();
-            student[2] = new Student();
+            for(int i = 0; i < 3; i++)
+            {
+                student[i] = new Student();
+            }
 
-            sub[0] = new Student();
-            sub[1] = new Student();
-            sub[2] = new Student();
-            sub[3] = new Student();
-            sub[4] = new Student();
-            sub[5] = new Student();
-            sub[6] = new Student();
-            sub[7] = new Student();
-            sub[8] = new Student();
+            for (int cnt = 0; cnt < 9; cnt++)
+            {
+                sub[cnt] = new Student();
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
