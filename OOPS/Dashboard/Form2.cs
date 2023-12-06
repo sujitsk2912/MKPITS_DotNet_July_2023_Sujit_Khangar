@@ -114,7 +114,7 @@ namespace login_signup
 
                     //------------------------------------------------------------
 
-                    MessageBox.Show("Account created successfully");
+                    MessageBox.Show("Data saved successfully");
                     break;
                 }
 
@@ -127,11 +127,6 @@ namespace login_signup
 
             }
            
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
