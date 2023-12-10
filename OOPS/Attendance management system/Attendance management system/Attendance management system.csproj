@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{47A6CEF0-4CBF-49AD-809F-B84A532C6EDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Attendance_management_system</RootNamespace>
+    <AssemblyName>Attendance management system</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmactcreate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmactcreate.Designer.cs">
+      <DependentUpon>frmactcreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmadmission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmadmission.Designer.cs">
+      <DependentUpon>frmadmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmattendance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmattendance.Designer.cs">
+      <DependentUpon>frmattendance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmerror.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmerror.Designer.cs">
+      <DependentUpon>frmerror.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmfaculty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmfaculty.Designer.cs">
+      <DependentUpon>frmfaculty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frminvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frminvoice.Designer.cs">
+      <DependentUpon>frminvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmloginsuccess.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmloginsuccess.Designer.cs">
+      <DependentUpon>frmloginsuccess.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewlogin.Designer.cs">
+      <DependentUpon>frmnewlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmnewsignup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmnewsignup.Designer.cs">
+      <DependentUpon>frmnewsignup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstudents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstudents.Designer.cs">
+      <DependentUpon>frmstudents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MethodClass.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmactcreate.resx">
+      <DependentUpon>frmactcreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmadmission.resx">
+      <DependentUpon>frmadmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmattendance.resx">
+      <DependentUpon>frmattendance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmerror.resx">
+      <DependentUpon>frmerror.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmfaculty.resx">
+      <DependentUpon>frmfaculty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frminvoice.resx">
+      <DependentUpon>frminvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmloginsuccess.resx">
+      <DependentUpon>frmloginsuccess.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewlogin.resx">
+      <DependentUpon>frmnewlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmnewsignup.resx">
+      <DependentUpon>frmnewsignup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstudents.resx">
+      <DependentUpon>frmstudents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-solid-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\list-ul-regular-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-bookmark-solid-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-solid-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recycle-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\apply.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroud.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4-9-2021--6-06-37-am-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkmark %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\remove.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

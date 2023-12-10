@@ -1,0 +1,38 @@
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Attendance management system.exe.config
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Attendance management system.exe
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Attendance management system.pdb
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuButton.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuButton.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuTextBox.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.csproj.AssemblyReference.cache
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.Properties.Resources.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.csproj.GenerateResource.cache
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.exe.licenses
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.csproj.CoreCompileInputs.cache
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.csproj.CopyComplete
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.exe
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance management system.pdb
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmMain.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuDropdown.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmfaculty.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmLogin.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmSignup.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmstudents.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmattendance.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmadmission.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.1.5.3.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuLabel.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmnewlogin.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmnewsignup.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frminvoice.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmsuccess.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmerror.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmactcreate.resources
