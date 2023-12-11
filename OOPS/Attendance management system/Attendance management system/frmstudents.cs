@@ -18,7 +18,6 @@ namespace Attendance_management_system
         public frmstudents()
         {
             InitializeComponent();
-            txtfirstname.Select();
         }
 
         public int StudentID;
@@ -81,17 +80,17 @@ namespace Attendance_management_system
         }
 
         private void StudentsRecordDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
-        {/*
+        {
             StudentID = Convert.ToInt32(StudentsRecordDataGridView.Rows[0].Cells[0].Value.ToString());
             txtfirstname.Text = StudentsRecordDataGridView.Rows[0].Cells[1].Value.ToString();
             txtlastname.Text = StudentsRecordDataGridView.Rows[0].Cells[2].Value.ToString();
             txtclass.Text = StudentsRecordDataGridView.Rows[0].Cells[3].Value.ToString();
-            txtsection.Text = StudentsRecordDataGridView.Rows[0].Cells[4].Value.ToString();*/
+            txtsection.Text = StudentsRecordDataGridView.Rows[0].Cells[4].Value.ToString();
         }
 
         private void btnupdate_Click(object sender, EventArgs e)
         {
-            /*string Firstname = txtfirstname.Text;
+            string Firstname = txtfirstname.Text;
             string Lastname = txtlastname.Text;
             string Class = txtclass.Text;
             string Section = txtsection.Text;
@@ -119,11 +118,21 @@ namespace Attendance_management_system
                 txtlastname.Clear();
                 txtfirstname.Focus();
 
-            }*/
-            
+            }
+
         }
 
         private void frmstudents_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton5_Click_1(object sender, EventArgs e)
         {
 
         }

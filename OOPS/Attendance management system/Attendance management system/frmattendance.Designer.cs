@@ -52,12 +52,7 @@
             this.bunifuButton7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.rOLLNODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fIRSTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lASTNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.AttendanceRecordDataGridView = new System.Windows.Forms.DataGridView();
             this.PRESENT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.ABSENT = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.EDIT = new System.Windows.Forms.DataGridViewButtonColumn();
@@ -65,11 +60,13 @@
             this.studentData8ABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sujitdbDataSet = new Attendance_management_system.sujitdbDataSet();
             this.student_data__8A_TableAdapter = new Attendance_management_system.sujitdbDataSetTableAdapters.student_data__8A_TableAdapter();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.attendancepanel.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AttendanceRecordDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentData8ABindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet)).BeginInit();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // attendancepanel
@@ -90,7 +87,7 @@
             this.attendancepanel.Controls.Add(this.bunifuButton6);
             this.attendancepanel.Controls.Add(this.bunifuButton5);
             this.attendancepanel.Controls.Add(this.panel3);
-            this.attendancepanel.Controls.Add(this.dataGridView1);
+            this.attendancepanel.Controls.Add(this.AttendanceRecordDataGridView);
             this.attendancepanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.attendancepanel.Location = new System.Drawing.Point(0, 0);
             this.attendancepanel.MaximumSize = new System.Drawing.Size(1226, 664);
@@ -203,6 +200,7 @@
             this.bunifuButton1.TextMarginLeft = 0;
             this.bunifuButton1.TextPadding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
             // txtsubject
             // 
@@ -587,34 +585,13 @@
             this.bunifuButton5.TextMarginLeft = 0;
             this.bunifuButton5.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
-            // panel3
+            // AttendanceRecordDataGridView
             // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1226, 39);
-            this.panel3.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(25, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Attendance";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.AttendanceRecordDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AttendanceRecordDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
+            this.AttendanceRecordDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
@@ -622,18 +599,14 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.ColumnHeadersHeight = 40;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.rOLLNODataGridViewTextBoxColumn,
-            this.fIRSTNAMEDataGridViewTextBoxColumn,
-            this.lASTNAMEDataGridViewTextBoxColumn,
+            this.AttendanceRecordDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.AttendanceRecordDataGridView.ColumnHeadersHeight = 40;
+            this.AttendanceRecordDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.PRESENT,
             this.ABSENT,
             this.EDIT,
             this.DELETE});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dataGridView1.DataSource = this.studentData8ABindingSource;
+            this.AttendanceRecordDataGridView.Cursor = System.Windows.Forms.Cursors.Default;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
@@ -641,11 +614,12 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.Location = new System.Drawing.Point(83, 224);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.AttendanceRecordDataGridView.DefaultCellStyle = dataGridViewCellStyle2;
+            this.AttendanceRecordDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.AttendanceRecordDataGridView.Location = new System.Drawing.Point(83, 224);
+            this.AttendanceRecordDataGridView.Name = "AttendanceRecordDataGridView";
+            this.AttendanceRecordDataGridView.ReadOnly = true;
+            this.AttendanceRecordDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
@@ -653,36 +627,12 @@
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.RowHeadersWidth = 50;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1065, 352);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // rOLLNODataGridViewTextBoxColumn
-            // 
-            this.rOLLNODataGridViewTextBoxColumn.DataPropertyName = "ROLL NO";
-            this.rOLLNODataGridViewTextBoxColumn.HeaderText = "ROLL NO";
-            this.rOLLNODataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.rOLLNODataGridViewTextBoxColumn.Name = "rOLLNODataGridViewTextBoxColumn";
-            this.rOLLNODataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fIRSTNAMEDataGridViewTextBoxColumn
-            // 
-            this.fIRSTNAMEDataGridViewTextBoxColumn.DataPropertyName = "FIRSTNAME";
-            this.fIRSTNAMEDataGridViewTextBoxColumn.HeaderText = "FIRSTNAME";
-            this.fIRSTNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.fIRSTNAMEDataGridViewTextBoxColumn.Name = "fIRSTNAMEDataGridViewTextBoxColumn";
-            this.fIRSTNAMEDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // lASTNAMEDataGridViewTextBoxColumn
-            // 
-            this.lASTNAMEDataGridViewTextBoxColumn.DataPropertyName = "LASTNAME";
-            this.lASTNAMEDataGridViewTextBoxColumn.HeaderText = "LASTNAME";
-            this.lASTNAMEDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.lASTNAMEDataGridViewTextBoxColumn.Name = "lASTNAMEDataGridViewTextBoxColumn";
-            this.lASTNAMEDataGridViewTextBoxColumn.ReadOnly = true;
+            this.AttendanceRecordDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.AttendanceRecordDataGridView.RowHeadersWidth = 50;
+            this.AttendanceRecordDataGridView.RowTemplate.Height = 24;
+            this.AttendanceRecordDataGridView.Size = new System.Drawing.Size(1065, 352);
+            this.AttendanceRecordDataGridView.TabIndex = 0;
+            this.AttendanceRecordDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // PRESENT
             // 
@@ -728,6 +678,27 @@
             // 
             this.student_data__8A_TableAdapter.ClearBeforeFill = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(25, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 23);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Attendance";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1226, 39);
+            this.panel3.TabIndex = 1;
+            // 
             // frmattendance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -745,11 +716,11 @@
             this.Load += new System.EventHandler(this.frmattendance_Load);
             this.attendancepanel.ResumeLayout(false);
             this.attendancepanel.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AttendanceRecordDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentData8ABindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -760,9 +731,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton7;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton6;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView AttendanceRecordDataGridView;
         private System.Windows.Forms.ComboBox txtsection;
         private System.Windows.Forms.ComboBox txtclass;
         private System.Windows.Forms.Label label1;
@@ -778,11 +747,11 @@
         private System.Windows.Forms.BindingSource studentData8ABindingSource;
         private sujitdbDataSetTableAdapters.student_data__8A_TableAdapter student_data__8A_TableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn rOLLNODataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fIRSTNAMEDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lASTNAMEDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewCheckBoxColumn PRESENT;
         private System.Windows.Forms.DataGridViewCheckBoxColumn ABSENT;
         private System.Windows.Forms.DataGridViewButtonColumn EDIT;
         private System.Windows.Forms.DataGridViewButtonColumn DELETE;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label2;
     }
 }

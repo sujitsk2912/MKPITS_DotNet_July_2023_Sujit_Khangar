@@ -323,6 +323,16 @@ namespace Attendance_management_system.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap statisctics {
+            get {
+                object obj = ResourceManager.GetObject("statisctics", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap warning {
             get {
                 object obj = ResourceManager.GetObject("warning", resourceCulture);
@@ -346,6 +356,16 @@ namespace Attendance_management_system.Properties {
         internal static System.Drawing.Bitmap warning1 {
             get {
                 object obj = ResourceManager.GetObject("warning1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap x_regular_24 {
+            get {
+                object obj = ResourceManager.GetObject("x-regular-24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

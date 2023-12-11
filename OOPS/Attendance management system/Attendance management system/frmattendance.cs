@@ -38,5 +38,15 @@ namespace Attendance_management_system
         {
 
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

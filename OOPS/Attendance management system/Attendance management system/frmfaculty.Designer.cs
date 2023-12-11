@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmfaculty));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
@@ -74,9 +75,13 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.sujitdbDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sujitdbDataSet1 = new Attendance_management_system.sujitdbDataSet1();
             this.FacultyPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // FacultyPanel
@@ -879,7 +884,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(35, 9);
+            this.label2.Location = new System.Drawing.Point(25, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 23);
             this.label2.TabIndex = 4;
@@ -887,14 +892,26 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.DataSource = this.sujitdbDataSet1BindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(77, 378);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(1065, 248);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // sujitdbDataSet1BindingSource
+            // 
+            this.sujitdbDataSet1BindingSource.DataSource = this.sujitdbDataSet1;
+            this.sujitdbDataSet1BindingSource.Position = 0;
+            // 
+            // sujitdbDataSet1
+            // 
+            this.sujitdbDataSet1.DataSetName = "sujitdbDataSet1";
+            this.sujitdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // frmfaculty
             // 
@@ -915,6 +932,8 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -943,5 +962,7 @@
         private System.Windows.Forms.Label label10;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
+        private System.Windows.Forms.BindingSource sujitdbDataSet1BindingSource;
+        private sujitdbDataSet1 sujitdbDataSet1;
     }
 }

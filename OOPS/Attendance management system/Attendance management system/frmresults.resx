@@ -117,7 +117,43 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="studentData8ABindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>272, 222</value>
+  </metadata>
+  <metadata name="sujitdbDataSet2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>527, 222</value>
+  </metadata>
+  <metadata name="sujitdbDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>789, 222</value>
+  </metadata>
+  <metadata name="bindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>955, 222</value>
+  </metadata>
+  <metadata name="studentData8ABindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 263</value>
+  </metadata>
+  <metadata name="studentData8ABindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>280, 263</value>
+  </metadata>
+  <metadata name="sujitdbDataSet1BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>543, 263</value>
+  </metadata>
+  <metadata name="sujitdbDataSet1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>805, 263</value>
+  </metadata>
+  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>971, 263</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bunifuButton4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAnCAYAAAAVd0rFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACVSURBVHhe7dwxEYAwAATBWCExgjT6iIYJIq7aYmdewNU/
+        1l73ta8HCqe3ccbc84XC6U10pERHTnTkREdOdORER0505ERHTnTkREdOdORER0505ERHTnTkREdOdORE
+        R0505ERHTnTkREdOdORER0505ERHTnTkREdOdORER0505ERHTnTkREdOdORER+6Pzrs6pbXX/QGr2mgd
+        mlzQawAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="bunifuTextBox2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARwAAAArCAYAAACq/DdBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -128,17 +164,25 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAARsAAAArCAYAAABIICw4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADKSURBVHhe7dSxDcMwAANB7T+VBI+RMdK4cyDATXr7qyNw
-        DQf4YWaW7TiOz5zzAnja7sudmjH2cZ4XwON2X+7UiA3wHrEBEmIDJMQGSIgNkBAbICE2QEJsgITYAAmx
-        ARJiAyTEBkiIDZAQGyAhNkBCbICE2AAJsQESYgMkxAZIiA2QEBsgITZAQmyAhNgACbEBEmIDJMQGSIgN
-        kBAbICE2QEJsgITYAAmxARJiAyTEBkiIDZAQGyDxF5u11ncfAE/bfblTY2b29sb4AfDJLmhAX/V0AAAA
-        AElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAAJAAAAAnCAYAAADgicF1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACVSURBVHhe7dwxEcNAEARBEbFFRdDM4M34XG8G0qQddNUC
+        mHiPc831WvOBu3Y7xx7v7wzctdsREI8JiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIB
+        kQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIvkH5KWVp8411w9GRuk2
+        ezTwXgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="txtname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuButton2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAI0AAAAnCAYAAAAy2cstAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACHSURBVHhe7dw5EQAxEAPBhWZoZu57EHjyDrpKACbWnJn1
+        2nBpfdF848ClLRoq0ZCJhkw0ZKIhEw2ZaMhEQyYaMtGQiYZMNGSiIRMNmWjIREMmGjLRkImGTDRkoiET
+        DZloyERDJhoy0ZCJhkw0ZKIhEw2ZaMhEQyYaMtGQiYZMNGR/NN49CWY9+9Ib5dwKUCUAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="txtstudentid.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARwAAAArCAYAAACq/DdBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADJSURBVHhe7dSxDcMwAANB7T+VDY2RMdK4cyBATQbQV0fg
@@ -148,42 +192,13 @@
         SUVORK5CYII=
 </value>
   </data>
-  <data name="bunifuButton7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnenter.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACMSURBVHhe7dyxDYRAEARBEgFSITQyuM94X0cYrTJKGr/9
-        Oe41z7nmpWV3Pfa4fjO07K7iRokbJm6YuGHihokbJm6YuGHihokbJm6YuGHihokbJm6YuGHihokbJm6Y
-        uGHihokbJm6YuGHihokbJm6YuGHihokbJm6YuGHihokbJm6YuGFfXG82Tfea5w8/2dS+QXTl4AAAAABJ
-        RU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAnCAYAAAAVd0rFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACVSURBVHhe7dwxEYAwAATBWCExgjT6iIYJIq7aYmdewNU/
+        1l73ta8HCqe3ccbc84XC6U10pERHTnTkREdOdORER0505ERHTnTkREdOdORER0505ERHTnTkREdOdORE
+        R0505ERHTnTkREdOdORER0505ERHTnTkREdOdORER0505ERHTnTkREdOdORER+6Pzrs6pbXX/QGr2mgd
+        mlzQawAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuButton6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACBSURBVHhe7dyxDQAhEAPBK43S6Jx/KGM1wUjON/ecmfXb
-        5Kwb945Dzha3S9wwccPEDRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPE
-        DRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPEDXtxvdkkzfoAToGEBP+pMVIAAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="bunifuButton5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACKSURBVHhe7dyxDYAwAAPBrEKyCKPRZ2hQGOP0xUnuv/dY
-        e93Xvp5YTtdxxtzzjeV0LS6quLDiwooLKy6suLDiwooLKy6suLDiwooLKy6suLDiwooLKy6suLDiwooL
-        Ky6suLDiwooLKy6suLDiwooLKy6suLDiwooLKy6suLDiwooL++P2ZmNae90fnAUbR6SYI1cAAAAASUVO
-        RK5CYII=
-</value>
-  </data>
-  <metadata name="bindingSource2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>609, 17</value>
-  </metadata>
-  <metadata name="sujitdbDataSet2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="bindingSource1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>183, 17</value>
-  </metadata>
-  <metadata name="sujitdbDataSet2BindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>347, 17</value>
-  </metadata>
 </root>

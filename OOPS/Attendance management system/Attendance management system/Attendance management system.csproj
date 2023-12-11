@@ -142,6 +142,18 @@
     <Compile Include="frmnewsignup.Designer.cs">
       <DependentUpon>frmnewsignup.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmresults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmresults.Designer.cs">
+      <DependentUpon>frmresults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstudent.Designer.cs">
+      <DependentUpon>frmstudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmstudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +163,16 @@
     <Compile Include="MethodClass.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sujitdbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sujitdbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sujitdbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sujitdbDataSet1.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -187,6 +209,12 @@
     <EmbeddedResource Include="frmnewsignup.resx">
       <DependentUpon>frmnewsignup.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmresults.resx">
+      <DependentUpon>frmresults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstudent.resx">
+      <DependentUpon>frmstudent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmstudents.resx">
       <DependentUpon>frmstudents.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +238,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="sujitdbDataSet.xsc">
+      <DependentUpon>sujitdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sujitdbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sujitdbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sujitdbDataSet.xss">
+      <DependentUpon>sujitdbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sujitdbDataSet1.xsc">
+      <DependentUpon>sujitdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sujitdbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sujitdbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sujitdbDataSet1.xss">
+      <DependentUpon>sujitdbDataSet1.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -300,6 +350,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\check %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x-regular-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statisctics.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,3 +36,5 @@ C:\HTML Material\Windows Forms\Attendance management system\Attendance managemen
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuPictureBox.xml
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmerror.resources
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmactcreate.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmstudent.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmresults.resources

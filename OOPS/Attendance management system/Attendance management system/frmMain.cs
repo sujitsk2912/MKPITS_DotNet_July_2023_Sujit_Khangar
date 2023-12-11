@@ -20,12 +20,13 @@ namespace Attendance_management_system
             btndashboard.Select();
         }
 
-        frmstudents students = null;
+        frmstudent student = null;
         frmfaculty faculty = null;
-        frmLogin login = null;
-        frmSignup signup = null;
+        frmnewlogin login = null;
+        frmnewsignup signup = null;
         frmattendance attendance = null;
         frmadmission admission = null;
+        frmresults results = null;
         
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
@@ -44,7 +45,9 @@ namespace Attendance_management_system
 
         private void bunifuButton4_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            login = new frmnewlogin();
+            login.Show();
+            this.Hide();
         }
 
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
@@ -56,14 +59,16 @@ namespace Attendance_management_system
         {
             faculty = new frmfaculty();
 
-            if (attendance != null && students != null && admission != null)
+            if (results != null && attendance != null && student != null && admission != null)
             {
                 attendance.Close();
-                students.Close();
+                student.Close();
                 admission.Close();
+                results.Close();
+                results = null;
                 attendance = null;
                 admission = null;
-                students = null;
+                student = null;
             }
 
             faculty.TopLevel = false;
@@ -80,23 +85,25 @@ namespace Attendance_management_system
 
         private void btnstudent_Click(object sender, EventArgs e)
         {
-            students = new frmstudents();
+            student = new frmstudent();
 
-            if (attendance != null && faculty != null && admission != null)
+            if (attendance != null && faculty != null && admission != null && results != null)
            {
                attendance.Close();
                faculty.Close();
                admission.Close();
+                results.Close();
+               results = null;
                attendance = null;
                admission = null;
                faculty = null;
            }
 
-           students.TopLevel = false;
-           students.Dock = DockStyle.Fill;
-           students.WindowState = FormWindowState.Maximized;
-           DashboardPanel.Controls.Add(students);
-           students.Show();
+           student.TopLevel = false;
+           student.Dock = DockStyle.Fill;
+           student.WindowState = FormWindowState.Maximized;
+           DashboardPanel.Controls.Add(student);
+           student.Show();
         }
 
         private void btnadmission_Click(object sender, EventArgs e)
@@ -109,12 +116,14 @@ namespace Attendance_management_system
 
             attendance = new frmattendance();
 
-            if (students != null && faculty != null && admission != null)
+            if (results != null && student != null && faculty != null && admission != null)
             {
-                students.Close();
+                student.Close();
                 faculty.Close();
                 admission.Close();
-                students = null;
+                results.Close();
+                results = null;
+                student = null;
                 admission = null;
                 faculty = null;
             }
@@ -130,14 +139,16 @@ namespace Attendance_management_system
         {
             admission = new frmadmission();
 
-            if (students != null && faculty != null && attendance != null)
+            if (results != null && student != null && faculty != null && attendance != null)
             {
-                students.Close();
+                student.Close();
                 faculty.Close();
                 attendance.Close();
+                results.Close();
+                results = null;
                 faculty = null;
                 attendance = null;
-                students = null;
+                student  = null;
             }
 
             admission.TopLevel = false;
@@ -146,6 +157,34 @@ namespace Attendance_management_system
             DashboardPanel.Controls.Add(admission);
             admission.Show();
 
+        }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            results = new frmresults();
+
+            if (attendance != null && student != null && admission != null && faculty != null)
+            {
+                attendance.Close();
+                student.Close();
+                admission.Close();
+                faculty.Close();
+                attendance = null;
+                admission = null;
+                student = null;
+                faculty= null;
+            }
+
+            results.TopLevel = false;
+            results.Dock = DockStyle.Fill;
+            results.WindowState = FormWindowState.Maximized;
+            DashboardPanel.Controls.Add(results);
+            results.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 }
