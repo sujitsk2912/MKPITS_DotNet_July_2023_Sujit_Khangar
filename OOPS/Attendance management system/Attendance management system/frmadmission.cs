@@ -25,7 +25,7 @@ namespace Attendance_management_system
             // VARIABLE DECLARATION ..................
 
             string Register = txtresgister.Text;
-            string Enrollment = txtenrollment.Text;
+            string StudentId = txtstudentid.Text;
             string Name = txtname.Text;
             string Phone = txtphone.Text;
             string Parent = txtparent.Text;
@@ -33,10 +33,9 @@ namespace Attendance_management_system
             string DOB = txtDOB.Text;
             string Gender = null;
             string DOA = txtDOA.Text;
-            string Class = txtclass.Text;
-            string Section = txtsection.Text;
-            string Category = txtcategory.Text;
+            string Course = txtcourse.Text;
             string Fees = txtfees.Text;
+            string Duration = txtduration.Text;
 
             if(btnMale.Checked)
             {
@@ -55,17 +54,27 @@ namespace Attendance_management_system
             string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
-            string Query = "INSERT INTO Student_Admission_data_new ([REG NO.],ENROLLMENT, FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], CLASS, SECTION, CATEGORY, FEES ) VALUES ('" + Register + "','"+ Enrollment +"','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','"+ Gender+"','"+DOA+"','"+Class+"','"+Section+"','"+Category+"','"+Fees+"')";
-            SqlCommand cmd = new SqlCommand(Query, conn);
-            cmd.ExecuteNonQuery();
-            conn.Close();
 
+            try
+            {
+                string Query = "INSERT INTO Admission_Data ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
+                SqlCommand cmd = new SqlCommand(Query, conn);
+                cmd.ExecuteNonQuery();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+                MessageBox.Show("Data Submited Successfully");
+            }
+           
             //---------------------------------------------------
 
-            MessageBox.Show("Data Submited Successfully");
-
-            /*txtresgister.Clear();
-            txtenrollment.Clear();
+           /* txtresgister.Clear();
+            txtstudentid.Clear();
             txtname.Clear();
             txtphone.Clear();
             txtparent.Clear();
@@ -74,10 +83,9 @@ namespace Attendance_management_system
             txtDOA.Text = DateTime.Now.ToString();
             btnMale.Checked = false;
             btnfemale.Checked = false;
-            txtclass.ResetText();
-            txtsection.ResetText();
-            txtcategory.ResetText();
+            txtcourse.ResetText();
             txtfees.Clear();
+            txtduration.ResetText();
             txtresgister.Focus();*/
 
         }
@@ -92,14 +100,25 @@ namespace Attendance_management_system
             frminvoice invoice = new frminvoice();
 
             invoice.Reciept = txtresgister.Text;
-            invoice.Enrollment = txtenrollment.Text;
+            invoice.StudentId= txtstudentid.Text;
             invoice.Name = txtname.Text;
-            invoice.Class = txtclass.Text;
+            invoice.Course = txtcourse.Text;
             invoice.Phone = txtphone.Text;
             invoice.Address = txtaddress.Text;
             invoice.Date = txtDOA.Text;
             invoice.Fees = txtfees.Text;
             invoice.ShowDialog();
+
+        }
+
+        private void frmadmission_Activated(object sender, EventArgs e)
+        {
+            txtDOB.Text = DateTime.Now.ToString();
+            txtDOA.Text = DateTime.Now.ToString();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
 
         }
     }

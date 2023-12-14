@@ -13,16 +13,15 @@ namespace Attendance_management_system
 {
     public partial class frminvoice : Form
     {
-        public string Reciept, Enrollment, Phone, Fees , Name, Class, Address, Date;
+        public string Reciept, StudentId, Phone, Fees , Name, Course, Address, Date;
         public frminvoice()
         {
             InitializeComponent();
         }
 
-       
-
         private void Print(Panel BodyPanel)
         {
+
         }
         private void label10_Click(object sender, EventArgs e)
         {
@@ -135,6 +134,11 @@ namespace Attendance_management_system
            
         }
 
+        private void collegename_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void bunifuTextBox8_TextChanged(object sender, EventArgs e)
         {
 
@@ -153,9 +157,9 @@ namespace Attendance_management_system
         private void frminvoice_Load(object sender, EventArgs e)
         {
             txtreciept.Text = Reciept;
-            txtenrollment.Text = Enrollment;
+            txtstudentid.Text = StudentId;
             txtname.Text = Name;
-            txtclass.Text = Class;
+            txtcourse.Text = Course;
             txtphone.Text = Phone;
             txtaddress.Text = Address;
             txtdate.Text = Date;

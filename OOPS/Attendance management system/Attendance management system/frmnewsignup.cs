@@ -89,7 +89,9 @@ namespace Attendance_management_system
 
         private void signuplink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            frmnewlogin Login = new frmnewlogin();
+            Login.Show();
+            this.Hide();
         }
     }
 }

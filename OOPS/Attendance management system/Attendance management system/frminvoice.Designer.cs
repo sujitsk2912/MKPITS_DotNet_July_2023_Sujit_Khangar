@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frminvoice));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -50,12 +50,12 @@
             this.Headerpanel = new System.Windows.Forms.Panel();
             this.txtreciept = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtenrollment = new System.Windows.Forms.Label();
+            this.txtstudentid = new System.Windows.Forms.Label();
             this.txtname = new System.Windows.Forms.Label();
             this.txtphone = new System.Windows.Forms.Label();
             this.txtfees = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.txtclass = new System.Windows.Forms.Label();
+            this.txtcourse = new System.Windows.Forms.Label();
             this.txtaddress = new System.Windows.Forms.Label();
             this.txtdate = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -66,10 +66,10 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.Logopicture = new System.Windows.Forms.PictureBox();
-            this.btnprint = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.Logopicture = new System.Windows.Forms.PictureBox();
+            this.btnprint = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -115,12 +115,12 @@
             this.tableLayoutPanel1.Controls.Add(this.label4, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.label3, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.txtenrollment, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.txtstudentid, 2, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtname, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.txtphone, 2, 4);
             this.tableLayoutPanel1.Controls.Add(this.txtfees, 2, 7);
             this.tableLayoutPanel1.Controls.Add(this.label11, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.txtclass, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.txtcourse, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.txtaddress, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.txtdate, 2, 6);
             this.tableLayoutPanel1.GrowStyle = System.Windows.Forms.TableLayoutPanelGrowStyle.AddColumns;
@@ -239,9 +239,9 @@
             this.label5.Location = new System.Drawing.Point(76, 268);
             this.label5.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 25);
+            this.label5.Size = new System.Drawing.Size(79, 25);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Class: ";
+            this.label5.Text = "Course: ";
             // 
             // label7
             // 
@@ -311,9 +311,9 @@
             this.label3.Location = new System.Drawing.Point(76, 171);
             this.label3.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(143, 25);
+            this.label3.Size = new System.Drawing.Size(110, 25);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Enrollment No: ";
+            this.label3.Text = "Student ID: ";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
@@ -345,19 +345,19 @@
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkLabel1.Location = new System.Drawing.Point(335, 88);
+            this.linkLabel1.Location = new System.Drawing.Point(377, 84);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(217, 20);
+            this.linkLabel1.Size = new System.Drawing.Size(138, 20);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "https://nagpuruniversity.ac.in/";
+            this.linkLabel1.Text = "support@mkpits.in";
             // 
             // label13
             // 
             this.label13.AutoSize = true;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(283, 88);
+            this.label13.Location = new System.Drawing.Point(325, 84);
             this.label13.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(58, 20);
@@ -370,12 +370,12 @@
             this.label12.AutoSize = true;
             this.label12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(126, 88);
+            this.label12.Location = new System.Drawing.Point(148, 84);
             this.label12.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(153, 20);
+            this.label12.Size = new System.Drawing.Size(177, 20);
             this.label12.TabIndex = 4;
-            this.label12.Text = "Phone: 0712-6580309";
+            this.label12.Text = "Phone: +91-78880-66630";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label10
@@ -383,12 +383,12 @@
             this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(104, 58);
+            this.label10.Location = new System.Drawing.Point(189, 54);
             this.label10.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(467, 20);
+            this.label10.Size = new System.Drawing.Size(299, 20);
             this.label10.TabIndex = 3;
-            this.label10.Text = "42XQ+4RW, Amravati Rd, Gokulpeth, Nagpur, Maharashtra 440033";
+            this.label10.Text = "2nd Floor, Fortune Mall, Sitabuldi, Nagpur";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // collegename
@@ -396,13 +396,14 @@
             this.collegename.AutoSize = true;
             this.collegename.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.collegename.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.collegename.Location = new System.Drawing.Point(40, 13);
+            this.collegename.Location = new System.Drawing.Point(108, 13);
             this.collegename.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
             this.collegename.Name = "collegename";
-            this.collegename.Size = new System.Drawing.Size(575, 28);
+            this.collegename.Size = new System.Drawing.Size(437, 28);
             this.collegename.TabIndex = 2;
-            this.collegename.Text = "RASHTRASANT TUKADOJI MAHARAJ NAGPUR UNIVERSITY";
+            this.collegename.Text = "MKP IT SERVICES PRIVATE LIMITED, NAGPUR";
             this.collegename.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.collegename.Click += new System.EventHandler(this.collegename_Click);
             // 
             // Headerpanel
             // 
@@ -440,17 +441,17 @@
             this.label1.Text = "Reciept No:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtenrollment
+            // txtstudentid
             // 
-            this.txtenrollment.AutoSize = true;
-            this.txtenrollment.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtenrollment.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtenrollment.Location = new System.Drawing.Point(261, 171);
-            this.txtenrollment.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-            this.txtenrollment.Name = "txtenrollment";
-            this.txtenrollment.Size = new System.Drawing.Size(0, 25);
-            this.txtenrollment.TabIndex = 6;
-            this.txtenrollment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtstudentid.AutoSize = true;
+            this.txtstudentid.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtstudentid.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtstudentid.Location = new System.Drawing.Point(261, 171);
+            this.txtstudentid.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.txtstudentid.Name = "txtstudentid";
+            this.txtstudentid.Size = new System.Drawing.Size(0, 25);
+            this.txtstudentid.TabIndex = 6;
+            this.txtstudentid.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // txtname
             // 
@@ -496,16 +497,16 @@
             this.label11.Size = new System.Drawing.Size(0, 25);
             this.label11.TabIndex = 14;
             // 
-            // txtclass
+            // txtcourse
             // 
-            this.txtclass.AutoSize = true;
-            this.txtclass.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtclass.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtclass.Location = new System.Drawing.Point(261, 268);
-            this.txtclass.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
-            this.txtclass.Name = "txtclass";
-            this.txtclass.Size = new System.Drawing.Size(0, 25);
-            this.txtclass.TabIndex = 15;
+            this.txtcourse.AutoSize = true;
+            this.txtcourse.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.txtcourse.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcourse.Location = new System.Drawing.Point(261, 268);
+            this.txtcourse.Margin = new System.Windows.Forms.Padding(3, 10, 3, 0);
+            this.txtcourse.Name = "txtcourse";
+            this.txtcourse.Size = new System.Drawing.Size(0, 25);
+            this.txtcourse.TabIndex = 15;
             // 
             // txtaddress
             // 
@@ -593,9 +594,23 @@
             this.panel10.Size = new System.Drawing.Size(850, 2);
             this.panel10.TabIndex = 6;
             // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // Logopicture
             // 
-            this.Logopicture.Image = global::Attendance_management_system.Properties.Resources._4_9_2021__6_06_37_am_logo;
+            this.Logopicture.Image = global::Attendance_management_system.Properties.Resources.cropped_MK_Placement;
             this.Logopicture.Location = new System.Drawing.Point(136, 76);
             this.Logopicture.Name = "Logopicture";
             this.Logopicture.Size = new System.Drawing.Size(149, 130);
@@ -622,11 +637,11 @@
             this.btnprint.ColorContrastOnClick = 45;
             this.btnprint.ColorContrastOnHover = 45;
             this.btnprint.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.btnprint.CustomizableEdges = borderEdges3;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.btnprint.CustomizableEdges = borderEdges5;
             this.btnprint.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnprint.DisabledBorderColor = System.Drawing.Color.Transparent;
             this.btnprint.DisabledFillColor = System.Drawing.SystemColors.Highlight;
@@ -693,20 +708,6 @@
             this.btnprint.UseDefaultRadiusAndThickness = true;
             this.btnprint.Click += new System.EventHandler(this.btnprint_Click_1);
             // 
-            // printDocument1
-            // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
-            // 
-            // printPreviewDialog1
-            // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
-            // 
             // frminvoice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -772,14 +773,14 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label collegename;
         private System.Windows.Forms.Label txtreciept;
-        private System.Windows.Forms.Label txtenrollment;
+        private System.Windows.Forms.Label txtstudentid;
         private System.Windows.Forms.Label txtname;
         private System.Windows.Forms.Label txtphone;
         private System.Windows.Forms.Label txtaddress;
         private System.Windows.Forms.Label txtdate;
         private System.Windows.Forms.Label txtfees;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label txtclass;
+        private System.Windows.Forms.Label txtcourse;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnprint;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox Logopicture;

@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using System.Net.NetworkInformation;
 
 namespace Attendance_management_system
 {
@@ -17,6 +20,15 @@ namespace Attendance_management_system
             InitializeComponent();
         }
 
+        public void Variable_Declration()
+        {
+            string Class = txtclass.Text;
+            string Section = txtsection.Text;
+            string Date = txtdate.Text;
+          //  string Subject = txtsubjects.Text;
+            string RollNo = txtrollno.Text;
+
+        }
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -33,6 +45,50 @@ namespace Attendance_management_system
         }
 
         private void bunifuButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton3_Click_1(object sender, EventArgs e)
+        {
+            string Class = txtclass.Text;
+            string Section = txtsection.Text;
+            string Date = txtdate.Text;
+          //  string Subject = txtsubjects.Text;
+            string RollNo = txtrollno.Text;
+
+            string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+           // string Query = "INSERT INTO Student_Result (Subjects) VALUES ('" + Subject + "')";
+           // SqlCommand cmd = new SqlCommand(Query, conn);
+           // cmd.ExecuteNonQuery();
+            conn.Close(); string connectionstring = "";
+
+            MessageBox.Show("Data Uploaded Successfully...");
+        }
+
+        private void frmresults_Activated(object sender, EventArgs e)
+        {
+            txtdate.Text = DateTime.Now.ToString();
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }

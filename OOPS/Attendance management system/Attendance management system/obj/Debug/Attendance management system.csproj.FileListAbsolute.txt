@@ -38,3 +38,14 @@ C:\HTML Material\Windows Forms\Attendance management system\Attendance managemen
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmactcreate.resources
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmstudent.resources
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmresults.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuPages.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuCircleProgress.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuPages.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuProgressBar.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmanimated.resources

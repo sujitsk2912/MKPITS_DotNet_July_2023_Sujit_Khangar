@@ -40,6 +40,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuButton">
       <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCircleProgress">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuCircleProgress.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
       <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
     </Reference>
@@ -49,11 +52,23 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuLabel">
       <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuLabel.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPages">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuPages.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPictureBox">
       <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuPictureBox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuProgressBar">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuProgressBar.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSlider">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuSlider.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTextBox">
       <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
+      <HintPath>D:\_Getintopc.com_Bunifu_UI_WinForms_5.0.3\packages\Bunifu.UI.WinForms.5.0.3\lib\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -93,6 +108,12 @@
     </Compile>
     <Compile Include="frmadmission.Designer.cs">
       <DependentUpon>frmadmission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmanimated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmanimated.Designer.cs">
+      <DependentUpon>frmanimated.cs</DependentUpon>
     </Compile>
     <Compile Include="frmattendance.cs">
       <SubType>Form</SubType>
@@ -184,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmadmission.resx">
       <DependentUpon>frmadmission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmanimated.resx">
+      <DependentUpon>frmanimated.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmattendance.resx">
       <DependentUpon>frmattendance.cs</DependentUpon>
@@ -356,6 +380,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\statisctics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cropped-MK-Placement.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

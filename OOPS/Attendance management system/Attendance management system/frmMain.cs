@@ -186,5 +186,15 @@ namespace Attendance_management_system
         {
             Environment.Exit(0);
         }
+
+        private void bunifuPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

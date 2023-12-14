@@ -156,15 +156,6 @@
         ECtEiBUixAoRYoUIsUKEWCHiL9b7vr/rAM6z+typmtn5G+MHrAo4pl3Y9ZUAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="txtfees.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQcAAAArCAYAAAB1sk1eAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC9SURBVHhe7dTBCcMwAARB9V+VhctIGfn456AgCAmbDuZg
-        PlfADjOzvzvP83Ecxw2werDTMMY6rusGeAdip0EcgA9xAJI4AEkcgCQOQBIHIIkDkMQBSOIAJHEAkjgA
-        SRyAJA5AEgcgiQOQxAFI4gAkcQCSOABJHIAkDkASByCJA5DEAUjiACRxAJI4AEkcgCQOQBIHIIkDkMQB
-        SOIAJHEAkjgASRyAJA5AEgcgfcVhzvlcB8DqwU6DmdnvxngB5XyypRSEX+AAAAAASUVORK5CYII=
-</value>
-  </data>
   <data name="txtname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAosAAAArCAYAAAAQacLQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -194,7 +185,16 @@
         jx0AAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="txtenrollment.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtstudentid.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAOsAAAArCAYAAACZ4n9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC9SURBVHhe7dOxCcQwAARB9V+Vjcr4Mj5x5keg5DvQwhxM
+        cvkOMwttzvm5rusFzrP63KmOsY7neYEDrT53qmKFk4kVIsQKEWKFCLFChFghQqwQIVaIECtEiBUixAoR
+        YoUIsUKEWCFCrBAhVogQK0SIFSLEChFihQixQoRYIUKsECFWiBArRIgVIsQKEWKFCLFChFghQqwQIVaI
+        ECtEiBUixAoRYoUIsUKEWCHiL9b7vr/rAM6z+typmtn5G+MHrAo4pl3Y9ZUAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="txtfees.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAOsAAAArCAYAAACZ4n9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC9SURBVHhe7dOxCcQwAARB9V+Vjcr4Mj5x5keg5DvQwhxM

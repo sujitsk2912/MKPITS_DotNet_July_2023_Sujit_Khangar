@@ -63,13 +63,9 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txtphone = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtsection = new System.Windows.Forms.ComboBox();
-            this.txtclass = new System.Windows.Forms.ComboBox();
             this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtfacultyno = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtfacultyid = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtname = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -77,6 +73,8 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.sujitdbDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sujitdbDataSet1 = new Attendance_management_system.sujitdbDataSet1();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtcourse = new System.Windows.Forms.ComboBox();
             this.FacultyPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,6 +85,8 @@
             // FacultyPanel
             // 
             this.FacultyPanel.BackColor = System.Drawing.Color.GhostWhite;
+            this.FacultyPanel.Controls.Add(this.label5);
+            this.FacultyPanel.Controls.Add(this.txtcourse);
             this.FacultyPanel.Controls.Add(this.bunifuButton1);
             this.FacultyPanel.Controls.Add(this.bunifuButton2);
             this.FacultyPanel.Controls.Add(this.label10);
@@ -96,13 +96,9 @@
             this.FacultyPanel.Controls.Add(this.label7);
             this.FacultyPanel.Controls.Add(this.txtphone);
             this.FacultyPanel.Controls.Add(this.label1);
-            this.FacultyPanel.Controls.Add(this.txtsection);
-            this.FacultyPanel.Controls.Add(this.txtclass);
             this.FacultyPanel.Controls.Add(this.bunifuButton5);
-            this.FacultyPanel.Controls.Add(this.label6);
-            this.FacultyPanel.Controls.Add(this.txtfacultyno);
+            this.FacultyPanel.Controls.Add(this.txtfacultyid);
             this.FacultyPanel.Controls.Add(this.label4);
-            this.FacultyPanel.Controls.Add(this.label5);
             this.FacultyPanel.Controls.Add(this.txtname);
             this.FacultyPanel.Controls.Add(this.label3);
             this.FacultyPanel.Controls.Add(this.panel3);
@@ -554,43 +550,6 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Phone: ";
             // 
-            // txtsection
-            // 
-            this.txtsection.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtsection.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsection.FormattingEnabled = true;
-            this.txtsection.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtsection.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"});
-            this.txtsection.Location = new System.Drawing.Point(925, 119);
-            this.txtsection.Name = "txtsection";
-            this.txtsection.Size = new System.Drawing.Size(72, 31);
-            this.txtsection.TabIndex = 10;
-            // 
-            // txtclass
-            // 
-            this.txtclass.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtclass.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtclass.FormattingEnabled = true;
-            this.txtclass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtclass.Items.AddRange(new object[] {
-            "5th",
-            "6th",
-            "7th",
-            "8th",
-            "9th",
-            "10th",
-            "11th",
-            "12th"});
-            this.txtclass.Location = new System.Drawing.Point(730, 119);
-            this.txtclass.Name = "txtclass";
-            this.txtclass.Size = new System.Drawing.Size(89, 31);
-            this.txtclass.TabIndex = 9;
-            // 
             // bunifuButton5
             // 
             this.bunifuButton5.AllowAnimations = true;
@@ -681,89 +640,79 @@
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
             this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
-            // label6
+            // txtfacultyid
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(843, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 25);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Section: ";
-            // 
-            // txtfacultyno
-            // 
-            this.txtfacultyno.AcceptsReturn = false;
-            this.txtfacultyno.AcceptsTab = false;
-            this.txtfacultyno.AnimationSpeed = 200;
-            this.txtfacultyno.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtfacultyno.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtfacultyno.BackColor = System.Drawing.Color.Transparent;
-            this.txtfacultyno.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtfacultyno.BackgroundImage")));
-            this.txtfacultyno.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtfacultyno.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtfacultyno.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtfacultyno.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtfacultyno.BorderRadius = 1;
-            this.txtfacultyno.BorderThickness = 1;
-            this.txtfacultyno.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtfacultyno.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfacultyno.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.txtfacultyno.DefaultText = "";
-            this.txtfacultyno.FillColor = System.Drawing.Color.GhostWhite;
-            this.txtfacultyno.HideSelection = true;
-            this.txtfacultyno.IconLeft = null;
-            this.txtfacultyno.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfacultyno.IconPadding = 10;
-            this.txtfacultyno.IconRight = null;
-            this.txtfacultyno.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfacultyno.Lines = new string[0];
-            this.txtfacultyno.Location = new System.Drawing.Point(338, 182);
-            this.txtfacultyno.MaxLength = 32767;
-            this.txtfacultyno.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtfacultyno.Modified = false;
-            this.txtfacultyno.Multiline = false;
-            this.txtfacultyno.Name = "txtfacultyno";
+            this.txtfacultyid.AcceptsReturn = false;
+            this.txtfacultyid.AcceptsTab = false;
+            this.txtfacultyid.AnimationSpeed = 200;
+            this.txtfacultyid.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtfacultyid.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtfacultyid.BackColor = System.Drawing.Color.Transparent;
+            this.txtfacultyid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtfacultyid.BackgroundImage")));
+            this.txtfacultyid.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtfacultyid.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtfacultyid.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtfacultyid.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtfacultyid.BorderRadius = 1;
+            this.txtfacultyid.BorderThickness = 1;
+            this.txtfacultyid.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtfacultyid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtfacultyid.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtfacultyid.DefaultText = "";
+            this.txtfacultyid.FillColor = System.Drawing.Color.GhostWhite;
+            this.txtfacultyid.HideSelection = true;
+            this.txtfacultyid.IconLeft = null;
+            this.txtfacultyid.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtfacultyid.IconPadding = 10;
+            this.txtfacultyid.IconRight = null;
+            this.txtfacultyid.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtfacultyid.Lines = new string[0];
+            this.txtfacultyid.Location = new System.Drawing.Point(338, 182);
+            this.txtfacultyid.MaxLength = 32767;
+            this.txtfacultyid.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtfacultyid.Modified = false;
+            this.txtfacultyid.Multiline = false;
+            this.txtfacultyid.Name = "txtfacultyid";
             stateProperties13.BorderColor = System.Drawing.Color.DodgerBlue;
             stateProperties13.FillColor = System.Drawing.Color.Empty;
             stateProperties13.ForeColor = System.Drawing.Color.Empty;
             stateProperties13.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfacultyno.OnActiveState = stateProperties13;
+            this.txtfacultyid.OnActiveState = stateProperties13;
             stateProperties14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
             stateProperties14.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             stateProperties14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             stateProperties14.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtfacultyno.OnDisabledState = stateProperties14;
+            this.txtfacultyid.OnDisabledState = stateProperties14;
             stateProperties15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             stateProperties15.FillColor = System.Drawing.Color.Empty;
             stateProperties15.ForeColor = System.Drawing.Color.Empty;
             stateProperties15.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfacultyno.OnHoverState = stateProperties15;
+            this.txtfacultyid.OnHoverState = stateProperties15;
             stateProperties16.BorderColor = System.Drawing.Color.Silver;
             stateProperties16.FillColor = System.Drawing.Color.GhostWhite;
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfacultyno.OnIdleState = stateProperties16;
-            this.txtfacultyno.Padding = new System.Windows.Forms.Padding(3);
-            this.txtfacultyno.PasswordChar = '\0';
-            this.txtfacultyno.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtfacultyno.PlaceholderText = "";
-            this.txtfacultyno.ReadOnly = false;
-            this.txtfacultyno.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtfacultyno.SelectedText = "";
-            this.txtfacultyno.SelectionLength = 0;
-            this.txtfacultyno.SelectionStart = 0;
-            this.txtfacultyno.ShortcutsEnabled = true;
-            this.txtfacultyno.Size = new System.Drawing.Size(260, 43);
-            this.txtfacultyno.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtfacultyno.TabIndex = 5;
-            this.txtfacultyno.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtfacultyno.TextMarginBottom = 0;
-            this.txtfacultyno.TextMarginLeft = 3;
-            this.txtfacultyno.TextMarginTop = 0;
-            this.txtfacultyno.TextPlaceholder = "";
-            this.txtfacultyno.UseSystemPasswordChar = false;
-            this.txtfacultyno.WordWrap = true;
+            this.txtfacultyid.OnIdleState = stateProperties16;
+            this.txtfacultyid.Padding = new System.Windows.Forms.Padding(3);
+            this.txtfacultyid.PasswordChar = '\0';
+            this.txtfacultyid.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtfacultyid.PlaceholderText = "";
+            this.txtfacultyid.ReadOnly = false;
+            this.txtfacultyid.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtfacultyid.SelectedText = "";
+            this.txtfacultyid.SelectionLength = 0;
+            this.txtfacultyid.SelectionStart = 0;
+            this.txtfacultyid.ShortcutsEnabled = true;
+            this.txtfacultyid.Size = new System.Drawing.Size(260, 43);
+            this.txtfacultyid.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtfacultyid.TabIndex = 5;
+            this.txtfacultyid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtfacultyid.TextMarginBottom = 0;
+            this.txtfacultyid.TextMarginLeft = 3;
+            this.txtfacultyid.TextMarginTop = 0;
+            this.txtfacultyid.TextPlaceholder = "";
+            this.txtfacultyid.UseSystemPasswordChar = false;
+            this.txtfacultyid.WordWrap = true;
             // 
             // label4
             // 
@@ -771,19 +720,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.label4.Location = new System.Drawing.Point(224, 200);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 25);
+            this.label4.Size = new System.Drawing.Size(101, 25);
             this.label4.TabIndex = 4;
-            this.label4.Text = "Faculty No: ";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(669, 125);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 25);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Class: ";
+            this.label4.Text = "Faculty ID: ";
             // 
             // txtname
             // 
@@ -913,6 +852,30 @@
             this.sujitdbDataSet1.DataSetName = "sujitdbDataSet1";
             this.sujitdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(662, 125);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 25);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Batch: ";
+            // 
+            // txtcourse
+            // 
+            this.txtcourse.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtcourse.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcourse.FormattingEnabled = true;
+            this.txtcourse.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtcourse.Items.AddRange(new object[] {
+            "Java",
+            "DotNet"});
+            this.txtcourse.Location = new System.Drawing.Point(737, 119);
+            this.txtcourse.Name = "txtcourse";
+            this.txtcourse.Size = new System.Drawing.Size(260, 31);
+            this.txtcourse.TabIndex = 31;
+            // 
             // frmfaculty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -941,13 +904,9 @@
         #endregion
 
         private System.Windows.Forms.Panel FacultyPanel;
-        private System.Windows.Forms.ComboBox txtsection;
-        private System.Windows.Forms.ComboBox txtclass;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
-        private System.Windows.Forms.Label label6;
-        private Bunifu.UI.WinForms.BunifuTextBox txtfacultyno;
+        private Bunifu.UI.WinForms.BunifuTextBox txtfacultyid;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
         private Bunifu.UI.WinForms.BunifuTextBox txtname;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
@@ -964,5 +923,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton2;
         private System.Windows.Forms.BindingSource sujitdbDataSet1BindingSource;
         private sujitdbDataSet1 sujitdbDataSet1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox txtcourse;
     }
 }

@@ -181,24 +181,15 @@
         RK5CYII=
 </value>
   </data>
-  <data name="txtfirstname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="txtfullname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAARsAAAArCAYAAABIICw4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADKSURBVHhe7dSxDcMwAANB7T+VBI+RMdK4cyDATXr7qyNw
-        DQf4YWaW7TiOz5zzAnja7sudmjH2cZ4XwON2X+7UiA3wHrEBEmIDJMQGSIgNkBAbICE2QEJsgITYAAmx
-        ARJiAyTEBkiIDZAQGyAhNkBCbICE2AAJsQESYgMkxAZIiA2QEBsgITZAQmyAhNgACbEBEmIDJMQGSIgN
-        kBAbICE2QEJsgITYAAmxARJiAyTEBkiIDZAQGyDxF5u11ncfAE/bfblTY2b29sb4AfDJLmhAX/V0AAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="txtlastname.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAARwAAAArCAYAAACq/DdBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADJSURBVHhe7dSxDcMwAANB7T+VDY2RMdK4cyBATQbQV0fg
-        Gg7ww8ws3Zzzc13XC3DCaszOzRjreJ4X4IjVmJ0bwQHOEhwgIzhARnCAjOAAGcEBMoIDZAQHyAgOkBEc
-        ICM4QEZwgIzgABnBATKCA2QEB8gIDpARHCAjOEBGcICM4AAZwQEyggNkBAfICA6QERwgIzhARnCAjOAA
-        GcEBMoIDZAQHyAgOkBEcICM4QEZwgIzgABnBATJ/wbnv+7sOgBNWY3ZuzMyKjfEDiYbOKDppevIAAAAA
-        SUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAscAAAArCAYAAACU7yX+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEISURBVHhe7daxDYNAFETB339VIMpwGU7IQCe9wK7hZqVJ
+        toI3ZmZmZmb2s+u6PsdxPAAAsKPVw6XxzDru+wEAgC2tHi6NxTEAAHsTxwAAEHEMAAARxwAAEHEMAAAR
+        xwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEM
+        AAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAA
+        EHEMAAARxwAAEHEMAAARxwAAEHEMAAARxwAAkL84Ps/zuw4AANjR6uHS2MzMzMzMZmZe8zJTDTf5VQ8A
+        AAAASUVORK5CYII=
 </value>
   </data>
 </root>

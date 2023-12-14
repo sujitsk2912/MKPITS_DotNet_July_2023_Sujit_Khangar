@@ -45,18 +45,18 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties12 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.loginpanel = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.txtpassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.wlcomeLabel = new System.Windows.Forms.Label();
             this.signuplink = new System.Windows.Forms.LinkLabel();
-            this.elipssignup = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.elipsform = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtpassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.btnsignup = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtconfirm = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtusername = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.elipssignup = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.elipsform = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.loginpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,83 +89,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(328, 2);
             this.panel3.TabIndex = 14;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
-            this.label1.Location = new System.Drawing.Point(102, 497);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(218, 25);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Already have an account? ";
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
-            this.panel2.Location = new System.Drawing.Point(86, 284);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(328, 2);
-            this.panel2.TabIndex = 7;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
-            this.panel1.Location = new System.Drawing.Point(86, 393);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(328, 2);
-            this.panel1.TabIndex = 7;
-            // 
-            // wlcomeLabel
-            // 
-            this.wlcomeLabel.AutoSize = true;
-            this.wlcomeLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.wlcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(10)))), ((int)(((byte)(156)))));
-            this.wlcomeLabel.Location = new System.Drawing.Point(156, 166);
-            this.wlcomeLabel.Name = "wlcomeLabel";
-            this.wlcomeLabel.Size = new System.Drawing.Size(176, 52);
-            this.wlcomeLabel.TabIndex = 6;
-            this.wlcomeLabel.Text = "Sign up";
-            // 
-            // signuplink
-            // 
-            this.signuplink.AutoSize = true;
-            this.signuplink.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signuplink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
-            this.signuplink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.signuplink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
-            this.signuplink.Location = new System.Drawing.Point(345, 499);
-            this.signuplink.Name = "signuplink";
-            this.signuplink.Size = new System.Drawing.Size(60, 23);
-            this.signuplink.TabIndex = 5;
-            this.signuplink.TabStop = true;
-            this.signuplink.Text = "Log in";
-            this.signuplink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signuplink_LinkClicked);
-            // 
-            // elipssignup
-            // 
-            this.elipssignup.ElipseRadius = 35;
-            this.elipssignup.TargetControl = this.btnsignup;
-            // 
-            // elipsform
-            // 
-            this.elipsform.ElipseRadius = 25;
-            this.elipsform.TargetControl = this;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = global::Attendance_management_system.Properties.Resources.backgroud;
-            this.pictureBox1.Location = new System.Drawing.Point(497, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(619, 693);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // txtpassword
             // 
@@ -242,6 +165,63 @@
             this.txtpassword.UseSystemPasswordChar = false;
             this.txtpassword.WordWrap = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
+            this.label1.Location = new System.Drawing.Point(102, 497);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(218, 25);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Already have an account? ";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
+            this.panel2.Location = new System.Drawing.Point(86, 284);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(328, 2);
+            this.panel2.TabIndex = 7;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(88)))), ((int)(((byte)(202)))));
+            this.panel1.Location = new System.Drawing.Point(86, 393);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(328, 2);
+            this.panel1.TabIndex = 7;
+            // 
+            // wlcomeLabel
+            // 
+            this.wlcomeLabel.AutoSize = true;
+            this.wlcomeLabel.Font = new System.Drawing.Font("Microsoft YaHei UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.wlcomeLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(10)))), ((int)(((byte)(156)))));
+            this.wlcomeLabel.Location = new System.Drawing.Point(156, 166);
+            this.wlcomeLabel.Name = "wlcomeLabel";
+            this.wlcomeLabel.Size = new System.Drawing.Size(176, 52);
+            this.wlcomeLabel.TabIndex = 6;
+            this.wlcomeLabel.Text = "Sign up";
+            // 
+            // signuplink
+            // 
+            this.signuplink.AutoSize = true;
+            this.signuplink.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signuplink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
+            this.signuplink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.signuplink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
+            this.signuplink.Location = new System.Drawing.Point(345, 499);
+            this.signuplink.Name = "signuplink";
+            this.signuplink.Size = new System.Drawing.Size(60, 23);
+            this.signuplink.TabIndex = 5;
+            this.signuplink.TabStop = true;
+            this.signuplink.Text = "Log in";
+            this.signuplink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signuplink_LinkClicked);
+            // 
             // btnsignup
             // 
             this.btnsignup.AllowAnimations = true;
@@ -272,7 +252,7 @@
             this.btnsignup.DisabledForecolor = System.Drawing.Color.White;
             this.btnsignup.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnsignup.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsignup.ForeColor = System.Drawing.Color.White;
+            this.btnsignup.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnsignup.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnsignup.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnsignup.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
@@ -282,7 +262,7 @@
             this.btnsignup.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnsignup.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnsignup.IconSize = 25;
-            this.btnsignup.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnsignup.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnsignup.IdleBorderRadius = 1;
             this.btnsignup.IdleBorderThickness = 1;
             this.btnsignup.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
@@ -307,12 +287,12 @@
             this.btnsignup.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnsignup.onHoverState.IconLeftImage = null;
             this.btnsignup.onHoverState.IconRightImage = null;
-            this.btnsignup.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnsignup.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnsignup.OnIdleState.BorderRadius = 1;
             this.btnsignup.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnsignup.OnIdleState.BorderThickness = 1;
             this.btnsignup.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
-            this.btnsignup.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnsignup.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnsignup.OnIdleState.IconLeftImage = null;
             this.btnsignup.OnIdleState.IconRightImage = null;
             this.btnsignup.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
@@ -482,8 +462,29 @@
             this.txtusername.UseSystemPasswordChar = false;
             this.txtusername.WordWrap = true;
             // 
+            // elipssignup
+            // 
+            this.elipssignup.ElipseRadius = 35;
+            this.elipssignup.TargetControl = this.btnsignup;
+            // 
+            // elipsform
+            // 
+            this.elipsform.ElipseRadius = 25;
+            this.elipsform.TargetControl = this;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::Attendance_management_system.Properties.Resources.backgroud;
+            this.pictureBox1.Location = new System.Drawing.Point(497, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(619, 693);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmnewsignup
             // 
+            this.AcceptButton = this.btnsignup;
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1116, 693);

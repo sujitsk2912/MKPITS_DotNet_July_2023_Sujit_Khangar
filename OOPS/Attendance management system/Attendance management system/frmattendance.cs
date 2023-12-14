@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using static System.Collections.Specialized.BitVector32;
 
 namespace Attendance_management_system
 {
@@ -15,13 +17,10 @@ namespace Attendance_management_system
         public frmattendance()
         {
             InitializeComponent();
-        }
-
-        private void StudentPanel_Paint(object sender, PaintEventArgs e)
-        {
 
         }
 
+        string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
         private void bunifuButton7_Click(object sender, EventArgs e)
         {
 
@@ -29,15 +28,10 @@ namespace Attendance_management_system
 
         private void frmattendance_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'sujitdbDataSet._student_data__8A_' table. You can move, or remove it, as needed.
-            this.student_data__8A_TableAdapter.Fill(this.sujitdbDataSet._student_data__8A_);
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
@@ -45,6 +39,53 @@ namespace Attendance_management_system
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void frmattendance_Activated(object sender, EventArgs e)
+        {
+            GetDataFromDatabase();
+            txtdate.Text = DateTime.Now.ToString();
+        }
+
+        private void txtdate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GetDataFromDatabase()
+        {
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+
+            try
+            {
+                string Query = "SELECT * FROM [student data (8A)]";
+                SqlCommand cmd = new SqlCommand(Query, conn);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                AttendanceRecordDataGridView.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AttendanceRecordDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -40,24 +40,24 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.loginpanel = new System.Windows.Forms.Panel();
+            this.eyebuttonshow = new System.Windows.Forms.PictureBox();
+            this.eyebuttonhide = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.wlcomeLabel = new System.Windows.Forms.Label();
             this.signuplink = new System.Windows.Forms.LinkLabel();
-            this.backgroundpanel = new System.Windows.Forms.Panel();
-            this.buttonelips = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.formelips = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.eyebuttonshow = new System.Windows.Forms.PictureBox();
-            this.eyebuttonhide = new System.Windows.Forms.PictureBox();
             this.btnlogin = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.txtpassword = new Bunifu.UI.WinForms.BunifuTextBox();
             this.txtusername = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.backgroundpanel = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonelips = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.formelips = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.loginpanel.SuspendLayout();
-            this.backgroundpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyebuttonshow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyebuttonhide)).BeginInit();
+            this.backgroundpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -80,6 +80,30 @@
             this.loginpanel.Size = new System.Drawing.Size(497, 693);
             this.loginpanel.TabIndex = 1;
             this.loginpanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginpanel_Paint);
+            // 
+            // eyebuttonshow
+            // 
+            this.eyebuttonshow.BackColor = System.Drawing.Color.White;
+            this.eyebuttonshow.Image = global::Attendance_management_system.Properties.Resources.hide;
+            this.eyebuttonshow.Location = new System.Drawing.Point(380, 344);
+            this.eyebuttonshow.Name = "eyebuttonshow";
+            this.eyebuttonshow.Size = new System.Drawing.Size(33, 28);
+            this.eyebuttonshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eyebuttonshow.TabIndex = 14;
+            this.eyebuttonshow.TabStop = false;
+            this.eyebuttonshow.Click += new System.EventHandler(this.eyebuttonshow_Click_1);
+            // 
+            // eyebuttonhide
+            // 
+            this.eyebuttonhide.Image = global::Attendance_management_system.Properties.Resources.hide;
+            this.eyebuttonhide.Location = new System.Drawing.Point(380, 344);
+            this.eyebuttonhide.Name = "eyebuttonhide";
+            this.eyebuttonhide.Size = new System.Drawing.Size(33, 28);
+            this.eyebuttonhide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eyebuttonhide.TabIndex = 13;
+            this.eyebuttonhide.TabStop = false;
+            this.eyebuttonhide.Visible = false;
+            this.eyebuttonhide.Click += new System.EventHandler(this.eyebuttonhide_Click_1);
             // 
             // label1
             // 
@@ -138,50 +162,6 @@
             this.signuplink.Text = "Sign up";
             this.signuplink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.signuplink_LinkClicked);
             // 
-            // backgroundpanel
-            // 
-            this.backgroundpanel.BackColor = System.Drawing.Color.White;
-            this.backgroundpanel.Controls.Add(this.pictureBox1);
-            this.backgroundpanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.backgroundpanel.Location = new System.Drawing.Point(0, 0);
-            this.backgroundpanel.Name = "backgroundpanel";
-            this.backgroundpanel.Size = new System.Drawing.Size(619, 693);
-            this.backgroundpanel.TabIndex = 0;
-            // 
-            // buttonelips
-            // 
-            this.buttonelips.ElipseRadius = 35;
-            this.buttonelips.TargetControl = this.btnlogin;
-            // 
-            // formelips
-            // 
-            this.formelips.ElipseRadius = 25;
-            this.formelips.TargetControl = this;
-            // 
-            // eyebuttonshow
-            // 
-            this.eyebuttonshow.BackColor = System.Drawing.Color.White;
-            this.eyebuttonshow.Image = global::Attendance_management_system.Properties.Resources.hide;
-            this.eyebuttonshow.Location = new System.Drawing.Point(380, 344);
-            this.eyebuttonshow.Name = "eyebuttonshow";
-            this.eyebuttonshow.Size = new System.Drawing.Size(33, 28);
-            this.eyebuttonshow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.eyebuttonshow.TabIndex = 14;
-            this.eyebuttonshow.TabStop = false;
-            this.eyebuttonshow.Click += new System.EventHandler(this.eyebuttonshow_Click_1);
-            // 
-            // eyebuttonhide
-            // 
-            this.eyebuttonhide.Image = global::Attendance_management_system.Properties.Resources.hide;
-            this.eyebuttonhide.Location = new System.Drawing.Point(380, 344);
-            this.eyebuttonhide.Name = "eyebuttonhide";
-            this.eyebuttonhide.Size = new System.Drawing.Size(33, 28);
-            this.eyebuttonhide.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.eyebuttonhide.TabIndex = 13;
-            this.eyebuttonhide.TabStop = false;
-            this.eyebuttonhide.Visible = false;
-            this.eyebuttonhide.Click += new System.EventHandler(this.eyebuttonhide_Click_1);
-            // 
             // btnlogin
             // 
             this.btnlogin.AllowAnimations = true;
@@ -212,7 +192,7 @@
             this.btnlogin.DisabledForecolor = System.Drawing.Color.White;
             this.btnlogin.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
             this.btnlogin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.ForeColor = System.Drawing.Color.White;
+            this.btnlogin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnlogin.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnlogin.IconLeftCursor = System.Windows.Forms.Cursors.Default;
             this.btnlogin.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
@@ -222,7 +202,7 @@
             this.btnlogin.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.btnlogin.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.btnlogin.IconSize = 25;
-            this.btnlogin.IdleBorderColor = System.Drawing.Color.Transparent;
+            this.btnlogin.IdleBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnlogin.IdleBorderRadius = 1;
             this.btnlogin.IdleBorderThickness = 1;
             this.btnlogin.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
@@ -247,12 +227,12 @@
             this.btnlogin.onHoverState.ForeColor = System.Drawing.Color.White;
             this.btnlogin.onHoverState.IconLeftImage = null;
             this.btnlogin.onHoverState.IconRightImage = null;
-            this.btnlogin.OnIdleState.BorderColor = System.Drawing.Color.Transparent;
+            this.btnlogin.OnIdleState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnlogin.OnIdleState.BorderRadius = 1;
             this.btnlogin.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.btnlogin.OnIdleState.BorderThickness = 1;
             this.btnlogin.OnIdleState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(10)))), ((int)(((byte)(191)))));
-            this.btnlogin.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.btnlogin.OnIdleState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btnlogin.OnIdleState.IconLeftImage = null;
             this.btnlogin.OnIdleState.IconRightImage = null;
             this.btnlogin.OnPressedState.BorderColor = System.Drawing.Color.Transparent;
@@ -422,6 +402,16 @@
             this.txtusername.UseSystemPasswordChar = false;
             this.txtusername.WordWrap = true;
             // 
+            // backgroundpanel
+            // 
+            this.backgroundpanel.BackColor = System.Drawing.Color.White;
+            this.backgroundpanel.Controls.Add(this.pictureBox1);
+            this.backgroundpanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.backgroundpanel.Location = new System.Drawing.Point(0, 0);
+            this.backgroundpanel.Name = "backgroundpanel";
+            this.backgroundpanel.Size = new System.Drawing.Size(619, 693);
+            this.backgroundpanel.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -434,8 +424,19 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // buttonelips
+            // 
+            this.buttonelips.ElipseRadius = 35;
+            this.buttonelips.TargetControl = this.btnlogin;
+            // 
+            // formelips
+            // 
+            this.formelips.ElipseRadius = 25;
+            this.formelips.TargetControl = this;
+            // 
             // frmnewlogin
             // 
+            this.AcceptButton = this.btnlogin;
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1116, 693);
@@ -449,10 +450,10 @@
             this.Text = "frmnewlogin";
             this.loginpanel.ResumeLayout(false);
             this.loginpanel.PerformLayout();
-            this.backgroundpanel.ResumeLayout(false);
-            this.backgroundpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyebuttonshow)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyebuttonhide)).EndInit();
+            this.backgroundpanel.ResumeLayout(false);
+            this.backgroundpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

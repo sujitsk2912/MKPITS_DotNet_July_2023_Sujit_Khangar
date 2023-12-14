@@ -39,7 +39,7 @@ namespace Attendance_management_system
             dt.Load(sdr);
             conn.Close();
 
-          //  StudentRecordDataGridView.DataSource = dt;
+            StudentRecordDataGridView.DataSource = dt;
         }
 
         private void StudentRecordDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -54,33 +54,7 @@ namespace Attendance_management_system
 
         private void btnenter_Click_1(object sender, EventArgs e)
         {
-           /* string StudentID = txtstudentid.Text;
-            string Firstname = txtfirstname.Text;
-            string Lastname = txtlastname.Text;
-            string Class = txtclass.Text;
-            string Section = txtsection.Text;*/
-
-            // Create a connection for Uploading the data into SQL data base
-
-            string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
-            SqlConnection conn = new SqlConnection(ConnectionString);
-            conn.Open();
-           // string Query = "INSERT INTO [student data (8A)] ([STUDENT ID], FIRSTNAME, LASTNAME, CLASS, SECTION) VALUES ('" + StudentID + "','" + Firstname + "','" + Lastname + "','" + Class + "', '" + Section + "')";
-           // SqlCommand cmd = new SqlCommand(Query, conn);
-          //  cmd.ExecuteNonQuery();
-            conn.Close();
-
-            MessageBox.Show("Student Data Uploaded");
-
-            // this commands clear the all text boxes after data uploaded......
-
-           /* txtfirstname.Clear();
-            txtstudentid.Clear();
-            txtlastname.Clear();
-            txtfirstname.Focus();*/
-
-            GetStudentsRecord(); // call this function to show data into datagridview instantly........
-
+           
         }
 
         private void attendancepanel_Paint(object sender, PaintEventArgs e)
@@ -90,6 +64,42 @@ namespace Attendance_management_system
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void btnenter_Click_2(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnenter_Click_3(object sender, EventArgs e)
+        {
+            string StudentID = txtstudentid.Text;
+            string Fullname = txtfullname.Text;
+            string Lastname = txtfullname.Text;
+            string Class = txtclass.Text;
+            string Section = txtsection.Text;
+
+            // Create a connection for Uploading the data into SQL data base
+
+            string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+            string Query = "INSERT INTO [student data (8A)] ([STUDENT ID], NAME, CLASS, SECTION) VALUES ('" + StudentID + "','" + Fullname + "','" + Lastname + "','" + Class + "', '" + Section + "')";
+            SqlCommand cmd = new SqlCommand(Query, conn);
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+            MessageBox.Show("Student Data Uploaded");
+
+            // this commands clear the all text boxes after data uploaded......
+
+            txtfullname.Clear();
+            txtstudentid.Clear();
+            txtfullname.Clear();
+            txtfullname.Focus();
+
+            GetStudentsRecord(); // call this function to show data into datagridview instantly........
 
         }
     }

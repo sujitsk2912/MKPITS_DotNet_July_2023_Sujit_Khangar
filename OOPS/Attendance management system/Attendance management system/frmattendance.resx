@@ -118,51 +118,52 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtfacultyid.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAQQAAAArCAYAAACehfZdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAC1SURBVHhe7dSxCcQwAARB9V+Vjcr4Mj5xZiMwC65BczDJ
+        FbDDzOyzOefvOI4b2NNqwJuDMdZxXTewqdWANweCALsTBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQ
+        gAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCCAEQQgAgCEEEAIghABAGIIAARBCCC
+        AEQQgAgCEEEA8gnCeZ7/dQB7Wg14c2BmtjbGA6SG00c//DYDAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAIcAAAAnCAYAAAAl+1vkAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACOSURBVHhe7dwxEYAwAARBrECMII0+omFCRcE52GJnXsDV
-        v405zn3uF3ytLrY1jnnc8LW6EAe/xEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEES
-        B0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcJHGQxEESB0kcpDcOb4L8GXOcD4QacYPs15zvAAAA
-        AElFTkSuQmCC
-</value>
-  </data>
-  <data name="bunifuButton7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACMSURBVHhe7dyxDYRAEARBEgFSITQyuM94X0cYrTJKGr/9
-        Oe41z7nmpWV3Pfa4fjO07K7iRokbJm6YuGHihokbJm6YuGHihokbJm6YuGHihokbJm6YuGHihokbJm6Y
-        uGHihokbJm6YuGHihokbJm6YuGHihokbJm6YuGHihokbJm6YuGFfXG82Tfea5w8/2dS+QXTl4AAAAABJ
-        RU5ErkJggg==
-</value>
-  </data>
-  <data name="bunifuButton6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACBSURBVHhe7dyxDQAhEAPBK43S6Jx/KGM1wUjON/ecmfXb
-        5Kwb945Dzha3S9wwccPEDRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPE
-        DRM3TNwwccPEDRM3TNwwccPEDRM3TNwwccPEDXtxvdkkzfoAToGEBP+pMVIAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAALUAAAAnCAYAAABJ/QnhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACbSURBVHhe7d1BDYRAFERBjABWkIaDWcd/M8h4qUMlLeDd
+        +7jXPOeaFwp2z8ce128GCnbPoiZF1OSImhxRkyNqckRNjqjJETU5oiZH1OSImhxRkyNqckRNjqjJETU5
+        oiZH1OSImhxRkyNqckRNjqjJETU5oiZH1OSImhxRkyNqckRNjqjJETU5oiZH1OSImhxRk/NF7Z2LknvN
+        8wfpENRRC1HGaQAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuButton5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAHcAAAAnCAYAAAA1t9d9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACKSURBVHhe7dyxDYAwAAPBrEKyCKPRZ2hQGOP0xUnuv/dY
-        e93Xvp5YTtdxxtzzjeV0LS6quLDiwooLKy6suLDiwooLKy6suLDiwooLKy6suLDiwooLKy6suLDiwooL
-        Ky6suLDiwooLKy6suLDiwooLKy6suLDiwooLKy6suLDiwooL++P2ZmNae90fnAUbR6SYI1cAAAAASUVO
-        RK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAJ0AAAAnCAYAAAAVd0rFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACVSURBVHhe7dwxEYAwAATBWCExgjT6iIYJIq7aYmdewNU/
+        1l73ta8HCqe3ccbc84XC6U10pERHTnTkREdOdORER0505ERHTnTkREdOdORER0505ERHTnTkREdOdORE
+        R0505ERHTnTkREdOdORER0505ERHTnTkREdOdORER0505ERHTnTkREdOdORER+6Pzrs6pbXX/QGr2mgd
+        mlzQawAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="PRESENT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="HeaderStudentID.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="ABSENT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="HeaderName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="EDIT.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="HeaderClass.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="DELETE.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="HeaderSection.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="HeaderPresent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="HeaderAbsent.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="HeaderLate.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
   <metadata name="studentData8ABindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -171,7 +172,13 @@
   <metadata name="sujitdbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="sujitdbDataSet.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <metadata name="student_data__8A_TableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>430, 17</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>70</value>
   </metadata>
 </root>

@@ -49,41 +49,30 @@
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties18 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties19 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties20 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties21 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties22 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties23 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties24 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties25 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties26 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties27 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties28 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.AdmissionPanel = new System.Windows.Forms.Panel();
-            this.txtcategory = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtresgister = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.btnfemale = new System.Windows.Forms.RadioButton();
-            this.btnMale = new System.Windows.Forms.RadioButton();
-            this.label12 = new System.Windows.Forms.Label();
             this.txtparent = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.txtDOB = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
             this.txtDOA = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtaddress = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtphone = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtsection = new System.Windows.Forms.ComboBox();
-            this.txtclass = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtfees = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtcourse = new System.Windows.Forms.ComboBox();
             this.txtname = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -91,8 +80,18 @@
             this.panelborder = new System.Windows.Forms.Panel();
             this.btnprint = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.txtenrollment = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.txtstudentid = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.btnfemale = new System.Windows.Forms.RadioButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.btnMale = new System.Windows.Forms.RadioButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txtfees = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtduration = new System.Windows.Forms.ComboBox();
             this.AdmissionPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelborder.SuspendLayout();
@@ -101,32 +100,17 @@
             // AdmissionPanel
             // 
             this.AdmissionPanel.BackColor = System.Drawing.Color.GhostWhite;
-            this.AdmissionPanel.Controls.Add(this.txtcategory);
             this.AdmissionPanel.Controls.Add(this.label14);
             this.AdmissionPanel.Controls.Add(this.txtresgister);
-            this.AdmissionPanel.Controls.Add(this.label13);
-            this.AdmissionPanel.Controls.Add(this.btnfemale);
-            this.AdmissionPanel.Controls.Add(this.btnMale);
-            this.AdmissionPanel.Controls.Add(this.label12);
             this.AdmissionPanel.Controls.Add(this.txtparent);
             this.AdmissionPanel.Controls.Add(this.label11);
             this.AdmissionPanel.Controls.Add(this.label10);
-            this.AdmissionPanel.Controls.Add(this.label9);
             this.AdmissionPanel.Controls.Add(this.txtDOB);
-            this.AdmissionPanel.Controls.Add(this.label8);
             this.AdmissionPanel.Controls.Add(this.txtDOA);
-            this.AdmissionPanel.Controls.Add(this.label4);
             this.AdmissionPanel.Controls.Add(this.txtaddress);
             this.AdmissionPanel.Controls.Add(this.label7);
             this.AdmissionPanel.Controls.Add(this.txtphone);
-            this.AdmissionPanel.Controls.Add(this.label1);
-            this.AdmissionPanel.Controls.Add(this.txtsection);
-            this.AdmissionPanel.Controls.Add(this.txtclass);
-            this.AdmissionPanel.Controls.Add(this.label6);
-            this.AdmissionPanel.Controls.Add(this.txtfees);
-            this.AdmissionPanel.Controls.Add(this.label5);
             this.AdmissionPanel.Controls.Add(this.txtname);
-            this.AdmissionPanel.Controls.Add(this.label3);
             this.AdmissionPanel.Controls.Add(this.panel3);
             this.AdmissionPanel.Controls.Add(this.panelborder);
             this.AdmissionPanel.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -135,37 +119,14 @@
             this.AdmissionPanel.Size = new System.Drawing.Size(1226, 664);
             this.AdmissionPanel.TabIndex = 5;
             // 
-            // txtcategory
-            // 
-            this.txtcategory.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtcategory.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcategory.FormattingEnabled = true;
-            this.txtcategory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtcategory.Items.AddRange(new object[] {
-            "NT - B",
-            "NT - C",
-            "NT - D",
-            "OBC",
-            "OTHERS",
-            "SBC",
-            "SC",
-            "ST",
-            "VJ"});
-            this.txtcategory.Location = new System.Drawing.Point(333, 513);
-            this.txtcategory.Name = "txtcategory";
-            this.txtcategory.Size = new System.Drawing.Size(200, 31);
-            this.txtcategory.TabIndex = 35;
-            this.txtcategory.Text = "OTHER";
-            // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
             this.label14.Location = new System.Drawing.Point(226, 519);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(97, 25);
+            this.label14.Size = new System.Drawing.Size(0, 25);
             this.label14.TabIndex = 34;
-            this.label14.Text = "Category: ";
             // 
             // txtresgister
             // 
@@ -245,43 +206,11 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(174, 128);
+            this.label13.Location = new System.Drawing.Point(56, 31);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(153, 25);
             this.label13.TabIndex = 32;
             this.label13.Text = "Registration No: ";
-            // 
-            // btnfemale
-            // 
-            this.btnfemale.AutoSize = true;
-            this.btnfemale.Location = new System.Drawing.Point(844, 387);
-            this.btnfemale.Name = "btnfemale";
-            this.btnfemale.Size = new System.Drawing.Size(86, 27);
-            this.btnfemale.TabIndex = 31;
-            this.btnfemale.TabStop = true;
-            this.btnfemale.Text = "Female";
-            this.btnfemale.UseVisualStyleBackColor = true;
-            // 
-            // btnMale
-            // 
-            this.btnMale.AutoSize = true;
-            this.btnMale.Location = new System.Drawing.Point(749, 388);
-            this.btnMale.Name = "btnMale";
-            this.btnMale.Size = new System.Drawing.Size(69, 27);
-            this.btnMale.TabIndex = 30;
-            this.btnMale.TabStop = true;
-            this.btnMale.Text = "Male";
-            this.btnMale.UseVisualStyleBackColor = true;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(652, 388);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(84, 25);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "Gender: ";
             // 
             // txtparent
             // 
@@ -378,16 +307,6 @@
             this.label10.TabIndex = 26;
             this.label10.Text = "Admission Form";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(264, 389);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(59, 25);
-            this.label9.TabIndex = 25;
-            this.label9.Text = "DOB: ";
-            // 
             // txtDOB
             // 
             this.txtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
@@ -396,17 +315,7 @@
             this.txtDOB.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtDOB.Size = new System.Drawing.Size(197, 30);
             this.txtDOB.TabIndex = 24;
-            this.txtDOB.Value = new System.DateTime(2023, 12, 7, 0, 0, 0, 0);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(137, 445);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(183, 25);
-            this.label8.TabIndex = 23;
-            this.label8.Text = "Date of Admission: : ";
+            this.txtDOB.Value = new System.DateTime(2023, 12, 14, 0, 0, 0, 0);
             // 
             // txtDOA
             // 
@@ -416,17 +325,7 @@
             this.txtDOA.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtDOA.Size = new System.Drawing.Size(200, 30);
             this.txtDOA.TabIndex = 22;
-            this.txtDOA.Value = new System.DateTime(2023, 12, 7, 11, 59, 42, 0);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(657, 519);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 25);
-            this.label4.TabIndex = 21;
-            this.label4.Text = "Fees: ";
+            this.txtDOA.Value = new System.DateTime(2023, 12, 14, 0, 0, 0, 0);
             // 
             // txtaddress
             // 
@@ -590,142 +489,25 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(253, 253);
+            this.label1.Location = new System.Drawing.Point(132, 156);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 25);
             this.label1.TabIndex = 11;
             this.label1.Text = "Phone: ";
             // 
-            // txtsection
+            // txtcourse
             // 
-            this.txtsection.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtsection.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtsection.FormattingEnabled = true;
-            this.txtsection.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtsection.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"});
-            this.txtsection.Location = new System.Drawing.Point(912, 444);
-            this.txtsection.Name = "txtsection";
-            this.txtsection.Size = new System.Drawing.Size(72, 31);
-            this.txtsection.TabIndex = 10;
-            // 
-            // txtclass
-            // 
-            this.txtclass.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtclass.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtclass.FormattingEnabled = true;
-            this.txtclass.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtclass.Items.AddRange(new object[] {
-            "5th",
-            "6th",
-            "7th",
-            "8th",
-            "9th",
-            "10th",
-            "11th",
-            "12th"});
-            this.txtclass.Location = new System.Drawing.Point(724, 444);
-            this.txtclass.Name = "txtclass";
-            this.txtclass.Size = new System.Drawing.Size(89, 31);
-            this.txtclass.TabIndex = 9;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(830, 450);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(83, 25);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Section: ";
-            // 
-            // txtfees
-            // 
-            this.txtfees.AcceptsReturn = false;
-            this.txtfees.AcceptsTab = false;
-            this.txtfees.AnimationSpeed = 200;
-            this.txtfees.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtfees.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtfees.BackColor = System.Drawing.Color.Transparent;
-            this.txtfees.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtfees.BackgroundImage")));
-            this.txtfees.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtfees.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtfees.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtfees.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtfees.BorderRadius = 1;
-            this.txtfees.BorderThickness = 1;
-            this.txtfees.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtfees.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfees.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.txtfees.DefaultText = "";
-            this.txtfees.FillColor = System.Drawing.Color.GhostWhite;
-            this.txtfees.HideSelection = true;
-            this.txtfees.IconLeft = null;
-            this.txtfees.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfees.IconPadding = 10;
-            this.txtfees.IconRight = null;
-            this.txtfees.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfees.Lines = new string[0];
-            this.txtfees.Location = new System.Drawing.Point(721, 501);
-            this.txtfees.MaxLength = 32767;
-            this.txtfees.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtfees.Modified = false;
-            this.txtfees.Multiline = false;
-            this.txtfees.Name = "txtfees";
-            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties17.FillColor = System.Drawing.Color.Empty;
-            stateProperties17.ForeColor = System.Drawing.Color.Empty;
-            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfees.OnActiveState = stateProperties17;
-            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtfees.OnDisabledState = stateProperties18;
-            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties19.FillColor = System.Drawing.Color.Empty;
-            stateProperties19.ForeColor = System.Drawing.Color.Empty;
-            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfees.OnHoverState = stateProperties19;
-            stateProperties20.BorderColor = System.Drawing.Color.Silver;
-            stateProperties20.FillColor = System.Drawing.Color.GhostWhite;
-            stateProperties20.ForeColor = System.Drawing.Color.Empty;
-            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfees.OnIdleState = stateProperties20;
-            this.txtfees.Padding = new System.Windows.Forms.Padding(3);
-            this.txtfees.PasswordChar = '\0';
-            this.txtfees.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtfees.PlaceholderText = "";
-            this.txtfees.ReadOnly = false;
-            this.txtfees.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtfees.SelectedText = "";
-            this.txtfees.SelectionLength = 0;
-            this.txtfees.SelectionStart = 0;
-            this.txtfees.ShortcutsEnabled = true;
-            this.txtfees.Size = new System.Drawing.Size(263, 43);
-            this.txtfees.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtfees.TabIndex = 5;
-            this.txtfees.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtfees.TextMarginBottom = 0;
-            this.txtfees.TextMarginLeft = 3;
-            this.txtfees.TextMarginTop = 0;
-            this.txtfees.TextPlaceholder = "";
-            this.txtfees.UseSystemPasswordChar = false;
-            this.txtfees.WordWrap = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(657, 450);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 25);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Class: ";
+            this.txtcourse.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtcourse.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcourse.FormattingEnabled = true;
+            this.txtcourse.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtcourse.Items.AddRange(new object[] {
+            "Java",
+            "DotNet"});
+            this.txtcourse.Location = new System.Drawing.Point(635, 347);
+            this.txtcourse.Name = "txtcourse";
+            this.txtcourse.Size = new System.Drawing.Size(235, 31);
+            this.txtcourse.TabIndex = 9;
             // 
             // txtname
             // 
@@ -760,26 +542,26 @@
             this.txtname.Modified = false;
             this.txtname.Multiline = false;
             this.txtname.Name = "txtname";
-            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties21.FillColor = System.Drawing.Color.Empty;
-            stateProperties21.ForeColor = System.Drawing.Color.Empty;
-            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtname.OnActiveState = stateProperties21;
-            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtname.OnDisabledState = stateProperties22;
-            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties23.FillColor = System.Drawing.Color.Empty;
-            stateProperties23.ForeColor = System.Drawing.Color.Empty;
-            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtname.OnHoverState = stateProperties23;
-            stateProperties24.BorderColor = System.Drawing.Color.Silver;
-            stateProperties24.FillColor = System.Drawing.Color.GhostWhite;
-            stateProperties24.ForeColor = System.Drawing.Color.Empty;
-            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtname.OnIdleState = stateProperties24;
+            stateProperties17.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties17.FillColor = System.Drawing.Color.Empty;
+            stateProperties17.ForeColor = System.Drawing.Color.Empty;
+            stateProperties17.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtname.OnActiveState = stateProperties17;
+            stateProperties18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties18.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtname.OnDisabledState = stateProperties18;
+            stateProperties19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties19.FillColor = System.Drawing.Color.Empty;
+            stateProperties19.ForeColor = System.Drawing.Color.Empty;
+            stateProperties19.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtname.OnHoverState = stateProperties19;
+            stateProperties20.BorderColor = System.Drawing.Color.Silver;
+            stateProperties20.FillColor = System.Drawing.Color.GhostWhite;
+            stateProperties20.ForeColor = System.Drawing.Color.Empty;
+            stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtname.OnIdleState = stateProperties20;
             this.txtname.Padding = new System.Windows.Forms.Padding(3);
             this.txtname.PasswordChar = '\0';
             this.txtname.PlaceholderForeColor = System.Drawing.Color.Silver;
@@ -806,11 +588,12 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(222, 187);
+            this.label3.Location = new System.Drawing.Point(104, 90);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(105, 25);
             this.label3.TabIndex = 2;
             this.label3.Text = "Full Name: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // panel3
             // 
@@ -837,10 +620,24 @@
             // 
             this.panelborder.BackColor = System.Drawing.Color.Transparent;
             this.panelborder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelborder.Controls.Add(this.label6);
+            this.panelborder.Controls.Add(this.txtduration);
             this.panelborder.Controls.Add(this.btnprint);
             this.panelborder.Controls.Add(this.bunifuButton5);
-            this.panelborder.Controls.Add(this.txtenrollment);
+            this.panelborder.Controls.Add(this.label13);
+            this.panelborder.Controls.Add(this.txtstudentid);
             this.panelborder.Controls.Add(this.label15);
+            this.panelborder.Controls.Add(this.btnfemale);
+            this.panelborder.Controls.Add(this.label5);
+            this.panelborder.Controls.Add(this.label9);
+            this.panelborder.Controls.Add(this.label8);
+            this.panelborder.Controls.Add(this.btnMale);
+            this.panelborder.Controls.Add(this.txtcourse);
+            this.panelborder.Controls.Add(this.label12);
+            this.panelborder.Controls.Add(this.txtfees);
+            this.panelborder.Controls.Add(this.label1);
+            this.panelborder.Controls.Add(this.label4);
+            this.panelborder.Controls.Add(this.label3);
             this.panelborder.Location = new System.Drawing.Point(113, 96);
             this.panelborder.Name = "panelborder";
             this.panelborder.Size = new System.Drawing.Size(1002, 565);
@@ -1026,89 +823,260 @@
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
             this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
-            // txtenrollment
+            // txtstudentid
             // 
-            this.txtenrollment.AcceptsReturn = false;
-            this.txtenrollment.AcceptsTab = false;
-            this.txtenrollment.AnimationSpeed = 200;
-            this.txtenrollment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtenrollment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtenrollment.BackColor = System.Drawing.Color.Transparent;
-            this.txtenrollment.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtenrollment.BackgroundImage")));
-            this.txtenrollment.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtenrollment.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtenrollment.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtenrollment.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtenrollment.BorderRadius = 1;
-            this.txtenrollment.BorderThickness = 1;
-            this.txtenrollment.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtenrollment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtenrollment.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.txtenrollment.DefaultText = "";
-            this.txtenrollment.FillColor = System.Drawing.Color.GhostWhite;
-            this.txtenrollment.HideSelection = true;
-            this.txtenrollment.IconLeft = null;
-            this.txtenrollment.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtenrollment.IconPadding = 10;
-            this.txtenrollment.IconRight = null;
-            this.txtenrollment.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtenrollment.Lines = new string[0];
-            this.txtenrollment.Location = new System.Drawing.Point(635, 13);
-            this.txtenrollment.MaxLength = 6;
-            this.txtenrollment.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtenrollment.Modified = false;
-            this.txtenrollment.Multiline = false;
-            this.txtenrollment.Name = "txtenrollment";
-            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties25.FillColor = System.Drawing.Color.Empty;
-            stateProperties25.ForeColor = System.Drawing.Color.Empty;
-            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtenrollment.OnActiveState = stateProperties25;
-            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtenrollment.OnDisabledState = stateProperties26;
-            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties27.FillColor = System.Drawing.Color.Empty;
-            stateProperties27.ForeColor = System.Drawing.Color.Empty;
-            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtenrollment.OnHoverState = stateProperties27;
-            stateProperties28.BorderColor = System.Drawing.Color.Silver;
-            stateProperties28.FillColor = System.Drawing.Color.GhostWhite;
-            stateProperties28.ForeColor = System.Drawing.Color.Empty;
-            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtenrollment.OnIdleState = stateProperties28;
-            this.txtenrollment.Padding = new System.Windows.Forms.Padding(3);
-            this.txtenrollment.PasswordChar = '\0';
-            this.txtenrollment.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtenrollment.PlaceholderText = "";
-            this.txtenrollment.ReadOnly = false;
-            this.txtenrollment.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtenrollment.SelectedText = "";
-            this.txtenrollment.SelectionLength = 0;
-            this.txtenrollment.SelectionStart = 0;
-            this.txtenrollment.ShortcutsEnabled = true;
-            this.txtenrollment.Size = new System.Drawing.Size(235, 43);
-            this.txtenrollment.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtenrollment.TabIndex = 33;
-            this.txtenrollment.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtenrollment.TextMarginBottom = 0;
-            this.txtenrollment.TextMarginLeft = 3;
-            this.txtenrollment.TextMarginTop = 0;
-            this.txtenrollment.TextPlaceholder = "";
-            this.txtenrollment.UseSystemPasswordChar = false;
-            this.txtenrollment.WordWrap = true;
+            this.txtstudentid.AcceptsReturn = false;
+            this.txtstudentid.AcceptsTab = false;
+            this.txtstudentid.AnimationSpeed = 200;
+            this.txtstudentid.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtstudentid.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtstudentid.BackColor = System.Drawing.Color.Transparent;
+            this.txtstudentid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtstudentid.BackgroundImage")));
+            this.txtstudentid.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtstudentid.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtstudentid.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtstudentid.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtstudentid.BorderRadius = 1;
+            this.txtstudentid.BorderThickness = 1;
+            this.txtstudentid.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtstudentid.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtstudentid.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtstudentid.DefaultText = "";
+            this.txtstudentid.FillColor = System.Drawing.Color.GhostWhite;
+            this.txtstudentid.HideSelection = true;
+            this.txtstudentid.IconLeft = null;
+            this.txtstudentid.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtstudentid.IconPadding = 10;
+            this.txtstudentid.IconRight = null;
+            this.txtstudentid.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtstudentid.Lines = new string[0];
+            this.txtstudentid.Location = new System.Drawing.Point(635, 13);
+            this.txtstudentid.MaxLength = 6;
+            this.txtstudentid.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtstudentid.Modified = false;
+            this.txtstudentid.Multiline = false;
+            this.txtstudentid.Name = "txtstudentid";
+            stateProperties21.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties21.FillColor = System.Drawing.Color.Empty;
+            stateProperties21.ForeColor = System.Drawing.Color.Empty;
+            stateProperties21.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtstudentid.OnActiveState = stateProperties21;
+            stateProperties22.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties22.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties22.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtstudentid.OnDisabledState = stateProperties22;
+            stateProperties23.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties23.FillColor = System.Drawing.Color.Empty;
+            stateProperties23.ForeColor = System.Drawing.Color.Empty;
+            stateProperties23.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtstudentid.OnHoverState = stateProperties23;
+            stateProperties24.BorderColor = System.Drawing.Color.Silver;
+            stateProperties24.FillColor = System.Drawing.Color.GhostWhite;
+            stateProperties24.ForeColor = System.Drawing.Color.Empty;
+            stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtstudentid.OnIdleState = stateProperties24;
+            this.txtstudentid.Padding = new System.Windows.Forms.Padding(3);
+            this.txtstudentid.PasswordChar = '\0';
+            this.txtstudentid.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtstudentid.PlaceholderText = "";
+            this.txtstudentid.ReadOnly = false;
+            this.txtstudentid.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtstudentid.SelectedText = "";
+            this.txtstudentid.SelectionLength = 0;
+            this.txtstudentid.SelectionStart = 0;
+            this.txtstudentid.ShortcutsEnabled = true;
+            this.txtstudentid.Size = new System.Drawing.Size(235, 43);
+            this.txtstudentid.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtstudentid.TabIndex = 33;
+            this.txtstudentid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtstudentid.TextMarginBottom = 0;
+            this.txtstudentid.TextMarginLeft = 3;
+            this.txtstudentid.TextMarginTop = 0;
+            this.txtstudentid.TextPlaceholder = "";
+            this.txtstudentid.UseSystemPasswordChar = false;
+            this.txtstudentid.WordWrap = true;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(488, 31);
+            this.label15.Location = new System.Drawing.Point(521, 31);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(143, 25);
+            this.label15.Size = new System.Drawing.Size(105, 25);
             this.label15.TabIndex = 32;
-            this.label15.Text = "Enrollment No: ";
+            this.label15.Text = "Student ID:";
+            // 
+            // btnfemale
+            // 
+            this.btnfemale.AutoSize = true;
+            this.btnfemale.Location = new System.Drawing.Point(735, 287);
+            this.btnfemale.Name = "btnfemale";
+            this.btnfemale.Size = new System.Drawing.Size(86, 27);
+            this.btnfemale.TabIndex = 31;
+            this.btnfemale.TabStop = true;
+            this.btnfemale.Text = "Female";
+            this.btnfemale.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(550, 353);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 25);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Course: ";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(78, 291);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(128, 25);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Date of Birth: ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(35, 353);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(174, 25);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Date of Admission: ";
+            // 
+            // btnMale
+            // 
+            this.btnMale.AutoSize = true;
+            this.btnMale.Location = new System.Drawing.Point(636, 287);
+            this.btnMale.Name = "btnMale";
+            this.btnMale.Size = new System.Drawing.Size(69, 27);
+            this.btnMale.TabIndex = 30;
+            this.btnMale.TabStop = true;
+            this.btnMale.Text = "Male";
+            this.btnMale.UseVisualStyleBackColor = true;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label12.Location = new System.Drawing.Point(542, 287);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(84, 25);
+            this.label12.TabIndex = 29;
+            this.label12.Text = "Gender: ";
+            // 
+            // txtfees
+            // 
+            this.txtfees.AcceptsReturn = false;
+            this.txtfees.AcceptsTab = false;
+            this.txtfees.AnimationSpeed = 200;
+            this.txtfees.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtfees.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtfees.BackColor = System.Drawing.Color.Transparent;
+            this.txtfees.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtfees.BackgroundImage")));
+            this.txtfees.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtfees.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.txtfees.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtfees.BorderColorIdle = System.Drawing.Color.Silver;
+            this.txtfees.BorderRadius = 1;
+            this.txtfees.BorderThickness = 1;
+            this.txtfees.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtfees.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtfees.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.txtfees.DefaultText = "";
+            this.txtfees.FillColor = System.Drawing.Color.GhostWhite;
+            this.txtfees.HideSelection = true;
+            this.txtfees.IconLeft = null;
+            this.txtfees.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtfees.IconPadding = 10;
+            this.txtfees.IconRight = null;
+            this.txtfees.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtfees.Lines = new string[0];
+            this.txtfees.Location = new System.Drawing.Point(219, 404);
+            this.txtfees.MaxLength = 32767;
+            this.txtfees.MinimumSize = new System.Drawing.Size(1, 1);
+            this.txtfees.Modified = false;
+            this.txtfees.Multiline = false;
+            this.txtfees.Name = "txtfees";
+            stateProperties25.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties25.FillColor = System.Drawing.Color.Empty;
+            stateProperties25.ForeColor = System.Drawing.Color.Empty;
+            stateProperties25.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtfees.OnActiveState = stateProperties25;
+            stateProperties26.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties26.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties26.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txtfees.OnDisabledState = stateProperties26;
+            stateProperties27.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties27.FillColor = System.Drawing.Color.Empty;
+            stateProperties27.ForeColor = System.Drawing.Color.Empty;
+            stateProperties27.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtfees.OnHoverState = stateProperties27;
+            stateProperties28.BorderColor = System.Drawing.Color.Silver;
+            stateProperties28.FillColor = System.Drawing.Color.GhostWhite;
+            stateProperties28.ForeColor = System.Drawing.Color.Empty;
+            stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtfees.OnIdleState = stateProperties28;
+            this.txtfees.Padding = new System.Windows.Forms.Padding(3);
+            this.txtfees.PasswordChar = '\0';
+            this.txtfees.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtfees.PlaceholderText = "";
+            this.txtfees.ReadOnly = false;
+            this.txtfees.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtfees.SelectedText = "";
+            this.txtfees.SelectionLength = 0;
+            this.txtfees.SelectionStart = 0;
+            this.txtfees.ShortcutsEnabled = true;
+            this.txtfees.Size = new System.Drawing.Size(235, 43);
+            this.txtfees.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
+            this.txtfees.TabIndex = 5;
+            this.txtfees.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtfees.TextMarginBottom = 0;
+            this.txtfees.TextMarginLeft = 3;
+            this.txtfees.TextMarginTop = 0;
+            this.txtfees.TextPlaceholder = "";
+            this.txtfees.UseSystemPasswordChar = false;
+            this.txtfees.WordWrap = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(151, 422);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 25);
+            this.label4.TabIndex = 21;
+            this.label4.Text = "Fees: ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(534, 422);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 25);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Duration: ";
+            // 
+            // txtduration
+            // 
+            this.txtduration.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtduration.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtduration.FormattingEnabled = true;
+            this.txtduration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtduration.Items.AddRange(new object[] {
+            "6 Months",
+            "8 Months",
+            "12 Months"});
+            this.txtduration.Location = new System.Drawing.Point(636, 416);
+            this.txtduration.Name = "txtduration";
+            this.txtduration.Size = new System.Drawing.Size(235, 31);
+            this.txtduration.TabIndex = 35;
             // 
             // frmadmission
             // 
@@ -1123,6 +1091,7 @@
             this.MinimumSize = new System.Drawing.Size(1226, 664);
             this.Name = "frmadmission";
             this.Text = "frmadmission";
+            this.Activated += new System.EventHandler(this.frmadmission_Activated);
             this.AdmissionPanel.ResumeLayout(false);
             this.AdmissionPanel.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -1140,10 +1109,8 @@
         private System.Windows.Forms.Label label7;
         private Bunifu.UI.WinForms.BunifuTextBox txtphone;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox txtsection;
-        private System.Windows.Forms.ComboBox txtclass;
+        private System.Windows.Forms.ComboBox txtcourse;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton5;
-        private System.Windows.Forms.Label label6;
         private Bunifu.UI.WinForms.BunifuTextBox txtfees;
         private System.Windows.Forms.Label label5;
         private Bunifu.UI.WinForms.BunifuTextBox txtname;
@@ -1164,10 +1131,11 @@
         private System.Windows.Forms.RadioButton btnMale;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.ComboBox txtcategory;
         private System.Windows.Forms.Panel panelborder;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnprint;
-        private Bunifu.UI.WinForms.BunifuTextBox txtenrollment;
+        private Bunifu.UI.WinForms.BunifuTextBox txtstudentid;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox txtduration;
     }
 }
