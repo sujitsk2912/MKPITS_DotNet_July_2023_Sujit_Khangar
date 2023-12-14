@@ -1,4 +1,4 @@
-*Que 5-From the following table, write a SQL query to find the salespeople who lives in 
+*Que 5 - From the following table, write a SQL query to find the salespeople who lives in 
 the City of 'Paris'. Return salespersons name, city. 
 
 *sol - 

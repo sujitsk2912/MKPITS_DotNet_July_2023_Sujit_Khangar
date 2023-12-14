@@ -1,4 +1,4 @@
-* Que 4- From the following table, write a SQL query to find the unique salespeople ID.
+* Que 4 - From the following table, write a SQL query to find the unique salespeople ID.
  Return salesman_id.   
 
  *sol -
