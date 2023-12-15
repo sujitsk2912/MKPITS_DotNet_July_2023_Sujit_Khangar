@@ -189,9 +189,41 @@ namespace Attendance_management_system
 
         private void bunifuPictureBox1_Click(object sender, EventArgs e)
         {
-
+            sidebartransition.Start();
         }
 
+        bool sidebarExpand = true;
+        private void sidebartransition_Tick(object sender, EventArgs e)
+        {
+            if (sidebarExpand)
+            {
+                sidebar.Width -= 10;
+                if (sidebar.Width <= 70)
+                {
+                    sidebarExpand = false;
+                    sidebartransition.Stop();
+                    /* panel3.Width = sidebar.Width;
+                     btnsetting.Width = sidebar.Width;
+                     btnlogin.Width = sidebar.Width;
+                     btnadmin.Width = sidebar.Width;
+                     btnabout.Width = sidebar.Width;*/
+                }
+            }
+            else
+            {
+                sidebar.Width += 10;
+                if (sidebar.Width >= 230)
+                {
+                    sidebarExpand = true;
+                    sidebartransition.Stop();
+                    /* panel3.Width = sidebar.Width;
+                     btnsetting.Width = sidebar.Width;
+                     btnlogin.Width = sidebar.Width;
+                     btnadmin.Width = sidebar.Width;
+                     btnabout.Width = sidebar.Width;*/
+                }
+            }
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 

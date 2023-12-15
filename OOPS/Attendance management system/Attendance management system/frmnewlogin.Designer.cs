@@ -54,16 +54,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.buttonelips = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.formelips = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyebuttonshow)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyebuttonhide)).BeginInit();
             this.backgroundpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // loginpanel
             // 
             this.loginpanel.BackColor = System.Drawing.Color.White;
+            this.loginpanel.Controls.Add(this.pictureBox2);
             this.loginpanel.Controls.Add(this.eyebuttonshow);
             this.loginpanel.Controls.Add(this.eyebuttonhide);
             this.loginpanel.Controls.Add(this.label1);
@@ -434,6 +437,18 @@
             this.formelips.ElipseRadius = 25;
             this.formelips.TargetControl = this;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Attendance_management_system.Properties.Resources.x_regular_24;
+            this.pictureBox2.Location = new System.Drawing.Point(447, 4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // frmnewlogin
             // 
             this.AcceptButton = this.btnlogin;
@@ -455,6 +470,7 @@
             this.backgroundpanel.ResumeLayout(false);
             this.backgroundpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -476,5 +492,6 @@
         private Bunifu.Framework.UI.BunifuElipse formelips;
         private System.Windows.Forms.PictureBox eyebuttonhide;
         private System.Windows.Forms.PictureBox eyebuttonshow;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

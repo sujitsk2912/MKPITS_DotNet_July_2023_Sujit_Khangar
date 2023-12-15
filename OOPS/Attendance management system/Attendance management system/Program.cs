@@ -22,7 +22,7 @@ namespace Attendance_management_system
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmattendance());
+            Application.Run(new frmMain());
         }
         [System.Runtime.InteropServices.DllImport("user32.dll")]
 

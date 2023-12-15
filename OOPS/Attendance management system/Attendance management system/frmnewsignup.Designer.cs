@@ -57,13 +57,16 @@
             this.elipssignup = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.elipsform = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.loginpanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // loginpanel
             // 
             this.loginpanel.BackColor = System.Drawing.Color.White;
+            this.loginpanel.Controls.Add(this.pictureBox2);
             this.loginpanel.Controls.Add(this.panel3);
             this.loginpanel.Controls.Add(this.txtpassword);
             this.loginpanel.Controls.Add(this.label1);
@@ -482,6 +485,18 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.Image = global::Attendance_management_system.Properties.Resources.x_regular_24;
+            this.pictureBox2.Location = new System.Drawing.Point(8, 7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(36, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
             // frmnewsignup
             // 
             this.AcceptButton = this.btnsignup;
@@ -497,6 +512,7 @@
             this.loginpanel.ResumeLayout(false);
             this.loginpanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -516,5 +532,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private Bunifu.UI.WinForms.BunifuTextBox txtpassword;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

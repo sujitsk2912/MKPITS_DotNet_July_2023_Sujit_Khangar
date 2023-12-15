@@ -19,7 +19,7 @@ namespace Attendance_management_system
             InitializeComponent();
             txtresgister.Select();
         }
-
+        string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
         private void bunifuButton5_Click(object sender, EventArgs e)
         {
             // VARIABLE DECLARATION ..................
@@ -46,47 +46,69 @@ namespace Attendance_management_system
                 Gender = "Female";
             }
            
-
             //----------------------------------------------
 
             //  CONNCTING TO SQL DATABASE----------------------
 
-            string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
+            
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
 
-            try
+            if (Course == "Java")
             {
-                string Query = "INSERT INTO Admission_Data ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
-                SqlCommand cmd = new SqlCommand(Query, conn);
-                cmd.ExecuteNonQuery();
+                try
+                {
+                    string Query = "INSERT INTO Admission_Java ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
+                    SqlCommand cmd = new SqlCommand(Query, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                    MessageBox.Show("Data Submited Successfully");
+                }
             }
-            catch(Exception ex)
+
+
+            if (Course == "DotNet")
             {
-                MessageBox.Show(ex.ToString());
+                try
+                {
+                    string Query = "INSERT INTO Admission_DotNet ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
+                    SqlCommand cmd = new SqlCommand(Query, conn);
+                    cmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                    MessageBox.Show("Data Submited Successfully");
+                }
             }
-            finally
-            {
-                conn.Close();
-                MessageBox.Show("Data Submited Successfully");
-            }
-           
+
             //---------------------------------------------------
 
-           /* txtresgister.Clear();
-            txtstudentid.Clear();
-            txtname.Clear();
-            txtphone.Clear();
-            txtparent.Clear();
-            txtaddress.Clear();
-            txtDOB.Text = DateTime.Now.ToString();
-            txtDOA.Text = DateTime.Now.ToString();
-            btnMale.Checked = false;
-            btnfemale.Checked = false;
-            txtcourse.ResetText();
-            txtfees.Clear();
-            txtduration.ResetText();
-            txtresgister.Focus();*/
+            /* txtresgister.Clear();
+             txtstudentid.Clear();
+             txtname.Clear();
+             txtphone.Clear();
+             txtparent.Clear();
+             txtaddress.Clear();
+             txtDOB.Text = DateTime.Now.ToString();
+             txtDOA.Text = DateTime.Now.ToString();
+             btnMale.Checked = false;
+             btnfemale.Checked = false;
+             txtcourse.ResetText();
+             txtfees.Clear();
+             txtduration.ResetText();
+             txtresgister.Focus();*/
 
         }
 
@@ -115,11 +137,66 @@ namespace Attendance_management_system
         {
             txtDOB.Text = DateTime.Now.ToString();
             txtDOA.Text = DateTime.Now.ToString();
+
+
         }
 
         private void label3_Click(object sender, EventArgs e)
         {
 
         }
+
+        private void GetDataFromJava()
+        {
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+
+            try
+            {
+                string Query = "SELECT [STUDENT ID],FULLNAME,COURSE FROM Admission_Java";
+                SqlCommand cmd = new SqlCommand(Query, conn);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+              //  AttendanceRecordDataGridView.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void GetDataFromDotNet()
+        {
+            SqlConnection conn = new SqlConnection(ConnectionString);
+            conn.Open();
+
+            try
+            {
+                string Query = "SELECT [STUDENT ID],FULLNAME,COURSE FROM Admission_DotNet";
+                SqlCommand cmd = new SqlCommand(Query, conn);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                //AttendanceRecordDataGridView.DataSource = dt;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
     }
 }

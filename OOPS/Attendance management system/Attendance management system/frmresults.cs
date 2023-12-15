@@ -22,8 +22,7 @@ namespace Attendance_management_system
 
         public void Variable_Declration()
         {
-            string Class = txtclass.Text;
-            string Section = txtsection.Text;
+            
             string Date = txtdate.Text;
           //  string Subject = txtsubjects.Text;
             string RollNo = txtrollno.Text;
@@ -51,8 +50,6 @@ namespace Attendance_management_system
 
         private void bunifuButton3_Click_1(object sender, EventArgs e)
         {
-            string Class = txtclass.Text;
-            string Section = txtsection.Text;
             string Date = txtdate.Text;
           //  string Subject = txtsubjects.Text;
             string RollNo = txtrollno.Text;

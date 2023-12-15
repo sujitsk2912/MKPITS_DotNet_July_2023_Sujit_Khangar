@@ -141,5 +141,10 @@ namespace Attendance_management_system
             eyebuttonshow.Visible = true;
             txtpassword.Focus();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

@@ -62,7 +62,6 @@
             this.AdmissionPanel = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.txtresgister = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label13 = new System.Windows.Forms.Label();
             this.txtparent = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -71,15 +70,15 @@
             this.txtaddress = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtphone = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtcourse = new System.Windows.Forms.ComboBox();
             this.txtname = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panelborder = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtduration = new System.Windows.Forms.ComboBox();
             this.btnprint = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.label13 = new System.Windows.Forms.Label();
             this.txtstudentid = new Bunifu.UI.WinForms.BunifuTextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnfemale = new System.Windows.Forms.RadioButton();
@@ -87,11 +86,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnMale = new System.Windows.Forms.RadioButton();
+            this.txtcourse = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtfees = new Bunifu.UI.WinForms.BunifuTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtduration = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.AdmissionPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panelborder.SuspendLayout();
@@ -201,16 +201,6 @@
             this.txtresgister.TextPlaceholder = "";
             this.txtresgister.UseSystemPasswordChar = false;
             this.txtresgister.WordWrap = true;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(56, 31);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(153, 25);
-            this.label13.TabIndex = 32;
-            this.label13.Text = "Registration No: ";
             // 
             // txtparent
             // 
@@ -485,30 +475,6 @@
             this.txtphone.UseSystemPasswordChar = false;
             this.txtphone.WordWrap = true;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(132, 156);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Phone: ";
-            // 
-            // txtcourse
-            // 
-            this.txtcourse.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtcourse.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcourse.FormattingEnabled = true;
-            this.txtcourse.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtcourse.Items.AddRange(new object[] {
-            "Java",
-            "DotNet"});
-            this.txtcourse.Location = new System.Drawing.Point(635, 347);
-            this.txtcourse.Name = "txtcourse";
-            this.txtcourse.Size = new System.Drawing.Size(235, 31);
-            this.txtcourse.TabIndex = 9;
-            // 
             // txtname
             // 
             this.txtname.AcceptsReturn = false;
@@ -584,17 +550,6 @@
             this.txtname.WordWrap = true;
             this.txtname.TextChanged += new System.EventHandler(this.txtname_TextChanged);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(104, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(105, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Full Name: ";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
@@ -612,9 +567,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.label2.Location = new System.Drawing.Point(25, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 23);
+            this.label2.Size = new System.Drawing.Size(128, 23);
             this.label2.TabIndex = 4;
-            this.label2.Text = "Admission";
+            this.label2.Text = "New Admission";
             // 
             // panelborder
             // 
@@ -642,6 +597,31 @@
             this.panelborder.Name = "panelborder";
             this.panelborder.Size = new System.Drawing.Size(1002, 565);
             this.panelborder.TabIndex = 36;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label6.Location = new System.Drawing.Point(117, 422);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(95, 25);
+            this.label6.TabIndex = 34;
+            this.label6.Text = "Duration: ";
+            // 
+            // txtduration
+            // 
+            this.txtduration.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtduration.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtduration.FormattingEnabled = true;
+            this.txtduration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtduration.Items.AddRange(new object[] {
+            "6 Months",
+            "8 Months",
+            "12 Months"});
+            this.txtduration.Location = new System.Drawing.Point(219, 416);
+            this.txtduration.Name = "txtduration";
+            this.txtduration.Size = new System.Drawing.Size(200, 31);
+            this.txtduration.TabIndex = 35;
             // 
             // btnprint
             // 
@@ -823,6 +803,16 @@
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
             this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(56, 31);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(153, 25);
+            this.label13.TabIndex = 32;
+            this.label13.Text = "Registration No: ";
+            // 
             // txtstudentid
             // 
             this.txtstudentid.AcceptsReturn = false;
@@ -959,6 +949,20 @@
             this.btnMale.Text = "Male";
             this.btnMale.UseVisualStyleBackColor = true;
             // 
+            // txtcourse
+            // 
+            this.txtcourse.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtcourse.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcourse.FormattingEnabled = true;
+            this.txtcourse.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtcourse.Items.AddRange(new object[] {
+            "Java",
+            "DotNet"});
+            this.txtcourse.Location = new System.Drawing.Point(635, 347);
+            this.txtcourse.Name = "txtcourse";
+            this.txtcourse.Size = new System.Drawing.Size(235, 31);
+            this.txtcourse.TabIndex = 9;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -996,7 +1000,7 @@
             this.txtfees.IconRight = null;
             this.txtfees.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txtfees.Lines = new string[0];
-            this.txtfees.Location = new System.Drawing.Point(219, 404);
+            this.txtfees.Location = new System.Drawing.Point(635, 404);
             this.txtfees.MaxLength = 32767;
             this.txtfees.MinimumSize = new System.Drawing.Size(1, 1);
             this.txtfees.Modified = false;
@@ -1043,40 +1047,36 @@
             this.txtfees.UseSystemPasswordChar = false;
             this.txtfees.WordWrap = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(132, 156);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(74, 25);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Phone: ";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(151, 422);
+            this.label4.Location = new System.Drawing.Point(567, 422);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(58, 25);
             this.label4.TabIndex = 21;
             this.label4.Text = "Fees: ";
             // 
-            // label6
+            // label3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(534, 422);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 25);
-            this.label6.TabIndex = 34;
-            this.label6.Text = "Duration: ";
-            // 
-            // txtduration
-            // 
-            this.txtduration.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtduration.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtduration.FormattingEnabled = true;
-            this.txtduration.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtduration.Items.AddRange(new object[] {
-            "6 Months",
-            "8 Months",
-            "12 Months"});
-            this.txtduration.Location = new System.Drawing.Point(636, 416);
-            this.txtduration.Name = "txtduration";
-            this.txtduration.Size = new System.Drawing.Size(235, 31);
-            this.txtduration.TabIndex = 35;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(104, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Full Name: ";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // frmadmission
             // 

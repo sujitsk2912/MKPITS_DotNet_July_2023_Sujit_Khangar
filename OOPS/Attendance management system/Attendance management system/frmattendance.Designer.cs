@@ -29,31 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmattendance));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.attendancepanel = new System.Windows.Forms.Panel();
-            this.txtname = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtbatch = new System.Windows.Forms.ComboBox();
+            this.txtfacultyname = new System.Windows.Forms.ComboBox();
+            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtdate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
+            this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.AttendanceRecordDataGridView = new System.Windows.Forms.DataGridView();
             this.HeaderStudentID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaderName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HeaderClass = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaderSection = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeaderPresent = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.HeaderAbsent = new System.Windows.Forms.DataGridViewCheckBoxColumn();
@@ -61,12 +60,6 @@
             this.studentData8ABindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sujitdbDataSet = new Attendance_management_system.sujitdbDataSet();
             this.student_data__8A_TableAdapter = new Attendance_management_system.sujitdbDataSetTableAdapters.student_data__8A_TableAdapter();
-            this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.bunifuButton5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtcourse = new System.Windows.Forms.ComboBox();
-            this.txtfacultyid = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.attendancepanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AttendanceRecordDataGridView)).BeginInit();
@@ -77,11 +70,9 @@
             // attendancepanel
             // 
             this.attendancepanel.BackColor = System.Drawing.Color.GhostWhite;
-            this.attendancepanel.Controls.Add(this.txtfacultyid);
-            this.attendancepanel.Controls.Add(this.label1);
             this.attendancepanel.Controls.Add(this.label5);
-            this.attendancepanel.Controls.Add(this.txtcourse);
-            this.attendancepanel.Controls.Add(this.txtname);
+            this.attendancepanel.Controls.Add(this.txtbatch);
+            this.attendancepanel.Controls.Add(this.txtfacultyname);
             this.attendancepanel.Controls.Add(this.bunifuButton1);
             this.attendancepanel.Controls.Add(this.label3);
             this.attendancepanel.Controls.Add(this.txtdate);
@@ -97,204 +88,41 @@
             this.attendancepanel.Size = new System.Drawing.Size(1226, 664);
             this.attendancepanel.TabIndex = 7;
             // 
-            // txtname
+            // label5
             // 
-            this.txtname.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtname.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtname.FormattingEnabled = true;
-            this.txtname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtname.Items.AddRange(new object[] {
-            "Lucky Tambe",
-            "Sujit Khangar",
-            "Chetan Raut"});
-            this.txtname.Location = new System.Drawing.Point(350, 76);
-            this.txtname.Name = "txtname";
-            this.txtname.Size = new System.Drawing.Size(260, 31);
-            this.txtname.TabIndex = 23;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(566, 88);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 25);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "Batch: ";
             // 
-            // label3
+            // txtbatch
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(669, 142);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 25);
-            this.label3.TabIndex = 19;
-            this.label3.Text = "Date: ";
+            this.txtbatch.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtbatch.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtbatch.FormattingEnabled = true;
+            this.txtbatch.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtbatch.Items.AddRange(new object[] {
+            "Java",
+            "DotNet"});
+            this.txtbatch.Location = new System.Drawing.Point(641, 82);
+            this.txtbatch.Name = "txtbatch";
+            this.txtbatch.Size = new System.Drawing.Size(144, 31);
+            this.txtbatch.TabIndex = 25;
+            this.txtbatch.Text = "Java";
             // 
-            // txtdate
+            // txtfacultyname
             // 
-            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.txtdate.Location = new System.Drawing.Point(735, 137);
-            this.txtdate.MaxDate = new System.DateTime(2999, 12, 31, 0, 0, 0, 0);
-            this.txtdate.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.txtdate.Name = "txtdate";
-            this.txtdate.Size = new System.Drawing.Size(132, 30);
-            this.txtdate.TabIndex = 18;
-            this.txtdate.Value = new System.DateTime(2023, 12, 15, 0, 53, 1, 0);
-            this.txtdate.ValueChanged += new System.EventHandler(this.txtdate_ValueChanged);
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(212, 83);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 25);
-            this.label8.TabIndex = 12;
-            this.label8.Text = "Faculty Name: ";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1226, 39);
-            this.panel3.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(25, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(98, 23);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Attendance";
-            // 
-            // AttendanceRecordDataGridView
-            // 
-            this.AttendanceRecordDataGridView.AllowUserToAddRows = false;
-            this.AttendanceRecordDataGridView.AllowUserToDeleteRows = false;
-            this.AttendanceRecordDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.AttendanceRecordDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.AttendanceRecordDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AttendanceRecordDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.AttendanceRecordDataGridView.ColumnHeadersHeight = 40;
-            this.AttendanceRecordDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.HeaderStudentID,
-            this.HeaderName,
-            this.HeaderClass,
-            this.HeaderSection,
-            this.HeaderPresent,
-            this.HeaderAbsent,
-            this.HeaderLate});
-            this.AttendanceRecordDataGridView.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle13.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.AttendanceRecordDataGridView.DefaultCellStyle = dataGridViewCellStyle13;
-            this.AttendanceRecordDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.AttendanceRecordDataGridView.Location = new System.Drawing.Point(83, 262);
-            this.AttendanceRecordDataGridView.Name = "AttendanceRecordDataGridView";
-            this.AttendanceRecordDataGridView.ReadOnly = true;
-            this.AttendanceRecordDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.AttendanceRecordDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.AttendanceRecordDataGridView.RowHeadersWidth = 50;
-            this.AttendanceRecordDataGridView.RowTemplate.Height = 24;
-            this.AttendanceRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AttendanceRecordDataGridView.Size = new System.Drawing.Size(1065, 334);
-            this.AttendanceRecordDataGridView.TabIndex = 0;
-            this.AttendanceRecordDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AttendanceRecordDataGridView_CellClick);
-            this.AttendanceRecordDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // HeaderStudentID
-            // 
-            this.HeaderStudentID.DataPropertyName = "STUDENT ID";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.HeaderStudentID.DefaultCellStyle = dataGridViewCellStyle9;
-            this.HeaderStudentID.HeaderText = "STUDENT ID";
-            this.HeaderStudentID.MinimumWidth = 6;
-            this.HeaderStudentID.Name = "HeaderStudentID";
-            this.HeaderStudentID.ReadOnly = true;
-            // 
-            // HeaderName
-            // 
-            this.HeaderName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HeaderName.DataPropertyName = "NAME";
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.HeaderName.DefaultCellStyle = dataGridViewCellStyle10;
-            this.HeaderName.HeaderText = "NAME";
-            this.HeaderName.MinimumWidth = 6;
-            this.HeaderName.Name = "HeaderName";
-            this.HeaderName.ReadOnly = true;
-            // 
-            // HeaderClass
-            // 
-            this.HeaderClass.DataPropertyName = "CLASS";
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.HeaderClass.DefaultCellStyle = dataGridViewCellStyle11;
-            this.HeaderClass.HeaderText = "CLASS";
-            this.HeaderClass.MinimumWidth = 6;
-            this.HeaderClass.Name = "HeaderClass";
-            this.HeaderClass.ReadOnly = true;
-            // 
-            // HeaderSection
-            // 
-            this.HeaderSection.DataPropertyName = "SECTION";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.HeaderSection.DefaultCellStyle = dataGridViewCellStyle12;
-            this.HeaderSection.HeaderText = "SECTION";
-            this.HeaderSection.MinimumWidth = 6;
-            this.HeaderSection.Name = "HeaderSection";
-            this.HeaderSection.ReadOnly = true;
-            // 
-            // HeaderPresent
-            // 
-            this.HeaderPresent.HeaderText = "PRESENT";
-            this.HeaderPresent.MinimumWidth = 6;
-            this.HeaderPresent.Name = "HeaderPresent";
-            this.HeaderPresent.ReadOnly = true;
-            // 
-            // HeaderAbsent
-            // 
-            this.HeaderAbsent.HeaderText = "ABSENT";
-            this.HeaderAbsent.MinimumWidth = 6;
-            this.HeaderAbsent.Name = "HeaderAbsent";
-            this.HeaderAbsent.ReadOnly = true;
-            // 
-            // HeaderLate
-            // 
-            this.HeaderLate.HeaderText = "LATE";
-            this.HeaderLate.MinimumWidth = 6;
-            this.HeaderLate.Name = "HeaderLate";
-            this.HeaderLate.ReadOnly = true;
-            this.HeaderLate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // studentData8ABindingSource
-            // 
-            this.studentData8ABindingSource.DataMember = "student data (8A)";
-            this.studentData8ABindingSource.DataSource = this.sujitdbDataSet;
-            // 
-            // sujitdbDataSet
-            // 
-            this.sujitdbDataSet.DataSetName = "sujitdbDataSet";
-            this.sujitdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // student_data__8A_TableAdapter
-            // 
-            this.student_data__8A_TableAdapter.ClearBeforeFill = true;
+            this.txtfacultyname.BackColor = System.Drawing.Color.GhostWhite;
+            this.txtfacultyname.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtfacultyname.FormattingEnabled = true;
+            this.txtfacultyname.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.txtfacultyname.Location = new System.Drawing.Point(327, 82);
+            this.txtfacultyname.Name = "txtfacultyname";
+            this.txtfacultyname.Size = new System.Drawing.Size(195, 31);
+            this.txtfacultyname.TabIndex = 23;
             // 
             // bunifuButton1
             // 
@@ -315,11 +143,11 @@
             this.bunifuButton1.ColorContrastOnClick = 45;
             this.bunifuButton1.ColorContrastOnHover = 45;
             this.bunifuButton1.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges3.BottomLeft = true;
-            borderEdges3.BottomRight = true;
-            borderEdges3.TopLeft = true;
-            borderEdges3.TopRight = true;
-            this.bunifuButton1.CustomizableEdges = borderEdges3;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.bunifuButton1.CustomizableEdges = borderEdges1;
             this.bunifuButton1.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton1.DisabledBorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton1.DisabledFillColor = System.Drawing.Color.ForestGreen;
@@ -343,7 +171,7 @@
             this.bunifuButton1.IdleIconLeftImage = global::Attendance_management_system.Properties.Resources.apply;
             this.bunifuButton1.IdleIconRightImage = null;
             this.bunifuButton1.IndicateFocus = false;
-            this.bunifuButton1.Location = new System.Drawing.Point(545, 613);
+            this.bunifuButton1.Location = new System.Drawing.Point(546, 603);
             this.bunifuButton1.Name = "bunifuButton1";
             this.bunifuButton1.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton1.OnDisabledState.BorderRadius = 1;
@@ -386,6 +214,38 @@
             this.bunifuButton1.UseDefaultRadiusAndThickness = true;
             this.bunifuButton1.Click += new System.EventHandler(this.bunifuButton1_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(855, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(60, 25);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Date: ";
+            // 
+            // txtdate
+            // 
+            this.txtdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtdate.Location = new System.Drawing.Point(921, 82);
+            this.txtdate.MaxDate = new System.DateTime(2999, 12, 31, 0, 0, 0, 0);
+            this.txtdate.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.txtdate.Name = "txtdate";
+            this.txtdate.Size = new System.Drawing.Size(137, 30);
+            this.txtdate.TabIndex = 18;
+            this.txtdate.Value = new System.DateTime(2023, 12, 15, 0, 53, 1, 0);
+            this.txtdate.ValueChanged += new System.EventHandler(this.txtdate_ValueChanged);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(189, 89);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(132, 25);
+            this.label8.TabIndex = 12;
+            this.label8.Text = "Faculty Name: ";
+            // 
             // bunifuButton5
             // 
             this.bunifuButton5.AllowAnimations = true;
@@ -405,11 +265,11 @@
             this.bunifuButton5.ColorContrastOnClick = 45;
             this.bunifuButton5.ColorContrastOnHover = 45;
             this.bunifuButton5.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges4.BottomLeft = true;
-            borderEdges4.BottomRight = true;
-            borderEdges4.TopLeft = true;
-            borderEdges4.TopRight = true;
-            this.bunifuButton5.CustomizableEdges = borderEdges4;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.bunifuButton5.CustomizableEdges = borderEdges2;
             this.bunifuButton5.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bunifuButton5.DisabledBorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton5.DisabledFillColor = System.Drawing.Color.ForestGreen;
@@ -433,7 +293,7 @@
             this.bunifuButton5.IdleIconLeftImage = global::Attendance_management_system.Properties.Resources.add_user;
             this.bunifuButton5.IdleIconRightImage = null;
             this.bunifuButton5.IndicateFocus = false;
-            this.bunifuButton5.Location = new System.Drawing.Point(544, 208);
+            this.bunifuButton5.Location = new System.Drawing.Point(558, 153);
             this.bunifuButton5.Name = "bunifuButton5";
             this.bunifuButton5.OnDisabledState.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuButton5.OnDisabledState.BorderRadius = 1;
@@ -476,113 +336,153 @@
             this.bunifuButton5.UseDefaultRadiusAndThickness = true;
             this.bunifuButton5.Click += new System.EventHandler(this.bunifuButton5_Click);
             // 
-            // label5
+            // panel3
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(660, 82);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 25);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Batch: ";
+            this.panel3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(1226, 39);
+            this.panel3.TabIndex = 1;
             // 
-            // txtcourse
+            // label2
             // 
-            this.txtcourse.BackColor = System.Drawing.Color.GhostWhite;
-            this.txtcourse.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtcourse.FormattingEnabled = true;
-            this.txtcourse.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.txtcourse.Items.AddRange(new object[] {
-            "Java",
-            "DotNet"});
-            this.txtcourse.Location = new System.Drawing.Point(735, 76);
-            this.txtcourse.Name = "txtcourse";
-            this.txtcourse.Size = new System.Drawing.Size(218, 31);
-            this.txtcourse.TabIndex = 25;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(25, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(98, 23);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Attendance";
             // 
-            // txtfacultyid
+            // AttendanceRecordDataGridView
             // 
-            this.txtfacultyid.AcceptsReturn = false;
-            this.txtfacultyid.AcceptsTab = false;
-            this.txtfacultyid.AnimationSpeed = 200;
-            this.txtfacultyid.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.txtfacultyid.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.txtfacultyid.BackColor = System.Drawing.Color.Transparent;
-            this.txtfacultyid.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtfacultyid.BackgroundImage")));
-            this.txtfacultyid.BorderColorActive = System.Drawing.Color.DodgerBlue;
-            this.txtfacultyid.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.txtfacultyid.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            this.txtfacultyid.BorderColorIdle = System.Drawing.Color.Silver;
-            this.txtfacultyid.BorderRadius = 1;
-            this.txtfacultyid.BorderThickness = 1;
-            this.txtfacultyid.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.txtfacultyid.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfacultyid.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.txtfacultyid.DefaultText = "";
-            this.txtfacultyid.FillColor = System.Drawing.Color.GhostWhite;
-            this.txtfacultyid.HideSelection = true;
-            this.txtfacultyid.IconLeft = null;
-            this.txtfacultyid.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfacultyid.IconPadding = 10;
-            this.txtfacultyid.IconRight = null;
-            this.txtfacultyid.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtfacultyid.Lines = new string[0];
-            this.txtfacultyid.Location = new System.Drawing.Point(350, 124);
-            this.txtfacultyid.MaxLength = 32767;
-            this.txtfacultyid.MinimumSize = new System.Drawing.Size(1, 1);
-            this.txtfacultyid.Modified = false;
-            this.txtfacultyid.Multiline = false;
-            this.txtfacultyid.Name = "txtfacultyid";
-            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties5.FillColor = System.Drawing.Color.Empty;
-            stateProperties5.ForeColor = System.Drawing.Color.Empty;
-            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfacultyid.OnActiveState = stateProperties5;
-            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txtfacultyid.OnDisabledState = stateProperties6;
-            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties7.FillColor = System.Drawing.Color.Empty;
-            stateProperties7.ForeColor = System.Drawing.Color.Empty;
-            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfacultyid.OnHoverState = stateProperties7;
-            stateProperties8.BorderColor = System.Drawing.Color.Silver;
-            stateProperties8.FillColor = System.Drawing.Color.GhostWhite;
-            stateProperties8.ForeColor = System.Drawing.Color.Empty;
-            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.txtfacultyid.OnIdleState = stateProperties8;
-            this.txtfacultyid.Padding = new System.Windows.Forms.Padding(3);
-            this.txtfacultyid.PasswordChar = '\0';
-            this.txtfacultyid.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtfacultyid.PlaceholderText = "";
-            this.txtfacultyid.ReadOnly = false;
-            this.txtfacultyid.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.txtfacultyid.SelectedText = "";
-            this.txtfacultyid.SelectionLength = 0;
-            this.txtfacultyid.SelectionStart = 0;
-            this.txtfacultyid.ShortcutsEnabled = true;
-            this.txtfacultyid.Size = new System.Drawing.Size(260, 43);
-            this.txtfacultyid.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
-            this.txtfacultyid.TabIndex = 27;
-            this.txtfacultyid.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtfacultyid.TextMarginBottom = 0;
-            this.txtfacultyid.TextMarginLeft = 3;
-            this.txtfacultyid.TextMarginTop = 0;
-            this.txtfacultyid.TextPlaceholder = "";
-            this.txtfacultyid.UseSystemPasswordChar = false;
-            this.txtfacultyid.WordWrap = true;
+            this.AttendanceRecordDataGridView.AllowUserToAddRows = false;
+            this.AttendanceRecordDataGridView.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.AttendanceRecordDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.AttendanceRecordDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.AttendanceRecordDataGridView.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.AttendanceRecordDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AttendanceRecordDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.AttendanceRecordDataGridView.ColumnHeadersHeight = 40;
+            this.AttendanceRecordDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.HeaderStudentID,
+            this.HeaderName,
+            this.HeaderSection,
+            this.HeaderPresent,
+            this.HeaderAbsent,
+            this.HeaderLate});
+            this.AttendanceRecordDataGridView.Cursor = System.Windows.Forms.Cursors.Default;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.AttendanceRecordDataGridView.DefaultCellStyle = dataGridViewCellStyle6;
+            this.AttendanceRecordDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.AttendanceRecordDataGridView.Location = new System.Drawing.Point(83, 223);
+            this.AttendanceRecordDataGridView.Name = "AttendanceRecordDataGridView";
+            this.AttendanceRecordDataGridView.ReadOnly = true;
+            this.AttendanceRecordDataGridView.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.AttendanceRecordDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            this.AttendanceRecordDataGridView.RowHeadersWidth = 50;
+            this.AttendanceRecordDataGridView.RowTemplate.Height = 24;
+            this.AttendanceRecordDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.AttendanceRecordDataGridView.Size = new System.Drawing.Size(1065, 356);
+            this.AttendanceRecordDataGridView.TabIndex = 0;
+            this.AttendanceRecordDataGridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AttendanceRecordDataGridView_CellClick);
+            this.AttendanceRecordDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // label1
+            // HeaderStudentID
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(236, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 25);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Faculty ID: ";
+            this.HeaderStudentID.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HeaderStudentID.DataPropertyName = "STUDENT ID";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.HeaderStudentID.DefaultCellStyle = dataGridViewCellStyle3;
+            this.HeaderStudentID.HeaderText = "STUDENT ID";
+            this.HeaderStudentID.MinimumWidth = 6;
+            this.HeaderStudentID.Name = "HeaderStudentID";
+            this.HeaderStudentID.ReadOnly = true;
+            // 
+            // HeaderName
+            // 
+            this.HeaderName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HeaderName.DataPropertyName = "FULLNAME";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.HeaderName.DefaultCellStyle = dataGridViewCellStyle4;
+            this.HeaderName.HeaderText = "NAME";
+            this.HeaderName.MinimumWidth = 6;
+            this.HeaderName.Name = "HeaderName";
+            this.HeaderName.ReadOnly = true;
+            // 
+            // HeaderSection
+            // 
+            this.HeaderSection.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HeaderSection.DataPropertyName = "COURSE";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.HeaderSection.DefaultCellStyle = dataGridViewCellStyle5;
+            this.HeaderSection.HeaderText = "BATCH";
+            this.HeaderSection.MinimumWidth = 6;
+            this.HeaderSection.Name = "HeaderSection";
+            this.HeaderSection.ReadOnly = true;
+            // 
+            // HeaderPresent
+            // 
+            this.HeaderPresent.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HeaderPresent.HeaderText = "PRESENT";
+            this.HeaderPresent.MinimumWidth = 6;
+            this.HeaderPresent.Name = "HeaderPresent";
+            this.HeaderPresent.ReadOnly = true;
+            // 
+            // HeaderAbsent
+            // 
+            this.HeaderAbsent.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HeaderAbsent.HeaderText = "ABSENT";
+            this.HeaderAbsent.MinimumWidth = 6;
+            this.HeaderAbsent.Name = "HeaderAbsent";
+            this.HeaderAbsent.ReadOnly = true;
+            // 
+            // HeaderLate
+            // 
+            this.HeaderLate.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HeaderLate.HeaderText = "LATE";
+            this.HeaderLate.MinimumWidth = 6;
+            this.HeaderLate.Name = "HeaderLate";
+            this.HeaderLate.ReadOnly = true;
+            this.HeaderLate.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // studentData8ABindingSource
+            // 
+            this.studentData8ABindingSource.DataMember = "student data (8A)";
+            this.studentData8ABindingSource.DataSource = this.sujitdbDataSet;
+            // 
+            // sujitdbDataSet
+            // 
+            this.sujitdbDataSet.DataSetName = "sujitdbDataSet";
+            this.sujitdbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // student_data__8A_TableAdapter
+            // 
+            this.student_data__8A_TableAdapter.ClearBeforeFill = true;
             // 
             // frmattendance
             // 
@@ -620,23 +520,20 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DateTimePicker txtdate;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bunifuButton1;
-        private System.Windows.Forms.ComboBox txtname;
+        private System.Windows.Forms.ComboBox txtfacultyname;
         private sujitdbDataSet sujitdbDataSet;
         private System.Windows.Forms.BindingSource studentData8ABindingSource;
         private sujitdbDataSetTableAdapters.student_data__8A_TableAdapter student_data__8A_TableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn rOLLNODataGridViewTextBoxColumn;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox txtbatch;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaderStudentID;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaderName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HeaderClass;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeaderSection;
         private System.Windows.Forms.DataGridViewCheckBoxColumn HeaderPresent;
         private System.Windows.Forms.DataGridViewCheckBoxColumn HeaderAbsent;
         private System.Windows.Forms.DataGridViewCheckBoxColumn HeaderLate;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox txtcourse;
-        private Bunifu.UI.WinForms.BunifuTextBox txtfacultyid;
-        private System.Windows.Forms.Label label1;
     }
 }

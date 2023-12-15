@@ -93,5 +93,10 @@ namespace Attendance_management_system
             Login.Show();
             this.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

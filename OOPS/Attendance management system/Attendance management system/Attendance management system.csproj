@@ -109,6 +109,12 @@
     <Compile Include="frmadmission.Designer.cs">
       <DependentUpon>frmadmission.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdmissionRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmissionRecord.Designer.cs">
+      <DependentUpon>frmAdmissionRecord.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmanimated.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>sujitdbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="sujitdbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sujitdbDataSet2.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -283,6 +294,17 @@
     </None>
     <None Include="sujitdbDataSet1.xss">
       <DependentUpon>sujitdbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="sujitdbDataSet2.xsc">
+      <DependentUpon>sujitdbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="sujitdbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sujitdbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sujitdbDataSet2.xss">
+      <DependentUpon>sujitdbDataSet2.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
