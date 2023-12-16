@@ -56,6 +56,7 @@ namespace Attendance_management_system
 
                 else
                 {
+                
                     string ConnectionString = "Data Source=LAPTOP-CNVSH31R\\SQLEXPRESS01;Initial Catalog=sujitdb;Integrated Security=True";
 
                     // 2. establishing connection
@@ -65,24 +66,34 @@ namespace Attendance_management_system
                     // 3. Open connection
                     conn.Open();
 
-                    // 4. prepare query
+                    try
+                    {
+                        // 4. prepare query
 
-                    string Query = "INSERT INTO Attendance_Managment_Login_server (USERNAME, PASSWORD, CONFIRM) VALUES ('" + Username + "','" + Password + "','" + Confirm + "')";
+                        string Query = "INSERT INTO Attendance_Managment_Login_server (USERNAME, PASSWORD, CONFIRM) VALUES ('" + Username + "','" + Password + "','" + Confirm + "')";
 
-                    // 5. execute query
+                        // 5. execute query
 
-                    SqlCommand cmd = new SqlCommand(Query, conn);
-                    cmd.ExecuteNonQuery();
+                        SqlCommand cmd = new SqlCommand(Query, conn);
+                        cmd.ExecuteNonQuery();
 
-                    // 6.close connection
-                    conn.Close();
+                        frmactcreate.Show();
+                        return;
+                        //  MessageBox.Show("Sign Up successfull, please Login Now...");
 
+                    }
 
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+                    finally
+                    {
+                        // 6.close connection
+                        conn.Close();
+                    }
+                    
                     // --------------------------------------------
-
-                    frmactcreate.Show();
-                    return;
-                    //  MessageBox.Show("Sign Up successfull, please Login Now...");
                 }
             }
         }

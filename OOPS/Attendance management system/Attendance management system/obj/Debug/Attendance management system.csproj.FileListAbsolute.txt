@@ -49,3 +49,6 @@ C:\HTML Material\Windows Forms\Attendance management system\Attendance managemen
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuSlider.xml
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.xml
 C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmanimated.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.frmAttendanceRecord.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.blank.resources
+C:\HTML Material\Windows Forms\Attendance management system\Attendance management system\obj\Debug\Attendance_management_system.blank2.resources

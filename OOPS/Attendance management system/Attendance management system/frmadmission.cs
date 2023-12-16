@@ -37,79 +37,86 @@ namespace Attendance_management_system
             string Fees = txtfees.Text;
             string Duration = txtduration.Text;
 
-            if(btnMale.Checked)
+            if (Register == "" || StudentId == "" || Name == "" || Phone == "" || Parent == "" || Address == "" || Fees == "" || (btnMale.Checked == false && btnfemale.Checked == false))
             {
-                Gender = "Male";
-            }
-            else if(btnfemale.Checked)
-            {
-                Gender = "Female";
-            }
-           
-            //----------------------------------------------
-
-            //  CONNCTING TO SQL DATABASE----------------------
-
-            
-            SqlConnection conn = new SqlConnection(ConnectionString);
-            conn.Open();
-
-            if (Course == "Java")
-            {
-                try
-                {
-                    string Query = "INSERT INTO Admission_Java ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
-                    SqlCommand cmd = new SqlCommand(Query, conn);
-                    cmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.ToString());
-                }
-                finally
-                {
-                    conn.Close();
-                    MessageBox.Show("Data Submited Successfully");
-                }
+                MessageBox.Show("Please fill all fields");
             }
 
-
-            if (Course == "DotNet")
+            else
             {
-                try
+                if (btnMale.Checked)
                 {
-                    string Query = "INSERT INTO Admission_DotNet ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
-                    SqlCommand cmd = new SqlCommand(Query, conn);
-                    cmd.ExecuteNonQuery();
+                    Gender = "Male";
                 }
-                catch (Exception ex)
+                else if (btnfemale.Checked)
                 {
-                    MessageBox.Show(ex.ToString());
+                    Gender = "Female";
                 }
-                finally
+
+                //----------------------------------------------
+
+                //  CONNCTING TO SQL DATABASE----------------------
+
+
+                SqlConnection conn = new SqlConnection(ConnectionString);
+                conn.Open();
+
+                if (Course == "Java")
                 {
-                    conn.Close();
-                    MessageBox.Show("Data Submited Successfully");
+                    try
+                    {
+                        string Query = "INSERT INTO Admission_Java ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
+                        SqlCommand cmd = new SqlCommand(Query, conn);
+                        cmd.ExecuteNonQuery();
+                        MessageBox.Show("Data Submited Successfully");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+                    finally
+                    {
+                        conn.Close(); 
+                    }
                 }
+
+
+                if (Course == "DotNet")
+                {
+                    try
+                    {
+                        string Query = "INSERT INTO Admission_DotNet ([REG NO.],[STUDENT ID], FULLNAME, PHONE, [PARENTS PHONE], ADDRESS, DOB, GENDER, [ADMISSION DATE], COURSE, FEES, DURATION ) VALUES ('" + Register + "','" + StudentId + "','" + Name + "','" + Phone + "','" + Parent + "','" + Address + "','" + DOB + "','" + Gender + "','" + DOA + "','" + Course + "','" + Fees + "','" + Duration + "')";
+                        SqlCommand cmd = new SqlCommand(Query, conn);
+                        cmd.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
+                    }
+                    finally
+                    {
+                        conn.Close();
+                        MessageBox.Show("Data Submited Successfully");
+                    }
+                }
+
+                //---------------------------------------------------
+
+                /* txtresgister.Clear();
+                 txtstudentid.Clear();
+                 txtname.Clear();
+                 txtphone.Clear();
+                 txtparent.Clear();
+                 txtaddress.Clear();
+                 txtDOB.Text = DateTime.Now.ToString();
+                 txtDOA.Text = DateTime.Now.ToString();
+                 btnMale.Checked = false;
+                 btnfemale.Checked = false;
+                 txtcourse.ResetText();
+                 txtfees.Clear();
+                 txtduration.ResetText();
+                 txtresgister.Focus();*/
             }
-
-            //---------------------------------------------------
-
-            /* txtresgister.Clear();
-             txtstudentid.Clear();
-             txtname.Clear();
-             txtphone.Clear();
-             txtparent.Clear();
-             txtaddress.Clear();
-             txtDOB.Text = DateTime.Now.ToString();
-             txtDOA.Text = DateTime.Now.ToString();
-             btnMale.Checked = false;
-             btnfemale.Checked = false;
-             txtcourse.ResetText();
-             txtfees.Clear();
-             txtduration.ResetText();
-             txtresgister.Focus();*/
-
         }
 
         private void txtname_TextChanged(object sender, EventArgs e)

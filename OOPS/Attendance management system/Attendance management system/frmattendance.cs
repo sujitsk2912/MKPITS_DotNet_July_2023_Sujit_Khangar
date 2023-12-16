@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using static System.Collections.Specialized.BitVector32;
 using System.Security.Cryptography;
+using Microsoft.Win32;
+using System.Net;
 
 namespace Attendance_management_system
 {
@@ -29,7 +31,8 @@ namespace Attendance_management_system
 
         private void frmattendance_Load(object sender, EventArgs e)
         {
-            // Linking Combobox (Faculty Name) with DATABASE
+            btnsubmit.Enabled = false;
+            txtdate.Text = DateTime.Now.ToString();
 
             SqlConnection conn = new SqlConnection(ConnectionString);
             conn.Open();
@@ -53,39 +56,112 @@ namespace Attendance_management_system
             {
                 conn.Close();
             }
+
         }
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
+            string Date = txtdate.Text;
 
+            if (txtbatch.Text == "Java")
+            {
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    try
+                    {
+                        using (SqlCommand comm = new SqlCommand())
+                        {
+                            comm.Connection = conn;
+                            conn.Open();
+
+                            for (int i = 0; i < AttendanceRecordDataGridView.Rows.Count; i++)
+                            {
+                                string Query = "INSERT INTO AttendanceJavaByDate ([STUDENT ID], NAME, BATCH, PRESENT, ABSENT, LATE, DATE ) VALUES ('" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderID"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderName"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderBatch"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderPresent"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderAbsent"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderLate"].Value + "', '" +
+                                    Date + "');";
+
+                                comm.CommandText = Query;
+                                comm.ExecuteNonQuery();
+                            }
+                            MessageBox.Show("Data Uploaded Successfully...");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.ToString());
+                    }
+                    finally 
+                    { 
+                        conn.Close();
+                    }
+                }
+
+            }
+
+
+            if (txtbatch.Text == "DotNet")
+            {
+                using (SqlConnection conn = new SqlConnection(ConnectionString))
+                {
+                    try
+                    {
+                        using (SqlCommand comm = new SqlCommand())
+                        {
+                            comm.Connection = conn;
+                            conn.Open();
+
+                            for (int i = 0; i < AttendanceRecordDataGridView.Rows.Count; i++)
+                            {
+                                string Query = "INSERT INTO AttendanceDotNetByDate ([STUDENT ID], NAME, BATCH, PRESENT, ABSENT, LATE, DATE ) VALUES ('" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderID"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderName"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderBatch"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderPresent"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderAbsent"].Value + "', '" +
+                                    AttendanceRecordDataGridView.Rows[i].Cells["HeaderLate"].Value + "', '" +
+                                    Date + "');";
+
+                                comm.CommandText = Query;
+                                comm.ExecuteNonQuery();
+                            }
+                            MessageBox.Show("Data Uploaded Successfully...");
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("An error occurred: " + ex.ToString());
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                }
+            }
         }
 
         private void bunifuButton5_Click(object sender, EventArgs e)
         {
-            string Batch = txtbatch.Text;
 
-            if(Batch == "Java")
+            if (txtbatch.Text == "Java")
             {
                 GetDataFromJava();
             }
 
-            if(Batch == "DotNet")
+            if (txtbatch.Text == "DotNet")
             {
-                GetDataFromDotNet();
+               GetDataFromDotNet();
             }
 
-
-
+            btnsubmit.Enabled = true;
         }
 
         private void frmattendance_Activated(object sender, EventArgs e)
         {
-
-            txtdate.Text = DateTime.Now.ToString();
-
-            /* DataGridViewCheckBoxColumn check = new DataGridViewCheckBoxColumn();
-             check.HeaderText = "CheakBox";
-             AttendanceRecordDataGridView.Columns.Add(check);*/
 
         }
 
@@ -108,7 +184,6 @@ namespace Attendance_management_system
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 AttendanceRecordDataGridView.DataSource = dt;
-
             }
             catch (Exception ex)
             {
@@ -151,6 +226,26 @@ namespace Attendance_management_system
         }
 
         private void AttendanceRecordDataGridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void attendancepanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnenter_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsubmit_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnsearchrecord_Click(object sender, EventArgs e)
         {
 
         }

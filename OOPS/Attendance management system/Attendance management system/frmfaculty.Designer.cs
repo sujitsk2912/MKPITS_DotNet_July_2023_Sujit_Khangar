@@ -76,24 +76,24 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.FacultyRecordDataGridView = new System.Windows.Forms.DataGridView();
-            this.sujitdbDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.sujitdbDataSet1 = new Attendance_management_system.sujitdbDataSet1();
-            this.sujitdbDataSet2 = new Attendance_management_system.sujitdbDataSet2();
-            this.facultyRegistrationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.faculty_RegistrationTableAdapter = new Attendance_management_system.sujitdbDataSet2TableAdapters.Faculty_RegistrationTableAdapter();
             this.fACULTYIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fACULTYNAMEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.bATCHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.aDDRESSDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.eMAILDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pHONEDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.facultyRegistrationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sujitdbDataSet2 = new Attendance_management_system.sujitdbDataSet2();
+            this.sujitdbDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.sujitdbDataSet1 = new Attendance_management_system.sujitdbDataSet1();
+            this.faculty_RegistrationTableAdapter = new Attendance_management_system.sujitdbDataSet2TableAdapters.Faculty_RegistrationTableAdapter();
             this.FacultyPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FacultyRecordDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facultyRegistrationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.facultyRegistrationBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // FacultyPanel
@@ -236,6 +236,7 @@
             this.btnupdate.TextMarginLeft = 0;
             this.btnupdate.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnupdate.UseDefaultRadiusAndThickness = true;
+            this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
             // btndelete
             // 
@@ -325,6 +326,7 @@
             this.btndelete.TextMarginLeft = 0;
             this.btndelete.TextPadding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btndelete.UseDefaultRadiusAndThickness = true;
+            this.btndelete.Click += new System.EventHandler(this.btndelete_Click);
             // 
             // label10
             // 
@@ -914,30 +916,6 @@
             this.FacultyRecordDataGridView.TabIndex = 0;
             this.FacultyRecordDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // sujitdbDataSet1BindingSource
-            // 
-            this.sujitdbDataSet1BindingSource.DataSource = this.sujitdbDataSet1;
-            this.sujitdbDataSet1BindingSource.Position = 0;
-            // 
-            // sujitdbDataSet1
-            // 
-            this.sujitdbDataSet1.DataSetName = "sujitdbDataSet1";
-            this.sujitdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // sujitdbDataSet2
-            // 
-            this.sujitdbDataSet2.DataSetName = "sujitdbDataSet2";
-            this.sujitdbDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // facultyRegistrationBindingSource
-            // 
-            this.facultyRegistrationBindingSource.DataMember = "Faculty_Registration";
-            this.facultyRegistrationBindingSource.DataSource = this.sujitdbDataSet2;
-            // 
-            // faculty_RegistrationTableAdapter
-            // 
-            this.faculty_RegistrationTableAdapter.ClearBeforeFill = true;
-            // 
             // fACULTYIDDataGridViewTextBoxColumn
             // 
             this.fACULTYIDDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -992,6 +970,30 @@
             this.pHONEDataGridViewTextBoxColumn.Name = "pHONEDataGridViewTextBoxColumn";
             this.pHONEDataGridViewTextBoxColumn.ReadOnly = true;
             // 
+            // facultyRegistrationBindingSource
+            // 
+            this.facultyRegistrationBindingSource.DataMember = "Faculty_Registration";
+            this.facultyRegistrationBindingSource.DataSource = this.sujitdbDataSet2;
+            // 
+            // sujitdbDataSet2
+            // 
+            this.sujitdbDataSet2.DataSetName = "sujitdbDataSet2";
+            this.sujitdbDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // sujitdbDataSet1BindingSource
+            // 
+            this.sujitdbDataSet1BindingSource.DataSource = this.sujitdbDataSet1;
+            this.sujitdbDataSet1BindingSource.Position = 0;
+            // 
+            // sujitdbDataSet1
+            // 
+            this.sujitdbDataSet1.DataSetName = "sujitdbDataSet1";
+            this.sujitdbDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // faculty_RegistrationTableAdapter
+            // 
+            this.faculty_RegistrationTableAdapter.ClearBeforeFill = true;
+            // 
             // frmfaculty
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
@@ -1014,10 +1016,10 @@
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.FacultyRecordDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.facultyRegistrationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.sujitdbDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.facultyRegistrationBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

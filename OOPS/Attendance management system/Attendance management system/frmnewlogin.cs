@@ -66,36 +66,46 @@ namespace Attendance_management_system
                     // 3. Open connection
                     conn.Open();
 
-                    // 4. prepare query
-
-                    string Attendance_Managment_Login_server = "SELECT * FROM Attendance_Managment_Login_server WHERE USERNAME = '" + txtusername.Text + "' AND PASSWORD = '" + txtpassword.Text + "'";
-
-                    // 5. execute query
-
-                    SqlDataAdapter sda = new SqlDataAdapter(Attendance_Managment_Login_server, conn);
-
-                    DataTable data = new DataTable();
-
-                    sda.Fill(data);
-
-                    // 6.close connection
-                    conn.Close();
-
-                    if (data.Rows.Count > 0)
+                    try
                     {
-                        Username = txtusername.Text.Trim();
-                        Password = txtpassword.Text.Trim();
+                        // 4. prepare query
 
-                        frmsuccess.Show();
-                        break;
+                        string Attendance_Managment_Login_server = "SELECT * FROM Attendance_Managment_Login_server WHERE USERNAME = '" + txtusername.Text + "' AND PASSWORD = '" + txtpassword.Text + "'";
 
+                        // 5. execute query
+
+                        SqlDataAdapter sda = new SqlDataAdapter(Attendance_Managment_Login_server, conn);
+
+                        DataTable data = new DataTable();
+
+                        sda.Fill(data);
+
+                        if (data.Rows.Count > 0)
+                        {
+                            Username = txtusername.Text.Trim();
+                            Password = txtpassword.Text.Trim();
+
+                            frmsuccess.Show();
+                            break;
+
+                        }
+
+                        else
+                        {
+
+                            frmerror.Show();
+                            break;
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.ToString());
                     }
 
-                    else
+                    finally
                     {
-                        
-                        frmerror.Show();
-                        break;
+                        // 6.close connection
+                        conn.Close();
                     }
                 } 
             }

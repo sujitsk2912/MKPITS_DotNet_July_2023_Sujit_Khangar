@@ -132,5 +132,15 @@ namespace Attendance_management_system
         {
 
         }
+
+        private void btndelete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnupdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

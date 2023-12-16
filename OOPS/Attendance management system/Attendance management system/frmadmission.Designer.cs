@@ -622,6 +622,7 @@
             this.txtduration.Name = "txtduration";
             this.txtduration.Size = new System.Drawing.Size(200, 31);
             this.txtduration.TabIndex = 35;
+            this.txtduration.Text = "6 Months";
             // 
             // btnprint
             // 
@@ -962,6 +963,7 @@
             this.txtcourse.Name = "txtcourse";
             this.txtcourse.Size = new System.Drawing.Size(235, 31);
             this.txtcourse.TabIndex = 9;
+            this.txtcourse.Text = "Java";
             // 
             // label12
             // 
