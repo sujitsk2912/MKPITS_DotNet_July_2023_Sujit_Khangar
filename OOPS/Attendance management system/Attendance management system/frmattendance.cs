@@ -220,6 +220,17 @@ namespace Attendance_management_system
                 conn.Close();
             }
         }
+
+        private void BindGrid()
+        {/*
+
+            //Assign Click event to the Header CheckBox.
+            headerCheckBox.Click += new EventHandler(HeaderCheckBox_Clicked);
+            AttendanceRecordDataGridView.Controls.Add();
+
+            //Assign Click event to the DataGridView Cell.
+            dataGridView1.CellContentClick += new DataGridViewCellEventHandler(DataGridView_CellClick);
+      */  }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -248,6 +259,11 @@ namespace Attendance_management_system
         private void btnsearchrecord_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void AttendanceRecordDataGridView_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }
