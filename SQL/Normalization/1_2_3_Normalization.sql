@@ -69,3 +69,68 @@ SELECT * FROM City
 SELECT * FROM CUST
 SELECT * FROM PRODUCT
 SELECT * FROM STATE
+
+
+<!--////////////////////////////////////////////////////////-->
+
+
+create table Customer_Details
+(OrderId int,
+OrderDate date,
+CustId int,
+ProductId int,
+Rate decimal(10,2),
+Quantity int,
+City varchar(20),
+State varchar(20)
+primary key(OrderId,CustId,ProductId));
+
+insert into Customer_Details values
+(1,'2023-12-21',101,1001,12,2,'Nagpur','Maharashtra'),
+(1,'2023-12-21',101,1002,13,3,'Nagpur','Maharashtra'),
+(1,'2023-12-21',101,1003,14,4,'Nagpur','Maharashtra'),
+(2,'2023-12-22',102,1001,12,5,'Mumbai','Maharashtra'),
+(2,'2023-12-22',102,1002,13,6,'Mumbai','Maharashtra');
+
+select * from Customer_Details
+
+create table Cust
+(OrderId int,
+OrderDate date,
+CustId int,
+City varchar(20),
+State varchar(20)
+primary key(OrderId,CustId));
+
+insert into Cust values
+(1,'2023-12-21',101,'Nagpur','Maharashtra'),
+(2,'2023-12-22',102,'Nagpur','Maharashtra');
+
+select * from Customer_Details
+select * from Cust
+
+create table Product
+(OrderId int,
+ProductId int,
+Rate decimal (10,2),
+Quantity int
+primary key(OrderId,ProductId)
+constraint Fk1 foreign key (OrderId)
+references Cust (OrderId));
+
+create table City_State
+(OrderId int,
+OrderDate Date,
+CustId int ,
+City Varchar(20),
+primary key(OrderId,CustId));
+
+insert into City_State values
+(1,'2023-12-21',101,'Nagpur'),
+(2,'2023-12-22',102,'Nagpur');
+
+create table State
+(CustId int primary key,
+State varchar(20)
+constraint fk3 foreign key (CustId)
+references City_State (CustId));
