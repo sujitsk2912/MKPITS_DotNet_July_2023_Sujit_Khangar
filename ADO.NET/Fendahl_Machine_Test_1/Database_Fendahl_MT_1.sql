@@ -1,3 +1,5 @@
+create database FendahlMT1
+
 create table TableNation
 (
 NationID int primary key ,
