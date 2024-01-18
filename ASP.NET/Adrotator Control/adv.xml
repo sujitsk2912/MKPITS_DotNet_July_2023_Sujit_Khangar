@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Advertisements>
+	<Ad>
+		<ImageUrl>wallpaper1.JPG</ImageUrl>
+		<Impressions>1</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>wallpaper2.JPG</ImageUrl>
+		<Impressions>6</Impressions>
+	</Ad>
+	<Ad>
+		<ImageUrl>wallpaper3.JPG</ImageUrl>
+		<Impressions>4</Impressions>
+	</Ad>
+</Advertisements>
