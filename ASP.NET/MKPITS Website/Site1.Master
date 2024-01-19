@@ -1,0 +1,237 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="MKPITS_WEBSITE.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style1 {
+            width: 100%;
+          
+        }
+        .auto-style4 {
+            height: 26px;
+            width: 123px;
+        }
+        .auto-style12 {
+            text-align: center;
+        }
+        .newStyle1 {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+        
+        .auto-style13 {
+            height: 855px;
+        }
+        .newStyle3 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle4 {
+            color: #C0C0C0;
+        }
+        .newStyle5 {
+            color: #9C9C9C;
+        }
+        .newStyle6 {
+            color: #292929;
+        }
+        .auto-style26 {
+            height: 26px;
+            width: 69px;
+        }
+        .auto-style31 {
+            height: 26px;
+            width: 95px;
+            text-align: center;
+        }
+        .auto-style32 {
+            height: 26px;
+            width: 71px;
+            text-align: center;
+        }
+        .auto-style33 {
+            height: 26px;
+            width: 75px;
+            text-align: center;
+        }
+        .auto-style38 {
+            width: 100%;
+            height: 191px;
+            background-color: #0E1422;
+        }
+        .auto-style40 {
+            width: 175px;
+        }
+        .auto-style41 {
+            width: 250px;
+        }
+        .auto-style42 {
+            width: 1080px;
+        }
+        .newStyle7 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style43 {
+            width: 195px;
+            height: 63px;
+            font-size: medium;
+            background-color: #E24004;
+            border-style: none;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .auto-style44 {
+            width: 147px;
+        }
+
+        .newStyle8 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style46 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            text-decoration: none;
+            font-size: medium;
+        }
+      
+
+        .auto-style47 {
+            width: 148px;
+        }
+        .auto-style48 {
+            height: 26px;
+            width: 45px;
+        }
+        .auto-style50 {
+            height: 26px;
+            width: 339px;
+        }
+        .auto-style51 {
+            width: 256px;
+        }
+        .auto-style52 {
+            height: 26px;
+            width: 216px;
+        }
+        .auto-style53 {
+            height: 26px;
+            width: 42px;
+        }
+        .auto-style54 {
+            height: 26px;
+            width: 92px;
+        }
+        .newStyle9 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .newStyle10 {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        }
+        .newStyle11 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .auto-style55 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+        }
+
+        .newStyle2 {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing:3px;
+            word-spacing:5px;
+        }
+        h2{
+            color:orangered;
+        }
+     
+
+        </style>
+</head>
+<body style="height: 850px">
+    <form id="form1" runat="server" class="auto-style13">
+        <div class="auto-style12">
+            
+            <h2 class="newStyle2">MKP IT SOLUTIONS</h2>
+
+            <div>
+                
+                <table class="auto-style38">
+                    <tr>
+                        <td class="auto-style44">&nbsp;</td>
+                        <td class="auto-style40">
+                            <asp:Image ID="Image1" runat="server" Height="114px" ImageUrl="~/mkplogo.png" Width="131px" />
+                        </td>
+                        <td class="auto-style42">&nbsp;</td>
+                        <td class="auto-style41">
+                                 <input style="cursor:pointer;" id="Button1" class="newStyle7 auto-style43" type="button" value="Enquiry" />
+                        </td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+        <table class="auto-style1" width ="100%">
+            <tr>
+                <td class="auto-style47">
+
+                </td>
+                <td class="auto-style26" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Home.aspx" CssClass="auto-style46">Home</asp:HyperLink>
+                    </strong></td>
+                <td class="auto-style48" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Home.aspx" CssClass="auto-style46">Admission</asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style32" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/About.aspx" CssClass="auto-style46">Client</asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style31" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Contact.aspx" CssClass="auto-style46">Courses</asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style33" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Contact.aspx" CssClass="auto-style46">Gallary</asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style4" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Contact.aspx" CssClass="auto-style46"> Recruitment</asp:HyperLink>
+                    </strong></td>
+                <td class="auto-style54" >
+                    <strong>
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Contact.aspx" CssClass="auto-style46">Training</asp:HyperLink>
+                    </strong>
+                </td>
+                <td class="auto-style50" >
+                    &nbsp;</td>
+                <td class="auto-style52" >
+                    &nbsp;</td>
+                <td class="auto-style53" >
+                    <asp:ImageButton ID="ImageButton5" runat="server" Width="30px" Height="30px" ImageUrl="~/linkedin-square-logo-24.png" />
+                </td>
+                <td class="auto-style51">
+
+                    <span class="auto-style55">Call 10:00 AM to 6:00 PM</span><br />
+                    <strong>
+                        <a href="tel:+91-78880-66630" style="box-sizing: inherit; -webkit-font-smoothing: antialiased; word-break: break-word; overflow-wrap: break-word; color: inherit; text-decoration: none; text-underline-offset: 0.3rem; outline: none; touch-action: manipulation; transition: var(--dt-transition); background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 86% / 0px 0.18rem no-repeat;" class="newStyle9">+91-78880-66630</a></strong></td>
+                <td>
+
+                </td>
+            </tr>
+        </table>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+     </body>
+</html>
